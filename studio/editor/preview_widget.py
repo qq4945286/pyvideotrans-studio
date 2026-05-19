@@ -393,6 +393,7 @@ class PreviewWidget(QWidget):
         self._audio_schedule = []  # [(start, end, audio_path, muted), ...]
         self._video_schedule = []  # [(start, end, video_path), ...]
         self._schedule_idx = -1
+        self._clip_timeline_start = 0.0  # 当前播放片段在时间线上的起始位置
         self._video_size = (0.0, 0.0)  # (width, height) 用于字幕定位
         self._active_duration = 0.0  # 选中素材时长（timeline 时间），0 表示用 _duration
         self._source_offset = 0.0  # 选中素材在源文件中的偏移
@@ -958,10 +959,14 @@ class PreviewWidget(QWidget):
             self._audio_proc = None
 
     def set_multi_track_schedule(self, audio_schedule: list, video_schedule: list = None):
-        """设置多轨排期表。audio: [(start, end, audio_path, muted), ...]; video: [(start, end, video_path), ...]"""
+        """设置多轨排期表。audio: [(start, end, audio_path, muted), ...]; video: [(start, timeline_end, path, source_start), ...]"""
         self._audio_schedule = sorted(audio_schedule, key=lambda x: x[0])
         self._video_schedule = sorted(video_schedule or [], key=lambda x: x[0])
         self._schedule_idx = -1
+        # 初始化为第一个视频素材的时间线起始
+        for vs in self._video_schedule:
+            self._clip_timeline_start = vs[0]  # timeline_start
+            break
 
     def _find_schedule_at(self, pos: float) -> int:
         """返回播放头位置对应的排期索引，-1 表示无匹配"""
@@ -974,10 +979,11 @@ class PreviewWidget(QWidget):
         """帧同步检查：播放头跨过音源/视频源边界时切换"""
         if not self._playing or not self._audio_schedule:
             return
-        pos = self._source_offset + self._position * self._speed
+        # 用绝对时间线位置匹配排期表（非源文件位置）
+        timeline_pos = self._clip_timeline_start + self._position
 
         # ── 音频切换 ──
-        idx = self._find_schedule_at(pos)
+        idx = self._find_schedule_at(timeline_pos)
         if idx != self._schedule_idx:
             self._schedule_idx = idx
             self._stop_audio()
@@ -985,33 +991,41 @@ class PreviewWidget(QWidget):
                 _, _, audio_path, entry_muted = self._audio_schedule[idx]
                 if not entry_muted and audio_path and os.path.exists(audio_path):
                     try:
-                        offset = pos - self._audio_schedule[idx][0]
+                        offset = timeline_pos - self._audio_schedule[idx][0]
                         self._audio_proc = subprocess.Popen(
-                            [
-                                "ffplay",
-                                "-nodisp",
-                                "-autoexit",
-                                "-ss",
-                                str(max(0.0, offset)),
-                                "-i",
-                                audio_path,
-                                "-loglevel",
-                                "quiet",
-                            ],
-                            stdout=subprocess.DEVNULL,
-                            stderr=subprocess.DEVNULL,
+                            ["ffplay", "-nodisp", "-autoexit",
+                             "-ss", str(max(0.0, offset)),
+                             "-i", audio_path, "-loglevel", "quiet"],
+                            stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL,
                         )
                     except Exception:
                         self._audio_proc = None
 
         # ── 视频源切换 ──
-        for v_start, v_end, v_path in self._video_schedule:
-            if v_start <= pos < v_end and v_path != self._current_path:
+        # video_schedule: (timeline_start, timeline_end, source_path, source_start)
+        for vs in self._video_schedule:
+            v_start, v_end, v_path = vs[0], vs[1], vs[2]
+            v_source_start = vs[3] if len(vs) > 3 else 0.0
+            if v_start <= timeline_pos < v_end and v_path != self._current_path:
                 if os.path.exists(v_path):
                     self._extractor.stop()
                     self._extractor.wait(300)
                     self._extractor.load(v_path)
                     self._current_path = v_path
+                    # 更新绝对时间线起始位置和源偏移
+                    self._source_offset = v_source_start
+                    self._clip_timeline_start = v_start
+                    # 跳帧到素材开头
+                    self._position = 0.0
+                break
+            elif v_start <= timeline_pos < v_end and v_path == self._current_path:
+                # 同源但 source_start 不同 → 重新 seek
+                if v_source_start != self._source_offset:
+                    self._source_offset = v_source_start
+                    self._clip_timeline_start = v_start
+                    self._position = 0.0
+                    skip_to = v_source_start + self._position * self._speed
+                    self._extractor.skip_to(skip_to)
                 break
 
     def _cleanup_audio_temp(self):

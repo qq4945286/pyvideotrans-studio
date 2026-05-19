@@ -2723,8 +2723,6 @@ class StudioMainWindow(QMainWindow):
             if _retries > 0:
                 QTimer.singleShot(500, lambda: self._on_play(_retries - 1))
             return
-        # 重置选中素材状态，全局播放时间线上所有素材
-        self._preview_widget.set_source_offset(0.0)
         # 动态捕捉所有内容的最大时间跨度（视频/音频/字幕），驱动滑块/时间显示
         clip_max = max((c.end for c in self._timeline_widget._clips), default=0.0)
         sub_max = max((e.end for e in self._timeline_widget._subtitle_entries), default=0.0)
@@ -2733,6 +2731,7 @@ class StudioMainWindow(QMainWindow):
         clips = self._timeline_widget._clips
         audio_schedule = []
         video_schedule = []
+        first_source_start = 0.0
         # 音频轨素材优先：相同 start 时 track_type="audio" 排在 "video" 前面，
         # 确保配音文件被 _find_schedule_at 优先命中
         for c in sorted(
@@ -2743,9 +2742,16 @@ class StudioMainWindow(QMainWindow):
             if not entry_muted and os.path.exists(c.source_path):
                 audio_path = c.source_path
             audio_schedule.append((c.start, c.end, audio_path, entry_muted))
-            # 视频轨素材：只记录视频文件用于跨源切换（排除音频文件）
+            # 视频轨素材：记录 (timeline_start, timeline_end, source_path, source_start)
             if os.path.exists(c.source_path) and getattr(c, "track_type", "") != "audio":
-                video_schedule.append((c.start, c.end, c.source_path))
+                ss = c.source_start
+                video_schedule.append((c.start, c.end, c.source_path, ss))
+
+        # 从第一个视频素材的 source_start 开始解码
+        for vs in video_schedule:
+            first_source_start = vs[3]
+            break
+        self._preview_widget.set_source_offset(first_source_start)
 
         # 确保有视频源（只从视频轨素材取）
         if not self._current_video:
