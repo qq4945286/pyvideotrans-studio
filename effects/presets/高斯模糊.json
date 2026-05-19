@@ -1,0 +1,1 @@
+{"name": "高斯模糊", "category": "锐化模糊", "ffmpeg_filter": "gblur=sigma={sigma}:steps=3", "params": {"sigma": {"type": "float", "default": 3.0, "min": 0.5, "max": 20.0, "label": "模糊程度"}}}

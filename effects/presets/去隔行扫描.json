@@ -1,0 +1,1 @@
+{"name": "去隔行扫描", "category": "修复", "ffmpeg_filter": "bwdif=mode=send_frame:parity=auto:deint=all"}

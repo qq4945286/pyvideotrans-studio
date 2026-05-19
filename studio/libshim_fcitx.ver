@@ -1,0 +1,20 @@
+Qt_6_PRIVATE_API {
+    global:
+        _ZTI20QGenericUnixServices;
+        _ZTS20QGenericUnixServices;
+        _ZTV20QGenericUnixServices;
+        _ZN20QGenericUnixServicesC1Ev;
+        _ZN20QGenericUnixServicesC2Ev;
+        _ZN20QGenericUnixServicesD1Ev;
+        _ZN20QGenericUnixServicesD2Ev;
+        _ZN20QGenericUnixServicesD0Ev;
+        _ZN20QGenericUnixServices11colorPickerEP7QWindow;
+        _ZN20QGenericUnixServices12openDocumentERK4QUrl;
+        _ZN20QGenericUnixServices19setApplicationBadgeEx;
+        _ZN20QGenericUnixServices22portalWindowIdentifierEP7QWindow;
+        _ZN20QGenericUnixServices7openUrlERK4QUrl;
+        _ZNK20QGenericUnixServices13hasCapabilityEN17QPlatformServices10CapabilityE;
+        _ZNK20QGenericUnixServices18desktopEnvironmentEv;
+    local:
+        *;
+};

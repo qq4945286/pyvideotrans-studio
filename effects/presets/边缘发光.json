@@ -1,0 +1,1 @@
+{"name": "边缘发光", "category": "风格化", "ffmpeg_filter": "edgedetect=low=0.1:high=0.3,negate,hue=s=0"}

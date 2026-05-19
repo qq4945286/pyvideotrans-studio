@@ -1,0 +1,1 @@
+{"name": "海报色调分离", "category": "风格化", "ffmpeg_filter": "pp=hb|vb|dr|al|lb,eq=contrast=1.3"}

@@ -1,0 +1,1 @@
+{"name": "移轴模糊", "category": "锐化模糊", "ffmpeg_filter": "geq=lum='p(X,Y)*if(lt(abs(Y-H/2),H*0.15),1,0.3)':cb='p(X,Y)*if(lt(abs(Y-H/2),H*0.15),1,0.3)':cr='p(X,Y)*if(lt(abs(Y-H/2),H*0.15),1,0.3)'"}

@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=pyvideotrans Studio
+Comment=视频翻译配音剪辑工具
+Exec=python /home/deepin/pyvideotrans/cli.py --studio
+Icon=/home/deepin/pyvideotrans/pyvideotrans-studio/studio/logo_icon.svg
+Path=/home/deepin/pyvideotrans
+Terminal=false
+Categories=AudioVideo;Video;Audio;
+StartupNotify=true

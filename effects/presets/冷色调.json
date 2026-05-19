@@ -1,0 +1,1 @@
+{"name": "冷色调", "category": "调色", "ffmpeg_filter": "colorbalance=rs=-{coolness}:gs=0:bs={coolness}", "params": {"coolness": {"type": "float", "default": 0.25, "min": -0.5, "max": 0.5, "label": "冷色强度"}}}

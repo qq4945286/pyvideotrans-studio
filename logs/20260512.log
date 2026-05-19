@@ -1,0 +1,9 @@
+[DEBUG] [字幕配音]渠道12:共耗时:0s
+[DEBUG] cosyvoice-tts data={'ref_wav': '/home/deepin/pyvideotrans/pyvideotrans-studio/f5-tts/012.wav', 'ref_text': '修水银哇得几句，最多各口头禅，你晓得是么里泼，在各干么哟'}
+[DEBUG] [字幕配音]渠道12:共耗时:0s
+[DEBUG] cosyvoice-tts data={'ref_wav': '/home/deepin/pyvideotrans/pyvideotrans-studio/f5-tts/012.wav', 'ref_text': '修水银哇得几句，最多各口头禅，你晓得是么里泼，在各干么哟'}
+[DEBUG] result=/tmp/gradio/397877f37b7ad7ecc3814a2ad706ca747596518294d8b19690bdbd37c009d979/audio.wav
+[DEBUG] [字幕配音]渠道12:共耗时:21s
+[DEBUG] cosyvoice-tts data={'ref_wav': '/home/deepin/pyvideotrans/pyvideotrans-studio/f5-tts/012.wav', 'ref_text': '修水银哇得几句，最多各口头禅，你晓得是么里泼，在各干么哟'}
+[DEBUG] result=/tmp/gradio/397877f37b7ad7ecc3814a2ad706ca747596518294d8b19690bdbd37c009d979/audio.wav
+[DEBUG] [字幕配音]渠道12:共耗时:10s

@@ -1,0 +1,38 @@
+[project]
+name = "pyvideotrans-studio"
+version = "0.1.0"
+description = "剪映风格视频翻译与轻量剪辑工具"
+requires-python = ">=3.10"
+dependencies = [
+    "pydub>=0.25.1",
+    "PySide6>=6.8",
+    "torch>=2.0",
+    "torchaudio>=2.0",
+    "tqdm>=4.67",
+    "numpy>=1.24",
+    "sentencepiece>=0.1.99",
+    "transformers>=4.36",
+    "librosa>=0.10.1",
+    "soundfile>=0.12.1",
+    "pandas>=2.0",
+    "scipy>=1.10",
+    "requests>=2.31",
+    "beautifulsoup4>=4.12",
+    "moonshine-voice>=0.0.59",
+]
+
+[project.urls]
+Homepage = "https://github.com/jianchang512/pyvideotrans"
+
+[project.scripts]
+pyvideotrans-studio = "main:main"
+
+[tool.setuptools.packages.find]
+include = ["studio*", "videotrans*"]
+
+# ── ROCm 环境 (AMD GPU) ──
+# torch/torchaudio 需从 ROCm 索引安装:
+#   pip install torch torchaudio --index-url https://download.pytorch.org/whl/rocm7.2
+#
+# ── CUDA 环境 (NVIDIA GPU) ──
+#   pip install torch torchaudio --index-url https://download.pytorch.org/whl/cu128

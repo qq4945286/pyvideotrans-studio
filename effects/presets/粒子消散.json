@@ -1,0 +1,20 @@
+{
+  "name": "particle_transition",
+  "type": "particle",
+  "duration": 1.0,
+  "easing": "easeOutQuad",
+  "params": {
+    "particle_count": 80,
+    "particle_size": 8,
+    "speed": 2.5,
+    "direction": "radial_outward",
+    "texture": "spark.png",
+    "color_mode": "from_source",
+    "random_seed": 42
+  },
+  "keyframes": [
+    { "time": 0.0, "progress": 0.0, "gravity": 0.0 },
+    { "time": 0.4, "progress": 0.3, "gravity": 0.2 },
+    { "time": 1.0, "progress": 1.0, "gravity": 0.8 }
+  ]
+}

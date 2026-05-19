@@ -1,0 +1,1 @@
+{"name": "卡通风格", "category": "风格化", "ffmpeg_filter": "edgedetect=mode=colormix:high=0.1,hue=s=0"}

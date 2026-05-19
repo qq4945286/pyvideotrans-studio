@@ -1,0 +1,1 @@
+{"name": "色差效果", "category": "风格化", "ffmpeg_filter": "rgbashift=rh={shift}:bv={shift}", "params": {"shift": {"type": "int", "default": 3, "min": 1, "max": 15, "label": "偏移量"}}}

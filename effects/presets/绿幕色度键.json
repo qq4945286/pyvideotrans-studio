@@ -1,0 +1,1 @@
+{"name": "绿幕色度键", "category": "抠像", "ffmpeg_filter": "colorkey=0x{tolerance}00{tolerance}:similarity={similarity}:blend=0.02", "params": {"tolerance": {"type": "string", "default": "30", "label": "绿色容差(hex)"}, "similarity": {"type": "float", "default": 0.35, "min": 0.05, "max": 0.8, "label": "相似度"}}}

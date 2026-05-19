@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4a9cff"/>
+      <stop offset="100%" stop-color="#3a8cff"/>
+    </linearGradient>
+  </defs>
+  <!-- 纯色填充的播放按钮，粗笔画，小尺寸也清晰 -->
+  <polygon points="160,100 160,412 380,256" fill="url(#g)"/>
+  <!-- 右侧小圆弧代表翻译，粗线 -->
+  <path d="M 400 180 A 130 130 0 0 1 400 332" fill="none" stroke="#6c5ce7" stroke-width="24" stroke-linecap="round"/>
+  <polygon points="400,332 380,300 420,308" fill="#6c5ce7"/>
+</svg>

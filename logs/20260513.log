@@ -1,0 +1,150 @@
+[DEBUG] cosyvoice-tts data={'ref_wav': '/home/deepin/pyvideotrans/pyvideotrans-studio/f5-tts/012.wav', 'ref_text': '修水银哇得几句，最多各口头禅，你晓得是么里泼，在各干么哟'}
+[DEBUG] result=/tmp/gradio/0b045580f5518b3904a66301952b0fb0393125b62379c454c42c0df95ebb8a8d/audio.wav
+[DEBUG] [字幕配音]渠道12:共耗时:37s
+[DEBUG] cosyvoice-tts data={'ref_wav': '/home/deepin/pyvideotrans/pyvideotrans-studio/f5-tts/012.wav', 'ref_text': '修水银哇得几句，最多各口头禅，你晓得是么里泼，在各干么哟'}
+[DEBUG] result=/tmp/gradio/3a652fcd7ea111181ab239ac8c6112070c2a051bb86c2d1581e5686695af6271/audio.wav
+[DEBUG] [字幕配音]渠道12:共耗时:9s
+[DEBUG] 返回缓存的编解码器 Linux-264: h264_vaapi
+[DEBUG] 最终配置信息：self.cfg=TaskCfgVTT(is_cuda=True, uuid='b1c76994fb', cache_folder='/home/deepin/pyvideotrans/pyvideotrans-studio/tmp/147941/b1c76994fb', target_dir='/home/deepin/Videos/001', source_language='英语', source_language_code='en', source_sub='/home/deepin/Videos/001/en.srt', source_wav='/home/deepin/pyvideotrans/pyvideotrans-studio/tmp/147941/b1c76994fb/en.wav', source_wav_output='/home/deepin/Videos/001/en.m4a', target_language='简体中文', target_language_code='zh-cn', target_sub='/home/deepin/Videos/001/zh-cn.srt', target_wav='/home/deepin/pyvideotrans/pyvideotrans-studio/tmp/147941/b1c76994fb/target.wav', target_wav_output='/home/deepin/Videos/001/zh-cn.m4a', name='/tmp/pvt_merge_llydugj1/merged.mp4', noextname='001', basename='001.mp4', ext='mp4', dirname='/home/deepin/Videos/全流程', shound_del_name=None, translate_type=4, tts_type=12, volume=0, pitch=0, voice_rate=0, voice_role='012.wav', voice_autorate=False, video_autorate=False, remove_silent_mid=False, align_sub_audio=True, detect_language='en', recogn_type=1, model_name='small.en', shibie_audio=None, remove_noise=False, enable_diariz=False, nums_diariz=0, rephrase=0, fix_punc=False, subtitle_language=None, app_mode='biaozhun', subtitles='', targetdir_mp4='/home/deepin/Videos/001/001.mp4', novoice_mp4='/home/deepin/pyvideotrans/pyvideotrans-studio/tmp/147941/b1c76994fb/novoice.mp4', is_separate=False, embed_bgm=False, instrument=None, vocal=None, back_audio='', clear_cache=False, background_music=None, subtitle_type=0, only_out_mp4=False, recogn2pass=False, output_srt=0, copysrt_rawvideo=False)
+[DEBUG] The file information: {'streams': [{'index': 0, 'codec_name': 'h264', 'codec_long_name': 'H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10', 'profile': 'High', 'codec_type': 'video', 'codec_tag_string': 'avc1', 'codec_tag': '0x31637661', 'width': 1920, 'height': 1080, 'coded_width': 1920, 'coded_height': 1080, 'closed_captions': 0, 'film_grain': 0, 'has_b_frames': 1, 'sample_aspect_ratio': '1:1', 'display_aspect_ratio': '16:9', 'pix_fmt': 'yuv420p', 'level': 42, 'color_range': 'tv', 'color_space': 'bt709', 'color_transfer': 'bt709', 'color_primaries': 'bt709', 'chroma_location': 'left', 'field_order': 'progressive', 'refs': 1, 'is_avc': 'true', 'nal_length_size': '4', 'id': '0x1', 'r_frame_rate': '60/1', 'avg_frame_rate': '60/1', 'time_base': '1/15360', 'start_pts': 215, 'start_time': '0.013997', 'duration_ts': 890880, 'duration': '58.000000', 'bit_rate': '1360852', 'bits_per_raw_sample': '8', 'nb_frames': '3480', 'extradata_size': 50, 'disposition': {'default': 1, 'dub': 0, 'original': 0, 'comment': 0, 'lyrics': 0, 'karaoke': 0, 'forced': 0, 'hearing_impaired': 0, 'visual_impaired': 0, 'clean_effects': 0, 'attached_pic': 0, 'timed_thumbnails': 0, 'non_diegetic': 0, 'captions': 0, 'descriptions': 0, 'metadata': 0, 'dependent': 0, 'still_image': 0}, 'tags': {'language': 'und', 'handler_name': 'ISO Media file produced by Google Inc.', 'vendor_id': '[0][0][0][0]', 'encoder': 'Lavc60.31.102 h264_vaapi'}}, {'index': 1, 'codec_name': 'aac', 'codec_long_name': 'AAC (Advanced Audio Coding)', 'profile': 'LC', 'codec_type': 'audio', 'codec_tag_string': 'mp4a', 'codec_tag': '0x6134706d', 'sample_fmt': 'fltp', 'sample_rate': '48000', 'channels': 2, 'channel_layout': 'stereo', 'bits_per_sample': 0, 'initial_padding': 0, 'id': '0x2', 'r_frame_rate': '0/0', 'avg_frame_rate': '0/0', 'time_base': '1/48000', 'start_pts': 0, 'start_time': '0.000000', 'duration_ts': 2784760, 'duration': '58.015833', 'bit_rate': '128332', 'nb_frames': '2720', 'extradata_size': 5, 'disposition': {'default': 1, 'dub': 0, 'original': 0, 'comment': 0, 'lyrics': 0, 'karaoke': 0, 'forced': 0, 'hearing_impaired': 0, 'visual_impaired': 0, 'clean_effects': 0, 'attached_pic': 0, 'timed_thumbnails': 0, 'non_diegetic': 0, 'captions': 0, 'descriptions': 0, 'metadata': 0, 'dependent': 0, 'still_image': 0}, 'tags': {'language': 'eng', 'handler_name': 'SoundHandler', 'vendor_id': '[0][0][0][0]'}}], 'format': {'filename': '/tmp/pvt_merge_llydugj1/merged.mp4', 'nb_streams': 2, 'nb_programs': 0, 'format_name': 'mov,mp4,m4a,3gp,3g2,mj2', 'format_long_name': 'QuickTime / MOV', 'start_time': '0.000000', 'duration': '58.015833', 'size': '10882075', 'bit_rate': '1500566', 'probe_score': 100, 'tags': {'major_brand': 'isom', 'minor_version': '512', 'compatible_brands': 'isomiso2avc1mp41', 'encoder': 'Lavf60.16.100'}}}
+[DEBUG] The file info after process:result={'video_fps': 60.0, 'r_frame_rate': '60/1', 'video_codec_name': 'h264', 'audio_codec_name': 'aac', 'width': 1920, 'height': 1080, 'time': 58000, 'streams_len': 2, 'streams_audio': 1, 'video_streams': 1, 'color': 'yuv420p'}
+[DEBUG] [FFMPEG-CMD]:
+ffmpeg -hide_banner -nostdin -ignore_unknown -threads 0 -y -fflags +genpts -i /tmp/pvt_merge_llydugj1/merged.mp4 -an -c:v copy novoice.mp4
+
+[DEBUG] [trans_create]:run_recogn() time.time()=1778602445.6212192
+[DEBUG] [recognition]__init__:kwargs={'detect_language': 'en', 'audio_file': '/home/deepin/pyvideotrans/pyvideotrans-studio/tmp/147941/b1c76994fb/en.wav', 'cache_folder': '/home/deepin/pyvideotrans/pyvideotrans-studio/tmp/147941/b1c76994fb', 'model_name': 'small.en', 'uuid': 'b1c76994fb', 'is_cuda': True, 'subtitle_type': 0, 'recogn_type': 1, 'max_speakers': -1, 'llm_post': False, 'recogn2pass': False}
+[DEBUG] BaseRecogn 初始化
+[DEBUG] [新进程执行任务]:STT use small.en
+[DEBUG] GPU进程池:max_workers=1
+[DEBUG] openai-whisper模式下，对small.en模型返回的断句结果重新后修正
+[DEBUG] [语音识别]渠道1,small.en:共耗时:14s
+[DEBUG] [字幕翻译]渠道4,deepseek-v4-flash:共耗时:0s
+[ERROR] 管线异常
+Traceback (most recent call last):
+  File "/home/deepin/pyvideotrans/pyvideotrans-studio/studio/main_window.py", line 2894, in _run_translate_pipeline
+    trk.trans()
+  File "/home/deepin/pyvideotrans/pyvideotrans-studio/videotrans/task/trans_create.py", line 726, in trans
+    target_srt = run_trans(
+                 ^^^^^^^^^^
+  File "/home/deepin/pyvideotrans/pyvideotrans-studio/videotrans/translator/__init__.py", line 784, in run
+    return DeepSeek(**kwargs).run()
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/deepin/pyvideotrans/pyvideotrans-studio/videotrans/translator/_base.py", line 103, in run
+    return self._run_srt(split_source_text)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/deepin/pyvideotrans/pyvideotrans-studio/videotrans/translator/_base.py", line 169, in _run_srt
+    result = self._item_task(srt_str)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/deepin/pyvideotrans/pyvideotrans-studio/videotrans/translator/_deepseek.py", line 52, in _item_task
+    response = model.chat.completions.create(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_utils/_utils.py", line 287, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/resources/chat/completions/completions.py", line 1211, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_base_client.py", line 1314, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_base_client.py", line 1087, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.AuthenticationError: Authentication Fails (governor)
+
+[DEBUG] [deepseek]响应:response=ChatCompletion(id='7aee93e3-2f97-4edf-9639-9dd2183d04d7', choices=[Choice(finish_reason='stop', index=0, logprobs=None, message=ChatCompletionMessage(content='<TRANSLATE_TEXT>\n1\n00:00:00,000 --> 00:00:05,000\nHello, my friend.\n</TRANSLATE_TEXT>', refusal=None, role='assistant', annotations=None, audio=None, function_call=None, tool_calls=None, reasoning_content='我们只需要翻译输入的内容。输入只有一个块，索引1，时间戳，内容"你好啊我的朋友"。翻译成英文，要简洁适合配音。"你好啊我的朋友"可以翻译为"Hello, my friend." 但需要更自然口语化，比如"Hey, my friend." 或者更简洁"Hello, friend." 考虑到配音长度，尽量简短。但保持友好。输出严格按格式。'))], created=1778602548, model='deepseek-v4-flash', object='chat.completion', service_tier=None, system_fingerprint='fp_8b330d02d0_prod0820_fp8_kvcache_20260402', usage=CompletionUsage(completion_tokens=122, prompt_tokens=853, total_tokens=975, completion_tokens_details=CompletionTokensDetails(accepted_prediction_tokens=None, audio_tokens=None, reasoning_tokens=85, rejected_prediction_tokens=None), prompt_tokens_details=PromptTokensDetails(audio_tokens=None, cached_tokens=0), prompt_cache_hit_tokens=0, prompt_cache_miss_tokens=853))
+[DEBUG] 按SRT格式翻译，原始字幕行数：1,整理为list[dict]后的行数:1
+[DEBUG] [字幕翻译]渠道4,deepseek-v4-flash:共耗时:2s
+[DEBUG] 返回缓存的编解码器 Linux-264: h264_vaapi
+[DEBUG] 最终配置信息：self.cfg=TaskCfgVTT(is_cuda=True, uuid='02af1e0684', cache_folder='/home/deepin/pyvideotrans/pyvideotrans-studio/tmp/147941/02af1e0684', target_dir='/home/deepin/Videos/001', source_language='英语', source_language_code='en', source_sub='/home/deepin/Videos/001/en.srt', source_wav='/home/deepin/pyvideotrans/pyvideotrans-studio/tmp/147941/02af1e0684/en.wav', source_wav_output='/home/deepin/Videos/001/en.m4a', target_language='简体中文', target_language_code='zh-cn', target_sub='/home/deepin/Videos/001/zh-cn.srt', target_wav='/home/deepin/pyvideotrans/pyvideotrans-studio/tmp/147941/02af1e0684/target.wav', target_wav_output='/home/deepin/Videos/001/zh-cn.m4a', name='/tmp/pvt_merge_4anq9wmh/merged.mp4', noextname='001', basename='001.mp4', ext='mp4', dirname='/home/deepin/Videos/全流程', shound_del_name=None, translate_type=4, tts_type=12, volume=0, pitch=0, voice_rate=0, voice_role='012.wav', voice_autorate=False, video_autorate=False, remove_silent_mid=False, align_sub_audio=True, detect_language='en', recogn_type=1, model_name='small.en', shibie_audio=None, remove_noise=False, enable_diariz=False, nums_diariz=0, rephrase=0, fix_punc=False, subtitle_language=None, app_mode='biaozhun', subtitles='', targetdir_mp4='/home/deepin/Videos/001/001.mp4', novoice_mp4='/home/deepin/pyvideotrans/pyvideotrans-studio/tmp/147941/02af1e0684/novoice.mp4', is_separate=False, embed_bgm=False, instrument=None, vocal=None, back_audio='', clear_cache=False, background_music=None, subtitle_type=0, only_out_mp4=False, recogn2pass=False, output_srt=0, copysrt_rawvideo=False)
+[DEBUG] The file information: {'streams': [{'index': 0, 'codec_name': 'h264', 'codec_long_name': 'H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10', 'profile': 'High', 'codec_type': 'video', 'codec_tag_string': 'avc1', 'codec_tag': '0x31637661', 'width': 1920, 'height': 1080, 'coded_width': 1920, 'coded_height': 1080, 'closed_captions': 0, 'film_grain': 0, 'has_b_frames': 1, 'sample_aspect_ratio': '1:1', 'display_aspect_ratio': '16:9', 'pix_fmt': 'yuv420p', 'level': 42, 'color_range': 'tv', 'color_space': 'bt709', 'color_transfer': 'bt709', 'color_primaries': 'bt709', 'chroma_location': 'left', 'field_order': 'progressive', 'refs': 1, 'is_avc': 'true', 'nal_length_size': '4', 'id': '0x1', 'r_frame_rate': '60/1', 'avg_frame_rate': '60/1', 'time_base': '1/15360', 'start_pts': 215, 'start_time': '0.013997', 'duration_ts': 890880, 'duration': '58.000000', 'bit_rate': '1360852', 'bits_per_raw_sample': '8', 'nb_frames': '3480', 'extradata_size': 50, 'disposition': {'default': 1, 'dub': 0, 'original': 0, 'comment': 0, 'lyrics': 0, 'karaoke': 0, 'forced': 0, 'hearing_impaired': 0, 'visual_impaired': 0, 'clean_effects': 0, 'attached_pic': 0, 'timed_thumbnails': 0, 'non_diegetic': 0, 'captions': 0, 'descriptions': 0, 'metadata': 0, 'dependent': 0, 'still_image': 0}, 'tags': {'language': 'und', 'handler_name': 'ISO Media file produced by Google Inc.', 'vendor_id': '[0][0][0][0]', 'encoder': 'Lavc60.31.102 h264_vaapi'}}, {'index': 1, 'codec_name': 'aac', 'codec_long_name': 'AAC (Advanced Audio Coding)', 'profile': 'LC', 'codec_type': 'audio', 'codec_tag_string': 'mp4a', 'codec_tag': '0x6134706d', 'sample_fmt': 'fltp', 'sample_rate': '48000', 'channels': 2, 'channel_layout': 'stereo', 'bits_per_sample': 0, 'initial_padding': 0, 'id': '0x2', 'r_frame_rate': '0/0', 'avg_frame_rate': '0/0', 'time_base': '1/48000', 'start_pts': 0, 'start_time': '0.000000', 'duration_ts': 2784760, 'duration': '58.015833', 'bit_rate': '128332', 'nb_frames': '2720', 'extradata_size': 5, 'disposition': {'default': 1, 'dub': 0, 'original': 0, 'comment': 0, 'lyrics': 0, 'karaoke': 0, 'forced': 0, 'hearing_impaired': 0, 'visual_impaired': 0, 'clean_effects': 0, 'attached_pic': 0, 'timed_thumbnails': 0, 'non_diegetic': 0, 'captions': 0, 'descriptions': 0, 'metadata': 0, 'dependent': 0, 'still_image': 0}, 'tags': {'language': 'eng', 'handler_name': 'SoundHandler', 'vendor_id': '[0][0][0][0]'}}], 'format': {'filename': '/tmp/pvt_merge_4anq9wmh/merged.mp4', 'nb_streams': 2, 'nb_programs': 0, 'format_name': 'mov,mp4,m4a,3gp,3g2,mj2', 'format_long_name': 'QuickTime / MOV', 'start_time': '0.000000', 'duration': '58.015833', 'size': '10882075', 'bit_rate': '1500566', 'probe_score': 100, 'tags': {'major_brand': 'isom', 'minor_version': '512', 'compatible_brands': 'isomiso2avc1mp41', 'encoder': 'Lavf60.16.100'}}}
+[DEBUG] The file info after process:result={'video_fps': 60.0, 'r_frame_rate': '60/1', 'video_codec_name': 'h264', 'audio_codec_name': 'aac', 'width': 1920, 'height': 1080, 'time': 58000, 'streams_len': 2, 'streams_audio': 1, 'video_streams': 1, 'color': 'yuv420p'}
+[DEBUG] [FFMPEG-CMD]:
+ffmpeg -hide_banner -nostdin -ignore_unknown -threads 0 -y -fflags +genpts -i /tmp/pvt_merge_4anq9wmh/merged.mp4 -an -c:v copy novoice.mp4
+
+[DEBUG] [deepseek]响应:response=ChatCompletion(id='a25df727-81e4-4fcc-ab29-1dad90061a39', choices=[Choice(finish_reason='stop', index=0, logprobs=None, message=ChatCompletionMessage(content='<TRANSLATE_TEXT>\n1\n00:00:00,000 --> 00:00:04,840\n好了，各位，本课程我们将深入探讨 Claude Code，这是一款由 Anthropic 开发的 AI 驱动\n\n2\n00:00:04,840 --> 00:00:10,880\n的编码工具，可用于分析、规划、编写和编辑项目代码\n\n3\n00:00:10,880 --> 00:00:16,640\n类似于其他编码工具如 Copilot、Cursor 或 Windsurf\n\n4\n00:00:16,640 --> 00:00:21,440\n但那些工具通常有界面嵌入在代码编辑器里\n\n5\n00:00:21,440 --> 00:00:26,500\n而 Claude Code 直接运行在终端中，我们通过终端\n\n6\n00:00:26,500 --> 00:00:31,080\n与之交互。这意味着它能更无缝地融入现有开发流程\n\n7\n00:00:31,080 --> 00:00:35,580\n无需强迫你切换 IDE。此外，你还可以在\n\n8\n00:00:35,580 --> 00:00:40,700\nGitHub 工作流中使用 Claude Code 自动审查拉取请求、提供反馈，以及\n\n9\n00:00:40,700 --> 00:00:45,820\n独立处理仓库中的开放问题。我觉得它的独特之处在于\n\n10\n00:00:45,820 --> 00:00:50,240\n能真正理解我使用的任何项目的代码库，根据我的个人\n\n11\n00:00:50,240 --> 00:00:54,460\n经验，它生成的代码在每个项目上都更贴切、更合适\n\n12\n00:00:54,460 --> 00:00:57,940\n所以在本系列中，我们将深入探讨\n</TRANSLATE_TEXT>', refusal=None, role='assistant', annotations=None, audio=None, function_call=None, tool_calls=None, reasoning_content='我们被要求翻译SRT字幕到简体中文，保持块数量一致，每个块独立翻译，并考虑口语化简洁。注意源文本有拼写错误"Anthropik"应为"Anthropic"，"Winsurf"可能为"Windsurf"。需要理解上下文，修正错误，然后翻译成简洁的汉语。每个块都要单独处理，不能合并。输出格式为SRT，需要保留索引和时间戳。翻译时要适合配音，所以简洁自然，避免冗长。'))], created=1778602580, model='deepseek-v4-flash', object='chat.completion', service_tier=None, system_fingerprint='fp_8b330d02d0_prod0820_fp8_kvcache_20260402', usage=CompletionUsage(completion_tokens=520, prompt_tokens=1296, total_tokens=1816, completion_tokens_details=CompletionTokensDetails(accepted_prediction_tokens=None, audio_tokens=None, reasoning_tokens=105, rejected_prediction_tokens=None), prompt_tokens_details=PromptTokensDetails(audio_tokens=None, cached_tokens=0), prompt_cache_hit_tokens=0, prompt_cache_miss_tokens=1296))
+[DEBUG] 按SRT格式翻译，原始字幕行数：12,整理为list[dict]后的行数:12
+[DEBUG] [字幕翻译]渠道4,deepseek-v4-flash:共耗时:6s
+[INFO] [Estimate] 预估报告已保存至: /home/deepin/Videos/001/配音时长预估.txt
+[DEBUG] cosyvoice-tts data={'ref_wav': '/home/deepin/pyvideotrans/pyvideotrans-studio/f5-tts/012.wav', 'ref_text': '修水银哇得几句，最多各口头禅，你晓得是么里泼，在各干么哟'}
+[DEBUG] result=/tmp/gradio/1b22fd61350ce3e87938bdaaa1c98945c488539461f186a85fa28004d76bcbef/audio.wav
+[DEBUG] cosyvoice-tts data={'ref_wav': '/home/deepin/pyvideotrans/pyvideotrans-studio/f5-tts/012.wav', 'ref_text': '修水银哇得几句，最多各口头禅，你晓得是么里泼，在各干么哟'}
+[DEBUG] result=/tmp/gradio/0cb8a79c1b71b7e764af42d1f413925060eba91a2714185ed29c9cf37bb1ab46/audio.wav
+[DEBUG] cosyvoice-tts data={'ref_wav': '/home/deepin/pyvideotrans/pyvideotrans-studio/f5-tts/012.wav', 'ref_text': '修水银哇得几句，最多各口头禅，你晓得是么里泼，在各干么哟'}
+[DEBUG] result=/tmp/gradio/f480de2b72e2ee8ee517951ab421577d0a33ec678467434bcaf821e67cea47a3/audio.wav
+[DEBUG] cosyvoice-tts data={'ref_wav': '/home/deepin/pyvideotrans/pyvideotrans-studio/f5-tts/012.wav', 'ref_text': '修水银哇得几句，最多各口头禅，你晓得是么里泼，在各干么哟'}
+[DEBUG] result=/tmp/gradio/cf01db556f8a4e45a596de623699456155ca2e3d7a2a96010fbea7705f6d4f7c/audio.wav
+[DEBUG] cosyvoice-tts data={'ref_wav': '/home/deepin/pyvideotrans/pyvideotrans-studio/f5-tts/012.wav', 'ref_text': '修水银哇得几句，最多各口头禅，你晓得是么里泼，在各干么哟'}
+[DEBUG] result=/tmp/gradio/7684605a1ccfc16e03ed6c62f168074604f98b41f5a4ad8d86221251b652759f/audio.wav
+[DEBUG] cosyvoice-tts data={'ref_wav': '/home/deepin/pyvideotrans/pyvideotrans-studio/f5-tts/012.wav', 'ref_text': '修水银哇得几句，最多各口头禅，你晓得是么里泼，在各干么哟'}
+[DEBUG] result=/tmp/gradio/3cfa856f9543f4f75c52afcef3dd1320809063a47b176db0a7172b673e05d12c/audio.wav
+[DEBUG] cosyvoice-tts data={'ref_wav': '/home/deepin/pyvideotrans/pyvideotrans-studio/f5-tts/012.wav', 'ref_text': '修水银哇得几句，最多各口头禅，你晓得是么里泼，在各干么哟'}
+[DEBUG] result=/tmp/gradio/2206ffafe7ffce8c9225bb4664e623b903487f180dd251b58b87a6a0b4a9be8d/audio.wav
+[DEBUG] cosyvoice-tts data={'ref_wav': '/home/deepin/pyvideotrans/pyvideotrans-studio/f5-tts/012.wav', 'ref_text': '修水银哇得几句，最多各口头禅，你晓得是么里泼，在各干么哟'}
+[DEBUG] result=/tmp/gradio/4c2eff28471217601cb482167f567ec38ea9af2348f93d858f321ab46a2ab55f/audio.wav
+[DEBUG] cosyvoice-tts data={'ref_wav': '/home/deepin/pyvideotrans/pyvideotrans-studio/f5-tts/012.wav', 'ref_text': '修水银哇得几句，最多各口头禅，你晓得是么里泼，在各干么哟'}
+[DEBUG] result=/tmp/gradio/c4b88f7afcc7a746030ee653dddfaf8eb8fd2c52ebb255a9e3c575212caa27d3/audio.wav
+[DEBUG] cosyvoice-tts data={'ref_wav': '/home/deepin/pyvideotrans/pyvideotrans-studio/f5-tts/012.wav', 'ref_text': '修水银哇得几句，最多各口头禅，你晓得是么里泼，在各干么哟'}
+[DEBUG] result=/tmp/gradio/fcb39458eae9b9e034e3d468b98454dd9f52ee9d2fca99fa35b46c87e33cc402/audio.wav
+[DEBUG] cosyvoice-tts data={'ref_wav': '/home/deepin/pyvideotrans/pyvideotrans-studio/f5-tts/012.wav', 'ref_text': '修水银哇得几句，最多各口头禅，你晓得是么里泼，在各干么哟'}
+[DEBUG] result=/tmp/gradio/74910deeb202b0d4d9566f45920979fe6860549b478485bf4df0336bd7e79a9c/audio.wav
+[DEBUG] cosyvoice-tts data={'ref_wav': '/home/deepin/pyvideotrans/pyvideotrans-studio/f5-tts/012.wav', 'ref_text': '修水银哇得几句，最多各口头禅，你晓得是么里泼，在各干么哟'}
+[DEBUG] result=/tmp/gradio/963c31282e590cec84d809e9c23350236068d2db32ce0fbe8b885b815b48a2cc/audio.wav
+[DEBUG] [字幕配音]渠道12:共耗时:288s
+[WARNING] [Overflow] 字幕[1] 配音时长 15819ms 超出字幕时段 4840ms (ratio=3.27)，需优化
+[WARNING] [Overflow] 字幕[2] 配音时长 19734ms 超出字幕时段 6040ms (ratio=3.27)，需优化
+[WARNING] [Overflow] 字幕[3] 配音时长 15145ms 超出字幕时段 5760ms (ratio=2.63)，需优化
+[WARNING] [Overflow] 字幕[4] 配音时长 6582ms 超出字幕时段 4800ms (ratio=1.37)，需优化
+[WARNING] [Overflow] 字幕[5] 配音时长 6864ms 超出字幕时段 5060ms (ratio=1.36)，需优化
+[WARNING] [Overflow] 字幕[6] 配音时长 13563ms 超出字幕时段 4580ms (ratio=2.96)，需优化
+[WARNING] [Overflow] 字幕[8] 配音时长 20117ms 超出字幕时段 5120ms (ratio=3.93)，需优化
+[WARNING] [Overflow] 字幕[10] 配音时长 7495ms 超出字幕时段 4420ms (ratio=1.70)，需优化
+[WARNING] [Overflow] 字幕[12] 配音时长 4686ms 超出字幕时段 3480ms (ratio=1.35)，需优化
+[INFO] [Overflow] 分析报告已保存至: /home/deepin/Videos/001/配音优化建议.txt
+[DEBUG] [SpeedRate] Init. AudioRate=False, VideoRate=False, Rubberband=True
+[DEBUG] [SpeedRate] 未启用变速，进入普通拼接模式。
+[DEBUG] concat_txt='/home/deepin/pyvideotrans/pyvideotrans-studio/tmp/147941/02af1e0684/final_audio_concat.txt',filelist[0]='/home/deepin/Videos/001/cache/dubb-0.wav'
+[DEBUG] [Audio-Concat] 最终音频已生成: /home/deepin/pyvideotrans/pyvideotrans-studio/tmp/147941/02af1e0684/target.wav
+[ERROR] 管线异常
+Traceback (most recent call last):
+  File "/home/deepin/pyvideotrans/pyvideotrans-studio/studio/main_window.py", line 2921, in _run_translate_pipeline
+    trk.align()
+  File "/home/deepin/pyvideotrans/pyvideotrans-studio/videotrans/task/trans_create.py", line 854, in align
+    volume = self.cfg.volume.replace("%", "").strip()
+             ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'int' object has no attribute 'replace'
+
+[DEBUG] 返回缓存的编解码器 Linux-264: h264_vaapi
+[DEBUG] 最终配置信息：self.cfg=TaskCfgVTT(is_cuda=True, uuid='f2e29b5ecd', cache_folder='/home/deepin/pyvideotrans/pyvideotrans-studio/tmp/162077/f2e29b5ecd', target_dir='/home/deepin/Videos/001', source_language='英语', source_language_code='en', source_sub='/home/deepin/Videos/001/en.srt', source_wav='/home/deepin/pyvideotrans/pyvideotrans-studio/tmp/162077/f2e29b5ecd/en.wav', source_wav_output='/home/deepin/Videos/001/en.m4a', target_language='简体中文', target_language_code='zh-cn', target_sub='/home/deepin/Videos/001/zh-cn.srt', target_wav='/home/deepin/pyvideotrans/pyvideotrans-studio/tmp/162077/f2e29b5ecd/target.wav', target_wav_output='/home/deepin/Videos/001/zh-cn.m4a', name='/tmp/pvt_merge_m4gh3y_m/merged.mp4', noextname='001', basename='001.mp4', ext='mp4', dirname='/home/deepin/Videos/全流程', shound_del_name=None, translate_type=4, tts_type=12, volume='+0%', pitch=0, voice_rate=0, voice_role='012.wav', voice_autorate=False, video_autorate=False, remove_silent_mid=False, align_sub_audio=True, detect_language='en', recogn_type=1, model_name='small.en', shibie_audio=None, remove_noise=False, enable_diariz=False, nums_diariz=0, rephrase=0, fix_punc=False, subtitle_language=None, app_mode='biaozhun', subtitles='', targetdir_mp4='/home/deepin/Videos/001/001.mp4', novoice_mp4='/home/deepin/pyvideotrans/pyvideotrans-studio/tmp/162077/f2e29b5ecd/novoice.mp4', is_separate=False, embed_bgm=False, instrument=None, vocal=None, back_audio='', clear_cache=False, background_music=None, subtitle_type=0, only_out_mp4=False, recogn2pass=False, output_srt=0, copysrt_rawvideo=False)
+[DEBUG] The file information: {'streams': [{'index': 0, 'codec_name': 'h264', 'codec_long_name': 'H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10', 'profile': 'High', 'codec_type': 'video', 'codec_tag_string': 'avc1', 'codec_tag': '0x31637661', 'width': 1920, 'height': 1080, 'coded_width': 1920, 'coded_height': 1080, 'closed_captions': 0, 'film_grain': 0, 'has_b_frames': 1, 'sample_aspect_ratio': '1:1', 'display_aspect_ratio': '16:9', 'pix_fmt': 'yuv420p', 'level': 42, 'color_range': 'tv', 'color_space': 'bt709', 'color_transfer': 'bt709', 'color_primaries': 'bt709', 'chroma_location': 'left', 'field_order': 'progressive', 'refs': 1, 'is_avc': 'true', 'nal_length_size': '4', 'id': '0x1', 'r_frame_rate': '60/1', 'avg_frame_rate': '60/1', 'time_base': '1/15360', 'start_pts': 215, 'start_time': '0.013997', 'duration_ts': 890880, 'duration': '58.000000', 'bit_rate': '1360852', 'bits_per_raw_sample': '8', 'nb_frames': '3480', 'extradata_size': 50, 'disposition': {'default': 1, 'dub': 0, 'original': 0, 'comment': 0, 'lyrics': 0, 'karaoke': 0, 'forced': 0, 'hearing_impaired': 0, 'visual_impaired': 0, 'clean_effects': 0, 'attached_pic': 0, 'timed_thumbnails': 0, 'non_diegetic': 0, 'captions': 0, 'descriptions': 0, 'metadata': 0, 'dependent': 0, 'still_image': 0}, 'tags': {'language': 'und', 'handler_name': 'ISO Media file produced by Google Inc.', 'vendor_id': '[0][0][0][0]', 'encoder': 'Lavc60.31.102 h264_vaapi'}}, {'index': 1, 'codec_name': 'aac', 'codec_long_name': 'AAC (Advanced Audio Coding)', 'profile': 'LC', 'codec_type': 'audio', 'codec_tag_string': 'mp4a', 'codec_tag': '0x6134706d', 'sample_fmt': 'fltp', 'sample_rate': '48000', 'channels': 2, 'channel_layout': 'stereo', 'bits_per_sample': 0, 'initial_padding': 0, 'id': '0x2', 'r_frame_rate': '0/0', 'avg_frame_rate': '0/0', 'time_base': '1/48000', 'start_pts': 0, 'start_time': '0.000000', 'duration_ts': 2784760, 'duration': '58.015833', 'bit_rate': '128332', 'nb_frames': '2720', 'extradata_size': 5, 'disposition': {'default': 1, 'dub': 0, 'original': 0, 'comment': 0, 'lyrics': 0, 'karaoke': 0, 'forced': 0, 'hearing_impaired': 0, 'visual_impaired': 0, 'clean_effects': 0, 'attached_pic': 0, 'timed_thumbnails': 0, 'non_diegetic': 0, 'captions': 0, 'descriptions': 0, 'metadata': 0, 'dependent': 0, 'still_image': 0}, 'tags': {'language': 'eng', 'handler_name': 'SoundHandler', 'vendor_id': '[0][0][0][0]'}}], 'format': {'filename': '/tmp/pvt_merge_m4gh3y_m/merged.mp4', 'nb_streams': 2, 'nb_programs': 0, 'format_name': 'mov,mp4,m4a,3gp,3g2,mj2', 'format_long_name': 'QuickTime / MOV', 'start_time': '0.000000', 'duration': '58.015833', 'size': '10882075', 'bit_rate': '1500566', 'probe_score': 100, 'tags': {'major_brand': 'isom', 'minor_version': '512', 'compatible_brands': 'isomiso2avc1mp41', 'encoder': 'Lavf60.16.100'}}}
+[DEBUG] The file info after process:result={'video_fps': 60.0, 'r_frame_rate': '60/1', 'video_codec_name': 'h264', 'audio_codec_name': 'aac', 'width': 1920, 'height': 1080, 'time': 58000, 'streams_len': 2, 'streams_audio': 1, 'video_streams': 1, 'color': 'yuv420p'}
+[DEBUG] [FFMPEG-CMD]:
+ffmpeg -hide_banner -nostdin -ignore_unknown -threads 0 -y -fflags +genpts -i /tmp/pvt_merge_m4gh3y_m/merged.mp4 -an -c:v copy novoice.mp4
+
+[DEBUG] 按SRT格式翻译，原始字幕行数：12,整理为list[dict]后的行数:12
+[DEBUG] [字幕翻译]渠道4,deepseek-v4-flash:共耗时:0s
+[INFO] [Estimate] 预估报告已保存至: /home/deepin/Videos/001/配音时长预估.txt
+[DEBUG] [字幕配音]渠道12:共耗时:0s
+[WARNING] [Overflow] 字幕[1] 配音时长 15819ms 超出字幕时段 4840ms (ratio=3.27)，需优化
+[WARNING] [Overflow] 字幕[2] 配音时长 19734ms 超出字幕时段 6040ms (ratio=3.27)，需优化
+[WARNING] [Overflow] 字幕[3] 配音时长 15145ms 超出字幕时段 5760ms (ratio=2.63)，需优化
+[WARNING] [Overflow] 字幕[4] 配音时长 6582ms 超出字幕时段 4800ms (ratio=1.37)，需优化
+[WARNING] [Overflow] 字幕[5] 配音时长 6864ms 超出字幕时段 5060ms (ratio=1.36)，需优化
+[WARNING] [Overflow] 字幕[6] 配音时长 13563ms 超出字幕时段 4580ms (ratio=2.96)，需优化
+[WARNING] [Overflow] 字幕[8] 配音时长 20117ms 超出字幕时段 5120ms (ratio=3.93)，需优化
+[WARNING] [Overflow] 字幕[10] 配音时长 7495ms 超出字幕时段 4420ms (ratio=1.70)，需优化
+[WARNING] [Overflow] 字幕[12] 配音时长 4686ms 超出字幕时段 3480ms (ratio=1.35)，需优化
+[INFO] [Overflow] 分析报告已保存至: /home/deepin/Videos/001/配音优化建议.txt
+[DEBUG] [SpeedRate] Init. AudioRate=False, VideoRate=False, Rubberband=True
+[DEBUG] [SpeedRate] 未启用变速，进入普通拼接模式。
+[DEBUG] concat_txt='/home/deepin/pyvideotrans/pyvideotrans-studio/tmp/162077/f2e29b5ecd/final_audio_concat.txt',filelist[0]='/home/deepin/Videos/001/cache/dubb-0.wav'
+[DEBUG] [Audio-Concat] 最终音频已生成: /home/deepin/pyvideotrans/pyvideotrans-studio/tmp/162077/f2e29b5ecd/target.wav
+[DEBUG] [FFMPEG-CMD]:
+ffmpeg -hide_banner -nostdin -ignore_unknown -threads 0 -y -i novoice.mp4 -vf tpad=stop_mode=clone:stop_duration=67.222 -c:v libx264 -crf 23 -preset medium -an final_video_with_freeze_lastend.mp4
+
+[DEBUG] 视频定格应延长67222ms，实际向上取整秒延长67.222s,操作成功。
+[DEBUG] 返回缓存的编解码器 Linux-264: h264_vaapi
+[DEBUG] [最终视频合成]copy模式，无需重新编码:
+['-y', '-progress', 'compose1778604427.2958539.txt', '-i', 'novoice.mp4', '-i', 'origin_audio.m4a', '-map', '0:v', '-map', '1:a', '-c:v', 'copy', '-c:a', 'copy', '-movflags', '+faststart', '-t', '125.216000', 'laste_target.mp4']
+[DEBUG] [FFMPEG-CMD]:
+ffmpeg -hide_banner -nostdin -ignore_unknown -threads 0 -y -progress compose1778604427.2958539.txt -i novoice.mp4 -i origin_audio.m4a -map 0:v -map 1:a -c:v copy -c:a copy -movflags +faststart -t 125.216000 laste_target.mp4
+

@@ -1,0 +1,1 @@
+{"name": "赛博朋克", "category": "调色", "ffmpeg_filter": "colorbalance=rs=0:gs=0.15:bs=0.3,eq=saturation=1.4:contrast=1.2"}

@@ -1,0 +1,1 @@
+{"name": "波浪扭曲", "category": "变形", "ffmpeg_filter": "geq=X='X+{amplitude}*sin(2*PI*Y/{frequency})':Y=Y", "params": {"amplitude": {"type": "float", "default": 8.0, "min": 1.0, "max": 30.0, "label": "振幅"}, "frequency": {"type": "float", "default": 40.0, "min": 10.0, "max": 100.0, "label": "频率"}}}

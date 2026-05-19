@@ -1,0 +1,3 @@
+Yehor/whisper-large-v3-turbo-quantized-uk
+mitchelldehaven/whisper-medium-uk
+arampacha/whisper-large-uk-2

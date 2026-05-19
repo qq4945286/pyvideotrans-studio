@@ -1,0 +1,1 @@
+{"name": "视频降噪", "category": "修复", "ffmpeg_filter": "hqdn3d={luma}:{chroma}:4.5:4.5", "params": {"luma": {"type": "float", "default": 4.0, "min": 1.0, "max": 20.0, "label": "亮度降噪"}, "chroma": {"type": "float", "default": 6.0, "min": 1.0, "max": 20.0, "label": "色度降噪"}}}

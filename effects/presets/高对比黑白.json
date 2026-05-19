@@ -1,0 +1,1 @@
+{"name": "高对比黑白", "category": "调色", "ffmpeg_filter": "hue=s=0,eq=contrast=1.5:brightness=-0.05"}

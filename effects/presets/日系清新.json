@@ -1,0 +1,1 @@
+{"name": "日系清新", "category": "调色", "ffmpeg_filter": "eq=gamma=1.1:saturation=0.85:brightness=0.08:contrast=0.9"}

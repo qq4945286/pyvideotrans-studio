@@ -1,0 +1,1 @@
+{"name": "马赛克像素化", "category": "风格化", "ffmpeg_filter": "scale=iw/{block_size}:ih/{block_size}:flags=neighbor,scale=iw*{block_size}:ih*{block_size}:flags=neighbor", "params": {"block_size": {"type": "int", "default": 8, "min": 2, "max": 32, "label": "像素块大小"}}}

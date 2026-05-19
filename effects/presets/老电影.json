@@ -1,0 +1,1 @@
+{"name": "老电影", "category": "风格化", "ffmpeg_filter": "hue=s=0,eq=gamma=1.2:contrast=1.15,noise=alls=10:allf=t,drawbox=x=0:y=0:w=iw:h=2:color=black@0.3:t=fill,drawbox=x=0:y=ih-2:w=iw:h=2:color=black@0.3:t=fill"}

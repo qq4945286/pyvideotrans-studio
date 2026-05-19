@@ -1,0 +1,1 @@
+{"name": "褪色复古", "category": "调色", "ffmpeg_filter": "eq=saturation=0.6:gamma=1.15:brightness=0.05,noise=alls=4:allf=t"}

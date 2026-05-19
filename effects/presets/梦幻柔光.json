@@ -1,0 +1,1 @@
+{"name": "梦幻柔光", "category": "风格化", "ffmpeg_filter": "gblur=sigma=2:steps=1,blend=all_mode=screen:all_opacity={opacity}", "params": {"opacity": {"type": "float", "default": 0.35, "min": 0.1, "max": 0.8, "label": "柔光强度"}}}

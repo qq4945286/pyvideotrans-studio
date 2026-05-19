@@ -1,0 +1,1 @@
+{"name": "暖色调", "category": "调色", "ffmpeg_filter": "colorbalance=rs={warmth}:gs=0:bs=-{warmth}", "params": {"warmth": {"type": "float", "default": 0.25, "min": -0.5, "max": 0.5, "label": "暖色强度"}}}

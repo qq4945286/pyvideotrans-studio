@@ -1,0 +1,1 @@
+{"name": "胶片颗粒", "category": "风格化", "ffmpeg_filter": "noise=alls={intensity}:allf=t", "params": {"intensity": {"type": "int", "default": 12, "min": 1, "max": 50, "label": "颗粒强度"}}}

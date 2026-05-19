@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <!-- 背景渐变 -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e1e24"/>
+      <stop offset="100%" stop-color="#141418"/>
+    </linearGradient>
+    <!-- 主图标渐变：蓝→紫（视频→翻译） -->
+    <linearGradient id="iconGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3a8cff"/>
+      <stop offset="50%" stop-color="#5a7cff"/>
+      <stop offset="100%" stop-color="#8c6cff"/>
+    </linearGradient>
+    <!-- 播放按钮渐变 -->
+    <linearGradient id="playGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4a9cff"/>
+      <stop offset="100%" stop-color="#3a8cff"/>
+    </linearGradient>
+    <!-- 高光 -->
+    <linearGradient id="highlight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+    <!-- 阴影 -->
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="4" stdDeviation="12" flood-color="#000000" flood-opacity="0.4"/>
+    </filter>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- 圆角方形背景 -->
+  <rect x="16" y="16" width="480" height="480" rx="96" ry="96" fill="url(#bgGrad)" stroke="#2a2a32" stroke-width="2" filter="url(#shadow)"/>
+
+  <!-- 表面高光 -->
+  <rect x="16" y="16" width="480" height="240" rx="96" ry="96" fill="url(#highlight)"/>
+
+  <!-- ===== 中心图形 ===== -->
+
+  <!-- 外环轨道（代表翻译/循环） -->
+  <circle cx="256" cy="256" r="150" fill="none" stroke="url(#iconGrad)" stroke-width="3" stroke-dasharray="12 8" opacity="0.3"/>
+
+  <!-- 右侧弧形箭头 x2（代表翻译/转换） -->
+  <g transform="translate(256,256)">
+    <!-- 第一个弧形箭头 -->
+    <path d="M 105 0 A 105 105 0 0 1 52 -91"
+          fill="none" stroke="url(#iconGrad)" stroke-width="8" stroke-linecap="round" filter="url(#glow)"/>
+    <polygon points="52,-91 38,-72 62,-72" fill="url(#iconGrad)" filter="url(#glow)"/>
+
+    <!-- 第二个弧形箭头 -->
+    <path d="M 125 0 A 125 125 0 0 1 62 -108"
+          fill="none" stroke="#6c5ce7" stroke-width="5" stroke-linecap="round" opacity="0.5"/>
+    <polygon points="62,-108 50,-92 72,-94" fill="#6c5ce7" opacity="0.5"/>
+  </g>
+
+  <!-- 左侧内容 -->
+
+  <!-- 装饰性胶片条（左侧竖线） -->
+  <rect x="132" y="170" width="3" height="28" rx="1.5" fill="url(#iconGrad)" opacity="0.4"/>
+  <rect x="132" y="204" width="3" height="28" rx="1.5" fill="url(#iconGrad)" opacity="0.4"/>
+  <rect x="132" y="238" width="3" height="28" rx="1.5" fill="url(#iconGrad)" opacity="0.4"/>
+  <rect x="132" y="272" width="3" height="28" rx="1.5" fill="url(#iconGrad)" opacity="0.4"/>
+  <rect x="132" y="306" width="3" height="28" rx="1.5" fill="url(#iconGrad)" opacity="0.4"/>
+
+  <!-- 主播放按钮（视频元素） -->
+  <g filter="url(#glow)">
+    <polygon points="185,195 185,317 280,256" fill="url(#playGrad)" stroke="#4a9cff" stroke-width="2" stroke-linejoin="round" opacity="0.95"/>
+  </g>
+
+  <!-- 播放按钮下方的影音波纹 -->
+  <path d="M 195 330 Q 210 340 195 350" fill="none" stroke="#3a8cff" stroke-width="2.5" stroke-linecap="round" opacity="0.5"/>
+  <path d="M 205 325 Q 228 340 205 355" fill="none" stroke="#3a8cff" stroke-width="2.5" stroke-linecap="round" opacity="0.35"/>
+
+  <!-- ===== 右侧翻译文字元素 ===== -->
+
+  <!-- 聊天气泡（翻译/语言元素） -->
+  <g transform="translate(310, 200)">
+    <!-- 气泡主体 -->
+    <rect x="0" y="0" width="82" height="60" rx="12" ry="12" fill="none" stroke="url(#iconGrad)" stroke-width="2.5" opacity="0.7"/>
+    <!-- 气泡尖角 -->
+    <polygon points="20,60 20,72 32,60" fill="none" stroke="url(#iconGrad)" stroke-width="2.5" stroke-linejoin="round" opacity="0.7"/>
+    <!-- 文字线条 -->
+    <rect x="14" y="16" width="54" height="3" rx="1.5" fill="url(#iconGrad)" opacity="0.6"/>
+    <rect x="14" y="26" width="38" height="3" rx="1.5" fill="url(#iconGrad)" opacity="0.4"/>
+    <rect x="14" y="36" width="44" height="3" rx="1.5" fill="url(#iconGrad)" opacity="0.4"/>
+  </g>
+
+  <!-- 小聊天气泡（第二个语言符号） -->
+  <g transform="translate(288, 275)" opacity="0.4">
+    <rect x="0" y="0" width="52" height="38" rx="8" ry="8" fill="none" stroke="#6c5ce7" stroke-width="2"/>
+    <polygon points="12,38 12,48 22,38" fill="none" stroke="#6c5ce7" stroke-width="2" stroke-linejoin="round"/>
+    <rect x="10" y="10" width="32" height="2.5" rx="1.25" fill="#6c5ce7" opacity="0.5"/>
+    <rect x="10" y="18" width="22" height="2.5" rx="1.25" fill="#6c5ce7" opacity="0.35"/>
+  </g>
+
+  <!-- ===== "PY" 文字标签（Python 元素） ===== -->
+  <g transform="translate(256, 410)">
+    <text x="0" y="0" font-family="'Arial Black', 'Helvetica Neue', sans-serif" font-size="38" font-weight="900" text-anchor="middle" fill="url(#iconGrad)" letter-spacing="6" filter="url(#glow)">PY</text>
+  </g>
+
+  <!-- ===== 底部文字 ===== -->
+  <g transform="translate(256, 460)">
+    <text x="0" y="0" font-family="'Arial', 'Helvetica Neue', sans-serif" font-size="18" font-weight="300" text-anchor="middle" fill="#666666" letter-spacing="2">VIDEO TRANS</text>
+  </g>
+
+  <!-- 装饰性角标 -->
+  <circle cx="88" cy="88" r="4" fill="#3a8cff" opacity="0.3"/>
+  <circle cx="424" cy="88" r="4" fill="#8c6cff" opacity="0.3"/>
+  <circle cx="88" cy="424" r="3" fill="#3a8cff" opacity="0.2"/>
+  <circle cx="424" cy="424" r="3" fill="#8c6cff" opacity="0.2"/>
+</svg>

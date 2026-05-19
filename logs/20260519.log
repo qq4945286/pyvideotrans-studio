@@ -1,0 +1,1156 @@
+[DEBUG] 本次EdgeTTS配音：重试延迟:5,出错将重试:4,并发:10
+[DEBUG] 执行流程：所有配音任务结束。
+[DEBUG] 开始执行事件循环的关闭流程...
+[DEBUG] 事件循环已关闭。
+[DEBUG] [字幕配音]渠道0:共耗时:2s
+[DEBUG] 返回缓存的编解码器 Linux-264: h264_vaapi
+[DEBUG] 最终配置信息：self.cfg=TaskCfgVTT(is_cuda=True, uuid='62f8242906', cache_folder='/home/deepin/pyvideotrans/pyvideotrans-studio/tmp/423473/62f8242906', target_dir='/home/deepin/Videos/0002', source_language='乌克兰语', source_language_code='uk', source_sub='/home/deepin/Videos/0002/uk.srt', source_wav='/home/deepin/pyvideotrans/pyvideotrans-studio/tmp/423473/62f8242906/uk.wav', source_wav_output='/home/deepin/Videos/0002/uk.m4a', target_language='简体中文', target_language_code='zh-cn', target_sub='/home/deepin/Videos/0002/zh-cn.srt', target_wav='/home/deepin/pyvideotrans/pyvideotrans-studio/tmp/423473/62f8242906/target.wav', target_wav_output='/home/deepin/Videos/0002/zh-cn.m4a', name='/tmp/pvt_merge_u4mhfrkl/merged.mp4', noextname='乌', basename='乌.mp4', ext='mp4', dirname='/home/deepin/Videos', shound_del_name=None, translate_type=4, tts_type=0, volume='+0%', pitch=0, voice_rate=0, voice_role='Yunyang(Male/CN)', voice_autorate=False, video_autorate=False, remove_silent_mid=False, align_sub_audio=True, detect_language='uk', recogn_type=4, model_name='kvhn/whisper-medium-uk', shibie_audio=None, remove_noise=False, enable_diariz=False, nums_diariz=0, rephrase=0, fix_punc=False, subtitle_language=None, app_mode='biaozhun', subtitles='', targetdir_mp4='/home/deepin/Videos/0002/乌.mp4', novoice_mp4='/home/deepin/pyvideotrans/pyvideotrans-studio/tmp/423473/62f8242906/novoice.mp4', is_separate=False, embed_bgm=False, instrument=None, vocal=None, back_audio='', clear_cache=False, background_music=None, subtitle_type=0, only_out_mp4=False, recogn2pass=False, output_srt=0, copysrt_rawvideo=False)
+[DEBUG] The file information: {'streams': [{'index': 0, 'codec_name': 'h264', 'codec_long_name': 'H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10', 'profile': 'High', 'codec_type': 'video', 'codec_tag_string': 'avc1', 'codec_tag': '0x31637661', 'width': 1280, 'height': 720, 'coded_width': 1280, 'coded_height': 720, 'closed_captions': 0, 'film_grain': 0, 'has_b_frames': 1, 'sample_aspect_ratio': '1:1', 'display_aspect_ratio': '16:9', 'pix_fmt': 'yuv420p', 'level': 31, 'color_range': 'tv', 'color_space': 'bt709', 'color_transfer': 'bt709', 'color_primaries': 'bt709', 'chroma_location': 'left', 'field_order': 'progressive', 'refs': 1, 'is_avc': 'true', 'nal_length_size': '4', 'id': '0x1', 'r_frame_rate': '25/1', 'avg_frame_rate': '25/1', 'time_base': '1/12800', 'start_pts': 179, 'start_time': '0.013984', 'duration_ts': 3097088, 'duration': '241.960000', 'bit_rate': '517787', 'bits_per_raw_sample': '8', 'nb_frames': '6049', 'extradata_size': 49, 'disposition': {'default': 1, 'dub': 0, 'original': 0, 'comment': 0, 'lyrics': 0, 'karaoke': 0, 'forced': 0, 'hearing_impaired': 0, 'visual_impaired': 0, 'clean_effects': 0, 'attached_pic': 0, 'timed_thumbnails': 0, 'non_diegetic': 0, 'captions': 0, 'descriptions': 0, 'metadata': 0, 'dependent': 0, 'still_image': 0}, 'tags': {'language': 'und', 'handler_name': 'ISO Media file produced by Google Inc.', 'vendor_id': '[0][0][0][0]', 'encoder': 'Lavc60.31.102 h264_vaapi'}}, {'index': 1, 'codec_name': 'aac', 'codec_long_name': 'AAC (Advanced Audio Coding)', 'profile': 'LC', 'codec_type': 'audio', 'codec_tag_string': 'mp4a', 'codec_tag': '0x6134706d', 'sample_fmt': 'fltp', 'sample_rate': '48000', 'channels': 2, 'channel_layout': 'stereo', 'bits_per_sample': 0, 'initial_padding': 0, 'id': '0x2', 'r_frame_rate': '0/0', 'avg_frame_rate': '0/0', 'time_base': '1/48000', 'start_pts': 0, 'start_time': '0.000000', 'duration_ts': 11615800, 'duration': '241.995833', 'bit_rate': '127734', 'nb_frames': '11344', 'extradata_size': 5, 'disposition': {'default': 1, 'dub': 0, 'original': 0, 'comment': 0, 'lyrics': 0, 'karaoke': 0, 'forced': 0, 'hearing_impaired': 0, 'visual_impaired': 0, 'clean_effects': 0, 'attached_pic': 0, 'timed_thumbnails': 0, 'non_diegetic': 0, 'captions': 0, 'descriptions': 0, 'metadata': 0, 'dependent': 0, 'still_image': 0}, 'tags': {'language': 'eng', 'handler_name': 'SoundHandler', 'vendor_id': '[0][0][0][0]'}}], 'format': {'filename': '/tmp/pvt_merge_u4mhfrkl/merged.mp4', 'nb_streams': 2, 'nb_programs': 0, 'format_name': 'mov,mp4,m4a,3gp,3g2,mj2', 'format_long_name': 'QuickTime / MOV', 'start_time': '0.000000', 'duration': '241.995833', 'size': '19694919', 'bit_rate': '651082', 'probe_score': 100, 'tags': {'major_brand': 'isom', 'minor_version': '512', 'compatible_brands': 'isomiso2avc1mp41', 'encoder': 'Lavf60.16.100'}}}
+[DEBUG] The file info after process:result={'video_fps': 25.0, 'r_frame_rate': '25/1', 'video_codec_name': 'h264', 'audio_codec_name': 'aac', 'width': 1280, 'height': 720, 'time': 241960, 'streams_len': 2, 'streams_audio': 1, 'video_streams': 1, 'color': 'yuv420p'}
+[DEBUG] [FFMPEG-CMD]:
+ffmpeg -hide_banner -nostdin -ignore_unknown -threads 0 -y -fflags +genpts -i /tmp/pvt_merge_u4mhfrkl/merged.mp4 -an -c:v copy novoice.mp4
+
+[DEBUG] [trans_create]:run_recogn() time.time()=1779177692.203827
+[DEBUG] [recognition]__init__:kwargs={'detect_language': 'uk', 'audio_file': '/home/deepin/pyvideotrans/pyvideotrans-studio/tmp/423473/62f8242906/uk.wav', 'cache_folder': '/home/deepin/pyvideotrans/pyvideotrans-studio/tmp/423473/62f8242906', 'model_name': 'kvhn/whisper-medium-uk', 'uuid': '62f8242906', 'is_cuda': True, 'subtitle_type': 0, 'recogn_type': 4, 'max_speakers': -1, 'llm_post': False, 'recogn2pass': False}
+[DEBUG] BaseRecogn 初始化
+[ERROR] 管线异常
+Traceback (most recent call last):
+  File "/home/deepin/pyvideotrans/pyvideotrans-studio/videotrans/util/help_down.py", line 68, in check_and_down_hf
+    huggingface_hub.snapshot_download(
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/huggingface_hub/utils/_validators.py", line 114, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/huggingface_hub/_snapshot_download.py", line 230, in snapshot_download
+    raise LocalEntryNotFoundError(
+huggingface_hub.errors.LocalEntryNotFoundError: Cannot find an appropriate cached snapshot folder for the specified revision on the local disk and outgoing traffic has been disabled. To enable repo look-ups and downloads online, pass 'local_files_only=False' as input.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/huggingface_hub/utils/_http.py", line 403, in hf_raise_for_status
+    response.raise_for_status()
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/requests/models.py", line 1028, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://huggingface.co/api/models/kvhn/whisper-medium-uk/revision/main
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/deepin/pyvideotrans/pyvideotrans-studio/videotrans/util/help_down.py", line 84, in check_and_down_hf
+    huggingface_hub.snapshot_download(
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/huggingface_hub/utils/_validators.py", line 114, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/huggingface_hub/_snapshot_download.py", line 245, in snapshot_download
+    raise api_call_error
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/huggingface_hub/_snapshot_download.py", line 165, in snapshot_download
+    repo_info = api.repo_info(repo_id=repo_id, repo_type=repo_type, revision=revision)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/huggingface_hub/utils/_validators.py", line 114, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/huggingface_hub/hf_api.py", line 2867, in repo_info
+    return method(
+           ^^^^^^^
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/huggingface_hub/utils/_validators.py", line 114, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/huggingface_hub/hf_api.py", line 2661, in model_info
+    hf_raise_for_status(r)
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/huggingface_hub/utils/_http.py", line 453, in hf_raise_for_status
+    raise _format(RepositoryNotFoundError, message, response) from e
+huggingface_hub.errors.RepositoryNotFoundError: 401 Client Error. (Request ID: Root=1-6a0c18dd-667fdc2f0091fe776b25a692;c4ebd9d8-911e-4b9a-9a0f-a613eb48a814)
+
+Repository Not Found for url: https://huggingface.co/api/models/kvhn/whisper-medium-uk/revision/main.
+Please make sure you specified the correct `repo_id` and `repo_type`.
+If you are trying to access a private or gated repo, make sure you are authenticated. For more details, see https://huggingface.co/docs/huggingface_hub/authentication
+Invalid username or password.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/deepin/pyvideotrans/pyvideotrans-studio/studio/main_window.py", line 3484, in _run_translate_pipeline
+    _run_step("音频转字幕", trk.recogn)
+  File "/home/deepin/pyvideotrans/pyvideotrans-studio/studio/main_window.py", line 3477, in _run_step
+    result = fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^
+  File "/home/deepin/pyvideotrans/pyvideotrans-studio/videotrans/task/trans_create.py", line 413, in recogn
+    raw_subtitles = run_recogn(
+                    ^^^^^^^^^^^
+  File "/home/deepin/pyvideotrans/pyvideotrans-studio/videotrans/recognition/__init__.py", line 384, in run
+    return HuggingfaceRecogn(**kwargs).run()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/deepin/pyvideotrans/pyvideotrans-studio/videotrans/recognition/_base.py", line 140, in run
+    self._download()
+  File "/home/deepin/pyvideotrans/pyvideotrans-studio/videotrans/recognition/_huggingface.py", line 24, in _download
+    tools.check_and_down_hf(self.model_name, self.model_name, self.local_dir, callback=self._process_callback)
+  File "/home/deepin/pyvideotrans/pyvideotrans-studio/videotrans/util/help_down.py", line 103, in check_and_down_hf
+    raise RuntimeError(f"{msg}\n[https://huggingface.co/{repo_id}/tree/main]\n{e}")
+RuntimeError: 下载模型失败，你可以打开以下网址，将所有文件下载到
+ /home/deepin/pyvideotrans/pyvideotrans-studio/models/models--kvhn--whisper-medium-uk 文件夹内
+
+[https://huggingface.co/kvhn/whisper-medium-uk/tree/main]
+401 Client Error. (Request ID: Root=1-6a0c18dd-667fdc2f0091fe776b25a692;c4ebd9d8-911e-4b9a-9a0f-a613eb48a814)
+
+Repository Not Found for url: https://huggingface.co/api/models/kvhn/whisper-medium-uk/revision/main.
+Please make sure you specified the correct `repo_id` and `repo_type`.
+If you are trying to access a private or gated repo, make sure you are authenticated. For more details, see https://huggingface.co/docs/huggingface_hub/authentication
+Invalid username or password.
+
+[DEBUG] 返回缓存的编解码器 Linux-264: h264_vaapi
+[DEBUG] 最终配置信息：self.cfg=TaskCfgVTT(is_cuda=True, uuid='f81177812e', cache_folder='/home/deepin/pyvideotrans/pyvideotrans-studio/tmp/423473/f81177812e', target_dir='/home/deepin/Videos/0002', source_language='乌克兰语', source_language_code='uk', source_sub='/home/deepin/Videos/0002/uk.srt', source_wav='/home/deepin/pyvideotrans/pyvideotrans-studio/tmp/423473/f81177812e/uk.wav', source_wav_output='/home/deepin/Videos/0002/uk.m4a', target_language='简体中文', target_language_code='zh-cn', target_sub='/home/deepin/Videos/0002/zh-cn.srt', target_wav='/home/deepin/pyvideotrans/pyvideotrans-studio/tmp/423473/f81177812e/target.wav', target_wav_output='/home/deepin/Videos/0002/zh-cn.m4a', name='/tmp/pvt_merge_6jy2_oro/merged.mp4', noextname='乌', basename='乌.mp4', ext='mp4', dirname='/home/deepin/Videos', shound_del_name=None, translate_type=4, tts_type=0, volume='+0%', pitch=0, voice_rate=0, voice_role='Yunyang(Male/CN)', voice_autorate=False, video_autorate=False, remove_silent_mid=False, align_sub_audio=True, detect_language='uk', recogn_type=4, model_name='kvhn/whisper-medium-uk', shibie_audio=None, remove_noise=False, enable_diariz=False, nums_diariz=0, rephrase=0, fix_punc=False, subtitle_language=None, app_mode='biaozhun', subtitles='', targetdir_mp4='/home/deepin/Videos/0002/乌.mp4', novoice_mp4='/home/deepin/pyvideotrans/pyvideotrans-studio/tmp/423473/f81177812e/novoice.mp4', is_separate=False, embed_bgm=False, instrument=None, vocal=None, back_audio='', clear_cache=False, background_music=None, subtitle_type=0, only_out_mp4=False, recogn2pass=False, output_srt=0, copysrt_rawvideo=False)
+[DEBUG] The file information: {'streams': [{'index': 0, 'codec_name': 'h264', 'codec_long_name': 'H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10', 'profile': 'High', 'codec_type': 'video', 'codec_tag_string': 'avc1', 'codec_tag': '0x31637661', 'width': 1280, 'height': 720, 'coded_width': 1280, 'coded_height': 720, 'closed_captions': 0, 'film_grain': 0, 'has_b_frames': 1, 'sample_aspect_ratio': '1:1', 'display_aspect_ratio': '16:9', 'pix_fmt': 'yuv420p', 'level': 31, 'color_range': 'tv', 'color_space': 'bt709', 'color_transfer': 'bt709', 'color_primaries': 'bt709', 'chroma_location': 'left', 'field_order': 'progressive', 'refs': 1, 'is_avc': 'true', 'nal_length_size': '4', 'id': '0x1', 'r_frame_rate': '25/1', 'avg_frame_rate': '25/1', 'time_base': '1/12800', 'start_pts': 179, 'start_time': '0.013984', 'duration_ts': 3097088, 'duration': '241.960000', 'bit_rate': '517787', 'bits_per_raw_sample': '8', 'nb_frames': '6049', 'extradata_size': 49, 'disposition': {'default': 1, 'dub': 0, 'original': 0, 'comment': 0, 'lyrics': 0, 'karaoke': 0, 'forced': 0, 'hearing_impaired': 0, 'visual_impaired': 0, 'clean_effects': 0, 'attached_pic': 0, 'timed_thumbnails': 0, 'non_diegetic': 0, 'captions': 0, 'descriptions': 0, 'metadata': 0, 'dependent': 0, 'still_image': 0}, 'tags': {'language': 'und', 'handler_name': 'ISO Media file produced by Google Inc.', 'vendor_id': '[0][0][0][0]', 'encoder': 'Lavc60.31.102 h264_vaapi'}}, {'index': 1, 'codec_name': 'aac', 'codec_long_name': 'AAC (Advanced Audio Coding)', 'profile': 'LC', 'codec_type': 'audio', 'codec_tag_string': 'mp4a', 'codec_tag': '0x6134706d', 'sample_fmt': 'fltp', 'sample_rate': '48000', 'channels': 2, 'channel_layout': 'stereo', 'bits_per_sample': 0, 'initial_padding': 0, 'id': '0x2', 'r_frame_rate': '0/0', 'avg_frame_rate': '0/0', 'time_base': '1/48000', 'start_pts': 0, 'start_time': '0.000000', 'duration_ts': 11615800, 'duration': '241.995833', 'bit_rate': '127734', 'nb_frames': '11344', 'extradata_size': 5, 'disposition': {'default': 1, 'dub': 0, 'original': 0, 'comment': 0, 'lyrics': 0, 'karaoke': 0, 'forced': 0, 'hearing_impaired': 0, 'visual_impaired': 0, 'clean_effects': 0, 'attached_pic': 0, 'timed_thumbnails': 0, 'non_diegetic': 0, 'captions': 0, 'descriptions': 0, 'metadata': 0, 'dependent': 0, 'still_image': 0}, 'tags': {'language': 'eng', 'handler_name': 'SoundHandler', 'vendor_id': '[0][0][0][0]'}}], 'format': {'filename': '/tmp/pvt_merge_6jy2_oro/merged.mp4', 'nb_streams': 2, 'nb_programs': 0, 'format_name': 'mov,mp4,m4a,3gp,3g2,mj2', 'format_long_name': 'QuickTime / MOV', 'start_time': '0.000000', 'duration': '241.995833', 'size': '19694919', 'bit_rate': '651082', 'probe_score': 100, 'tags': {'major_brand': 'isom', 'minor_version': '512', 'compatible_brands': 'isomiso2avc1mp41', 'encoder': 'Lavf60.16.100'}}}
+[DEBUG] The file info after process:result={'video_fps': 25.0, 'r_frame_rate': '25/1', 'video_codec_name': 'h264', 'audio_codec_name': 'aac', 'width': 1280, 'height': 720, 'time': 241960, 'streams_len': 2, 'streams_audio': 1, 'video_streams': 1, 'color': 'yuv420p'}
+[DEBUG] [FFMPEG-CMD]:
+ffmpeg -hide_banner -nostdin -ignore_unknown -threads 0 -y -fflags +genpts -i /tmp/pvt_merge_6jy2_oro/merged.mp4 -an -c:v copy novoice.mp4
+
+[DEBUG] [trans_create]:run_recogn() time.time()=1779177811.8979921
+[DEBUG] [recognition]__init__:kwargs={'detect_language': 'uk', 'audio_file': '/home/deepin/pyvideotrans/pyvideotrans-studio/tmp/423473/f81177812e/uk.wav', 'cache_folder': '/home/deepin/pyvideotrans/pyvideotrans-studio/tmp/423473/f81177812e', 'model_name': 'kvhn/whisper-medium-uk', 'uuid': 'f81177812e', 'is_cuda': True, 'subtitle_type': 0, 'recogn_type': 4, 'max_speakers': -1, 'llm_post': False, 'recogn2pass': False}
+[DEBUG] BaseRecogn 初始化
+[ERROR] 管线异常
+Traceback (most recent call last):
+  File "/home/deepin/pyvideotrans/pyvideotrans-studio/videotrans/util/help_down.py", line 68, in check_and_down_hf
+    huggingface_hub.snapshot_download(
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/huggingface_hub/utils/_validators.py", line 114, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/huggingface_hub/_snapshot_download.py", line 230, in snapshot_download
+    raise LocalEntryNotFoundError(
+huggingface_hub.errors.LocalEntryNotFoundError: Cannot find an appropriate cached snapshot folder for the specified revision on the local disk and outgoing traffic has been disabled. To enable repo look-ups and downloads online, pass 'local_files_only=False' as input.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/huggingface_hub/utils/_http.py", line 403, in hf_raise_for_status
+    response.raise_for_status()
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/requests/models.py", line 1028, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://huggingface.co/api/models/kvhn/whisper-medium-uk/revision/main
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/deepin/pyvideotrans/pyvideotrans-studio/videotrans/util/help_down.py", line 84, in check_and_down_hf
+    huggingface_hub.snapshot_download(
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/huggingface_hub/utils/_validators.py", line 114, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/huggingface_hub/_snapshot_download.py", line 245, in snapshot_download
+    raise api_call_error
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/huggingface_hub/_snapshot_download.py", line 165, in snapshot_download
+    repo_info = api.repo_info(repo_id=repo_id, repo_type=repo_type, revision=revision)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/huggingface_hub/utils/_validators.py", line 114, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/huggingface_hub/hf_api.py", line 2867, in repo_info
+    return method(
+           ^^^^^^^
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/huggingface_hub/utils/_validators.py", line 114, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/huggingface_hub/hf_api.py", line 2661, in model_info
+    hf_raise_for_status(r)
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/huggingface_hub/utils/_http.py", line 453, in hf_raise_for_status
+    raise _format(RepositoryNotFoundError, message, response) from e
+huggingface_hub.errors.RepositoryNotFoundError: 401 Client Error. (Request ID: Root=1-6a0c1957-7ed29d8b1bd9ddfe49932b59;b0697eba-fa4f-45a4-af3e-c70ada9b4be5)
+
+Repository Not Found for url: https://huggingface.co/api/models/kvhn/whisper-medium-uk/revision/main.
+Please make sure you specified the correct `repo_id` and `repo_type`.
+If you are trying to access a private or gated repo, make sure you are authenticated. For more details, see https://huggingface.co/docs/huggingface_hub/authentication
+Invalid username or password.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/deepin/pyvideotrans/pyvideotrans-studio/studio/main_window.py", line 3484, in _run_translate_pipeline
+    _run_step("音频转字幕", trk.recogn)
+  File "/home/deepin/pyvideotrans/pyvideotrans-studio/studio/main_window.py", line 3477, in _run_step
+    result = fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^
+  File "/home/deepin/pyvideotrans/pyvideotrans-studio/videotrans/task/trans_create.py", line 413, in recogn
+    raw_subtitles = run_recogn(
+                    ^^^^^^^^^^^
+  File "/home/deepin/pyvideotrans/pyvideotrans-studio/videotrans/recognition/__init__.py", line 384, in run
+    return HuggingfaceRecogn(**kwargs).run()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/deepin/pyvideotrans/pyvideotrans-studio/videotrans/recognition/_base.py", line 140, in run
+    self._download()
+  File "/home/deepin/pyvideotrans/pyvideotrans-studio/videotrans/recognition/_huggingface.py", line 24, in _download
+    tools.check_and_down_hf(self.model_name, self.model_name, self.local_dir, callback=self._process_callback)
+  File "/home/deepin/pyvideotrans/pyvideotrans-studio/videotrans/util/help_down.py", line 103, in check_and_down_hf
+    raise RuntimeError(f"{msg}\n[https://huggingface.co/{repo_id}/tree/main]\n{e}")
+RuntimeError: 下载模型失败，你可以打开以下网址，将所有文件下载到
+ /home/deepin/pyvideotrans/pyvideotrans-studio/models/models--kvhn--whisper-medium-uk 文件夹内
+
+[https://huggingface.co/kvhn/whisper-medium-uk/tree/main]
+401 Client Error. (Request ID: Root=1-6a0c1957-7ed29d8b1bd9ddfe49932b59;b0697eba-fa4f-45a4-af3e-c70ada9b4be5)
+
+Repository Not Found for url: https://huggingface.co/api/models/kvhn/whisper-medium-uk/revision/main.
+Please make sure you specified the correct `repo_id` and `repo_type`.
+If you are trying to access a private or gated repo, make sure you are authenticated. For more details, see https://huggingface.co/docs/huggingface_hub/authentication
+Invalid username or password.
+
+[DEBUG] 返回缓存的编解码器 Linux-264: h264_vaapi
+[DEBUG] 最终配置信息：self.cfg=TaskCfgVTT(is_cuda=True, uuid='7942a1319c', cache_folder='/home/deepin/pyvideotrans/pyvideotrans-studio/tmp/423473/7942a1319c', target_dir='/home/deepin/Videos/0002', source_language='乌克兰语', source_language_code='uk', source_sub='/home/deepin/Videos/0002/uk.srt', source_wav='/home/deepin/pyvideotrans/pyvideotrans-studio/tmp/423473/7942a1319c/uk.wav', source_wav_output='/home/deepin/Videos/0002/uk.m4a', target_language='简体中文', target_language_code='zh-cn', target_sub='/home/deepin/Videos/0002/zh-cn.srt', target_wav='/home/deepin/pyvideotrans/pyvideotrans-studio/tmp/423473/7942a1319c/target.wav', target_wav_output='/home/deepin/Videos/0002/zh-cn.m4a', name='/tmp/pvt_merge_vl3okgdo/merged.mp4', noextname='乌', basename='乌.mp4', ext='mp4', dirname='/home/deepin/Videos', shound_del_name=None, translate_type=4, tts_type=0, volume='+0%', pitch=0, voice_rate=0, voice_role='Yunyang(Male/CN)', voice_autorate=False, video_autorate=False, remove_silent_mid=False, align_sub_audio=True, detect_language='uk', recogn_type=4, model_name='kvhn/whisper-medium-uk', shibie_audio=None, remove_noise=False, enable_diariz=False, nums_diariz=0, rephrase=0, fix_punc=False, subtitle_language=None, app_mode='biaozhun', subtitles='', targetdir_mp4='/home/deepin/Videos/0002/乌.mp4', novoice_mp4='/home/deepin/pyvideotrans/pyvideotrans-studio/tmp/423473/7942a1319c/novoice.mp4', is_separate=False, embed_bgm=False, instrument=None, vocal=None, back_audio='', clear_cache=False, background_music=None, subtitle_type=0, only_out_mp4=False, recogn2pass=False, output_srt=0, copysrt_rawvideo=False)
+[DEBUG] The file information: {'streams': [{'index': 0, 'codec_name': 'h264', 'codec_long_name': 'H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10', 'profile': 'High', 'codec_type': 'video', 'codec_tag_string': 'avc1', 'codec_tag': '0x31637661', 'width': 1280, 'height': 720, 'coded_width': 1280, 'coded_height': 720, 'closed_captions': 0, 'film_grain': 0, 'has_b_frames': 1, 'sample_aspect_ratio': '1:1', 'display_aspect_ratio': '16:9', 'pix_fmt': 'yuv420p', 'level': 31, 'color_range': 'tv', 'color_space': 'bt709', 'color_transfer': 'bt709', 'color_primaries': 'bt709', 'chroma_location': 'left', 'field_order': 'progressive', 'refs': 1, 'is_avc': 'true', 'nal_length_size': '4', 'id': '0x1', 'r_frame_rate': '25/1', 'avg_frame_rate': '25/1', 'time_base': '1/12800', 'start_pts': 179, 'start_time': '0.013984', 'duration_ts': 3097088, 'duration': '241.960000', 'bit_rate': '517787', 'bits_per_raw_sample': '8', 'nb_frames': '6049', 'extradata_size': 49, 'disposition': {'default': 1, 'dub': 0, 'original': 0, 'comment': 0, 'lyrics': 0, 'karaoke': 0, 'forced': 0, 'hearing_impaired': 0, 'visual_impaired': 0, 'clean_effects': 0, 'attached_pic': 0, 'timed_thumbnails': 0, 'non_diegetic': 0, 'captions': 0, 'descriptions': 0, 'metadata': 0, 'dependent': 0, 'still_image': 0}, 'tags': {'language': 'und', 'handler_name': 'ISO Media file produced by Google Inc.', 'vendor_id': '[0][0][0][0]', 'encoder': 'Lavc60.31.102 h264_vaapi'}}, {'index': 1, 'codec_name': 'aac', 'codec_long_name': 'AAC (Advanced Audio Coding)', 'profile': 'LC', 'codec_type': 'audio', 'codec_tag_string': 'mp4a', 'codec_tag': '0x6134706d', 'sample_fmt': 'fltp', 'sample_rate': '48000', 'channels': 2, 'channel_layout': 'stereo', 'bits_per_sample': 0, 'initial_padding': 0, 'id': '0x2', 'r_frame_rate': '0/0', 'avg_frame_rate': '0/0', 'time_base': '1/48000', 'start_pts': 0, 'start_time': '0.000000', 'duration_ts': 11615800, 'duration': '241.995833', 'bit_rate': '127734', 'nb_frames': '11344', 'extradata_size': 5, 'disposition': {'default': 1, 'dub': 0, 'original': 0, 'comment': 0, 'lyrics': 0, 'karaoke': 0, 'forced': 0, 'hearing_impaired': 0, 'visual_impaired': 0, 'clean_effects': 0, 'attached_pic': 0, 'timed_thumbnails': 0, 'non_diegetic': 0, 'captions': 0, 'descriptions': 0, 'metadata': 0, 'dependent': 0, 'still_image': 0}, 'tags': {'language': 'eng', 'handler_name': 'SoundHandler', 'vendor_id': '[0][0][0][0]'}}], 'format': {'filename': '/tmp/pvt_merge_vl3okgdo/merged.mp4', 'nb_streams': 2, 'nb_programs': 0, 'format_name': 'mov,mp4,m4a,3gp,3g2,mj2', 'format_long_name': 'QuickTime / MOV', 'start_time': '0.000000', 'duration': '241.995833', 'size': '19694919', 'bit_rate': '651082', 'probe_score': 100, 'tags': {'major_brand': 'isom', 'minor_version': '512', 'compatible_brands': 'isomiso2avc1mp41', 'encoder': 'Lavf60.16.100'}}}
+[DEBUG] The file info after process:result={'video_fps': 25.0, 'r_frame_rate': '25/1', 'video_codec_name': 'h264', 'audio_codec_name': 'aac', 'width': 1280, 'height': 720, 'time': 241960, 'streams_len': 2, 'streams_audio': 1, 'video_streams': 1, 'color': 'yuv420p'}
+[DEBUG] [FFMPEG-CMD]:
+ffmpeg -hide_banner -nostdin -ignore_unknown -threads 0 -y -fflags +genpts -i /tmp/pvt_merge_vl3okgdo/merged.mp4 -an -c:v copy novoice.mp4
+
+[DEBUG] [trans_create]:run_recogn() time.time()=1779177946.463239
+[DEBUG] [recognition]__init__:kwargs={'detect_language': 'uk', 'audio_file': '/home/deepin/pyvideotrans/pyvideotrans-studio/tmp/423473/7942a1319c/uk.wav', 'cache_folder': '/home/deepin/pyvideotrans/pyvideotrans-studio/tmp/423473/7942a1319c', 'model_name': 'kvhn/whisper-medium-uk', 'uuid': '7942a1319c', 'is_cuda': True, 'subtitle_type': 0, 'recogn_type': 4, 'max_speakers': -1, 'llm_post': False, 'recogn2pass': False}
+[DEBUG] BaseRecogn 初始化
+[ERROR] 管线异常
+Traceback (most recent call last):
+  File "/home/deepin/pyvideotrans/pyvideotrans-studio/videotrans/util/help_down.py", line 68, in check_and_down_hf
+    huggingface_hub.snapshot_download(
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/huggingface_hub/utils/_validators.py", line 114, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/huggingface_hub/_snapshot_download.py", line 230, in snapshot_download
+    raise LocalEntryNotFoundError(
+huggingface_hub.errors.LocalEntryNotFoundError: Cannot find an appropriate cached snapshot folder for the specified revision on the local disk and outgoing traffic has been disabled. To enable repo look-ups and downloads online, pass 'local_files_only=False' as input.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/huggingface_hub/utils/_http.py", line 403, in hf_raise_for_status
+    response.raise_for_status()
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/requests/models.py", line 1028, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://huggingface.co/api/models/kvhn/whisper-medium-uk/revision/main
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/deepin/pyvideotrans/pyvideotrans-studio/videotrans/util/help_down.py", line 84, in check_and_down_hf
+    huggingface_hub.snapshot_download(
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/huggingface_hub/utils/_validators.py", line 114, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/huggingface_hub/_snapshot_download.py", line 245, in snapshot_download
+    raise api_call_error
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/huggingface_hub/_snapshot_download.py", line 165, in snapshot_download
+    repo_info = api.repo_info(repo_id=repo_id, repo_type=repo_type, revision=revision)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/huggingface_hub/utils/_validators.py", line 114, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/huggingface_hub/hf_api.py", line 2867, in repo_info
+    return method(
+           ^^^^^^^
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/huggingface_hub/utils/_validators.py", line 114, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/huggingface_hub/hf_api.py", line 2661, in model_info
+    hf_raise_for_status(r)
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/huggingface_hub/utils/_http.py", line 453, in hf_raise_for_status
+    raise _format(RepositoryNotFoundError, message, response) from e
+huggingface_hub.errors.RepositoryNotFoundError: 401 Client Error. (Request ID: Root=1-6a0c19db-67a8ba8f647abc7321ca7cb7;041b6552-3248-45d2-9591-2c2976b0a4f7)
+
+Repository Not Found for url: https://huggingface.co/api/models/kvhn/whisper-medium-uk/revision/main.
+Please make sure you specified the correct `repo_id` and `repo_type`.
+If you are trying to access a private or gated repo, make sure you are authenticated. For more details, see https://huggingface.co/docs/huggingface_hub/authentication
+Invalid username or password.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/deepin/pyvideotrans/pyvideotrans-studio/studio/main_window.py", line 3484, in _run_translate_pipeline
+    _run_step("音频转字幕", trk.recogn)
+  File "/home/deepin/pyvideotrans/pyvideotrans-studio/studio/main_window.py", line 3477, in _run_step
+    result = fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^
+  File "/home/deepin/pyvideotrans/pyvideotrans-studio/videotrans/task/trans_create.py", line 413, in recogn
+    raw_subtitles = run_recogn(
+                    ^^^^^^^^^^^
+  File "/home/deepin/pyvideotrans/pyvideotrans-studio/videotrans/recognition/__init__.py", line 384, in run
+    return HuggingfaceRecogn(**kwargs).run()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/deepin/pyvideotrans/pyvideotrans-studio/videotrans/recognition/_base.py", line 140, in run
+    self._download()
+  File "/home/deepin/pyvideotrans/pyvideotrans-studio/videotrans/recognition/_huggingface.py", line 24, in _download
+    tools.check_and_down_hf(self.model_name, self.model_name, self.local_dir, callback=self._process_callback)
+  File "/home/deepin/pyvideotrans/pyvideotrans-studio/videotrans/util/help_down.py", line 103, in check_and_down_hf
+    raise RuntimeError(f"{msg}\n[https://huggingface.co/{repo_id}/tree/main]\n{e}")
+RuntimeError: 下载模型失败，你可以打开以下网址，将所有文件下载到
+ /home/deepin/pyvideotrans/pyvideotrans-studio/models/models--kvhn--whisper-medium-uk 文件夹内
+
+[https://huggingface.co/kvhn/whisper-medium-uk/tree/main]
+401 Client Error. (Request ID: Root=1-6a0c19db-67a8ba8f647abc7321ca7cb7;041b6552-3248-45d2-9591-2c2976b0a4f7)
+
+Repository Not Found for url: https://huggingface.co/api/models/kvhn/whisper-medium-uk/revision/main.
+Please make sure you specified the correct `repo_id` and `repo_type`.
+If you are trying to access a private or gated repo, make sure you are authenticated. For more details, see https://huggingface.co/docs/huggingface_hub/authentication
+Invalid username or password.
+
+[DEBUG] 本次EdgeTTS配音：重试延迟:5,出错将重试:4,并发:10
+[DEBUG] 执行流程：所有配音任务结束。
+[DEBUG] 开始执行事件循环的关闭流程...
+[DEBUG] 事件循环已关闭。
+[DEBUG] [字幕配音]渠道0:共耗时:2s
+[DEBUG] 本次EdgeTTS配音：重试延迟:5,出错将重试:4,并发:10
+[DEBUG] 执行流程：所有配音任务结束。
+[DEBUG] 开始执行事件循环的关闭流程...
+[DEBUG] 事件循环已关闭。
+[DEBUG] [字幕配音]渠道0:共耗时:3s
+[DEBUG] 返回缓存的编解码器 Linux-264: h264_vaapi
+[DEBUG] 最终配置信息：self.cfg=TaskCfgVTT(is_cuda=True, uuid='14d6a1c872', cache_folder='/home/deepin/pyvideotrans/pyvideotrans-studio/tmp/426310/14d6a1c872', target_dir='/home/deepin/Videos/0002', source_language='乌克兰语', source_language_code='uk', source_sub='/home/deepin/Videos/0002/uk.srt', source_wav='/home/deepin/pyvideotrans/pyvideotrans-studio/tmp/426310/14d6a1c872/uk.wav', source_wav_output='/home/deepin/Videos/0002/uk.m4a', target_language='简体中文', target_language_code='zh-cn', target_sub='/home/deepin/Videos/0002/zh-cn.srt', target_wav='/home/deepin/pyvideotrans/pyvideotrans-studio/tmp/426310/14d6a1c872/target.wav', target_wav_output='/home/deepin/Videos/0002/zh-cn.m4a', name='/tmp/pvt_merge_4fmz3p8k/merged.mp4', noextname='乌', basename='乌.mp4', ext='mp4', dirname='/home/deepin/Videos', shound_del_name=None, translate_type=4, tts_type=0, volume='+0%', pitch=0, voice_rate=0, voice_role='Yunxi(Male/CN)', voice_autorate=False, video_autorate=False, remove_silent_mid=False, align_sub_audio=True, detect_language='uk', recogn_type=4, model_name='Yehor/whisper-large-v3-turbo-quantized-uk', shibie_audio=None, remove_noise=False, enable_diariz=False, nums_diariz=0, rephrase=0, fix_punc=False, subtitle_language=None, app_mode='biaozhun', subtitles='', targetdir_mp4='/home/deepin/Videos/0002/乌.mp4', novoice_mp4='/home/deepin/pyvideotrans/pyvideotrans-studio/tmp/426310/14d6a1c872/novoice.mp4', is_separate=False, embed_bgm=False, instrument=None, vocal=None, back_audio='', clear_cache=False, background_music=None, subtitle_type=0, only_out_mp4=False, recogn2pass=False, output_srt=0, copysrt_rawvideo=False)
+[DEBUG] The file information: {'streams': [{'index': 0, 'codec_name': 'h264', 'codec_long_name': 'H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10', 'profile': 'High', 'codec_type': 'video', 'codec_tag_string': 'avc1', 'codec_tag': '0x31637661', 'width': 1280, 'height': 720, 'coded_width': 1280, 'coded_height': 720, 'closed_captions': 0, 'film_grain': 0, 'has_b_frames': 1, 'sample_aspect_ratio': '1:1', 'display_aspect_ratio': '16:9', 'pix_fmt': 'yuv420p', 'level': 31, 'color_range': 'tv', 'color_space': 'bt709', 'color_transfer': 'bt709', 'color_primaries': 'bt709', 'chroma_location': 'left', 'field_order': 'progressive', 'refs': 1, 'is_avc': 'true', 'nal_length_size': '4', 'id': '0x1', 'r_frame_rate': '25/1', 'avg_frame_rate': '25/1', 'time_base': '1/12800', 'start_pts': 179, 'start_time': '0.013984', 'duration_ts': 3097088, 'duration': '241.960000', 'bit_rate': '517787', 'bits_per_raw_sample': '8', 'nb_frames': '6049', 'extradata_size': 49, 'disposition': {'default': 1, 'dub': 0, 'original': 0, 'comment': 0, 'lyrics': 0, 'karaoke': 0, 'forced': 0, 'hearing_impaired': 0, 'visual_impaired': 0, 'clean_effects': 0, 'attached_pic': 0, 'timed_thumbnails': 0, 'non_diegetic': 0, 'captions': 0, 'descriptions': 0, 'metadata': 0, 'dependent': 0, 'still_image': 0}, 'tags': {'language': 'und', 'handler_name': 'ISO Media file produced by Google Inc.', 'vendor_id': '[0][0][0][0]', 'encoder': 'Lavc60.31.102 h264_vaapi'}}, {'index': 1, 'codec_name': 'aac', 'codec_long_name': 'AAC (Advanced Audio Coding)', 'profile': 'LC', 'codec_type': 'audio', 'codec_tag_string': 'mp4a', 'codec_tag': '0x6134706d', 'sample_fmt': 'fltp', 'sample_rate': '48000', 'channels': 2, 'channel_layout': 'stereo', 'bits_per_sample': 0, 'initial_padding': 0, 'id': '0x2', 'r_frame_rate': '0/0', 'avg_frame_rate': '0/0', 'time_base': '1/48000', 'start_pts': 0, 'start_time': '0.000000', 'duration_ts': 11615800, 'duration': '241.995833', 'bit_rate': '127734', 'nb_frames': '11344', 'extradata_size': 5, 'disposition': {'default': 1, 'dub': 0, 'original': 0, 'comment': 0, 'lyrics': 0, 'karaoke': 0, 'forced': 0, 'hearing_impaired': 0, 'visual_impaired': 0, 'clean_effects': 0, 'attached_pic': 0, 'timed_thumbnails': 0, 'non_diegetic': 0, 'captions': 0, 'descriptions': 0, 'metadata': 0, 'dependent': 0, 'still_image': 0}, 'tags': {'language': 'eng', 'handler_name': 'SoundHandler', 'vendor_id': '[0][0][0][0]'}}], 'format': {'filename': '/tmp/pvt_merge_4fmz3p8k/merged.mp4', 'nb_streams': 2, 'nb_programs': 0, 'format_name': 'mov,mp4,m4a,3gp,3g2,mj2', 'format_long_name': 'QuickTime / MOV', 'start_time': '0.000000', 'duration': '241.995833', 'size': '19694919', 'bit_rate': '651082', 'probe_score': 100, 'tags': {'major_brand': 'isom', 'minor_version': '512', 'compatible_brands': 'isomiso2avc1mp41', 'encoder': 'Lavf60.16.100'}}}
+[DEBUG] The file info after process:result={'video_fps': 25.0, 'r_frame_rate': '25/1', 'video_codec_name': 'h264', 'audio_codec_name': 'aac', 'width': 1280, 'height': 720, 'time': 241960, 'streams_len': 2, 'streams_audio': 1, 'video_streams': 1, 'color': 'yuv420p'}
+[DEBUG] [FFMPEG-CMD]:
+ffmpeg -hide_banner -nostdin -ignore_unknown -threads 0 -y -fflags +genpts -i /tmp/pvt_merge_4fmz3p8k/merged.mp4 -an -c:v copy novoice.mp4
+
+[DEBUG] [trans_create]:run_recogn() time.time()=1779178191.4307108
+[DEBUG] [recognition]__init__:kwargs={'detect_language': 'uk', 'audio_file': '/home/deepin/pyvideotrans/pyvideotrans-studio/tmp/426310/14d6a1c872/uk.wav', 'cache_folder': '/home/deepin/pyvideotrans/pyvideotrans-studio/tmp/426310/14d6a1c872', 'model_name': 'Yehor/whisper-large-v3-turbo-quantized-uk', 'uuid': '14d6a1c872', 'is_cuda': True, 'subtitle_type': 0, 'recogn_type': 4, 'max_speakers': -1, 'llm_post': False, 'recogn2pass': False}
+[DEBUG] BaseRecogn 初始化
+[ERROR] 管线异常
+Traceback (most recent call last):
+  File "/home/deepin/pyvideotrans/pyvideotrans-studio/videotrans/util/help_down.py", line 68, in check_and_down_hf
+    huggingface_hub.snapshot_download(
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/huggingface_hub/utils/_validators.py", line 114, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/huggingface_hub/_snapshot_download.py", line 230, in snapshot_download
+    raise LocalEntryNotFoundError(
+huggingface_hub.errors.LocalEntryNotFoundError: Cannot find an appropriate cached snapshot folder for the specified revision on the local disk and outgoing traffic has been disabled. To enable repo look-ups and downloads online, pass 'local_files_only=False' as input.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/deepin/pyvideotrans/pyvideotrans-studio/videotrans/util/help_down.py", line 84, in check_and_down_hf
+    huggingface_hub.snapshot_download(
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/huggingface_hub/utils/_validators.py", line 114, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/huggingface_hub/_snapshot_download.py", line 332, in snapshot_download
+    thread_map(
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/tqdm/contrib/concurrent.py", line 69, in thread_map
+    return _executor_map(ThreadPoolExecutor, fn, *iterables, **tqdm_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/tqdm/contrib/concurrent.py", line 51, in _executor_map
+    return list(tqdm_class(ex.map(fn, *iterables, chunksize=chunksize), **kwargs))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/tqdm/std.py", line 1181, in __iter__
+    for obj in iterable:
+  File "/home/deepin/.local/share/uv/python/cpython-3.11.15-linux-x86_64-gnu/lib/python3.11/concurrent/futures/_base.py", line 619, in result_iterator
+    yield _result_or_cancel(fs.pop())
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/deepin/.local/share/uv/python/cpython-3.11.15-linux-x86_64-gnu/lib/python3.11/concurrent/futures/_base.py", line 317, in _result_or_cancel
+    return fut.result(timeout)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/deepin/.local/share/uv/python/cpython-3.11.15-linux-x86_64-gnu/lib/python3.11/concurrent/futures/_base.py", line 456, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/deepin/.local/share/uv/python/cpython-3.11.15-linux-x86_64-gnu/lib/python3.11/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/home/deepin/.local/share/uv/python/cpython-3.11.15-linux-x86_64-gnu/lib/python3.11/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/huggingface_hub/_snapshot_download.py", line 306, in _inner_hf_hub_download
+    return hf_hub_download(
+           ^^^^^^^^^^^^^^^^
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/huggingface_hub/utils/_validators.py", line 114, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/huggingface_hub/file_download.py", line 994, in hf_hub_download
+    return _hf_hub_download_to_local_dir(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/huggingface_hub/file_download.py", line 1304, in _hf_hub_download_to_local_dir
+    _download_to_tmp_and_move(
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/huggingface_hub/file_download.py", line 1742, in _download_to_tmp_and_move
+    http_get(
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/huggingface_hub/file_download.py", line 500, in http_get
+    for chunk in r.iter_content(chunk_size=constants.DOWNLOAD_CHUNK_SIZE):
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/requests/models.py", line 824, in generate
+    raise ChunkedEncodingError(e)
+requests.exceptions.ChunkedEncodingError: ('Connection broken: IncompleteRead(99908047 bytes read, 462670409 more expected)', IncompleteRead(99908047 bytes read, 462670409 more expected))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/deepin/pyvideotrans/pyvideotrans-studio/studio/main_window.py", line 3484, in _run_translate_pipeline
+    _run_step("音频转字幕", trk.recogn)
+  File "/home/deepin/pyvideotrans/pyvideotrans-studio/studio/main_window.py", line 3477, in _run_step
+    result = fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^
+  File "/home/deepin/pyvideotrans/pyvideotrans-studio/videotrans/task/trans_create.py", line 413, in recogn
+    raw_subtitles = run_recogn(
+                    ^^^^^^^^^^^
+  File "/home/deepin/pyvideotrans/pyvideotrans-studio/videotrans/recognition/__init__.py", line 384, in run
+    return HuggingfaceRecogn(**kwargs).run()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/deepin/pyvideotrans/pyvideotrans-studio/videotrans/recognition/_base.py", line 140, in run
+    self._download()
+  File "/home/deepin/pyvideotrans/pyvideotrans-studio/videotrans/recognition/_huggingface.py", line 24, in _download
+    tools.check_and_down_hf(self.model_name, self.model_name, self.local_dir, callback=self._process_callback)
+  File "/home/deepin/pyvideotrans/pyvideotrans-studio/videotrans/util/help_down.py", line 103, in check_and_down_hf
+    raise RuntimeError(f"{msg}\n[https://huggingface.co/{repo_id}/tree/main]\n{e}")
+RuntimeError: 下载模型失败，你可以打开以下网址，将所有文件下载到
+ /home/deepin/pyvideotrans/pyvideotrans-studio/models/models--Yehor--whisper-large-v3-turbo-quantized-uk 文件夹内
+
+[https://huggingface.co/Yehor/whisper-large-v3-turbo-quantized-uk/tree/main]
+('Connection broken: IncompleteRead(99908047 bytes read, 462670409 more expected)', IncompleteRead(99908047 bytes read, 462670409 more expected))
+
+[DEBUG] 返回缓存的编解码器 Linux-264: h264_vaapi
+[DEBUG] 最终配置信息：self.cfg=TaskCfgVTT(is_cuda=True, uuid='cf257ad70a', cache_folder='/home/deepin/pyvideotrans/pyvideotrans-studio/tmp/426310/cf257ad70a', target_dir='/home/deepin/Videos/0002', source_language='乌克兰语', source_language_code='uk', source_sub='/home/deepin/Videos/0002/uk.srt', source_wav='/home/deepin/pyvideotrans/pyvideotrans-studio/tmp/426310/cf257ad70a/uk.wav', source_wav_output='/home/deepin/Videos/0002/uk.m4a', target_language='简体中文', target_language_code='zh-cn', target_sub='/home/deepin/Videos/0002/zh-cn.srt', target_wav='/home/deepin/pyvideotrans/pyvideotrans-studio/tmp/426310/cf257ad70a/target.wav', target_wav_output='/home/deepin/Videos/0002/zh-cn.m4a', name='/tmp/pvt_merge_eh0t15tg/merged.mp4', noextname='乌', basename='乌.mp4', ext='mp4', dirname='/home/deepin/Videos', shound_del_name=None, translate_type=4, tts_type=0, volume='+0%', pitch=0, voice_rate=0, voice_role='Yunxi(Male/CN)', voice_autorate=False, video_autorate=False, remove_silent_mid=False, align_sub_audio=True, detect_language='uk', recogn_type=4, model_name='Yehor/whisper-large-v3-turbo-quantized-uk', shibie_audio=None, remove_noise=False, enable_diariz=False, nums_diariz=0, rephrase=0, fix_punc=False, subtitle_language=None, app_mode='biaozhun', subtitles='', targetdir_mp4='/home/deepin/Videos/0002/乌.mp4', novoice_mp4='/home/deepin/pyvideotrans/pyvideotrans-studio/tmp/426310/cf257ad70a/novoice.mp4', is_separate=False, embed_bgm=False, instrument=None, vocal=None, back_audio='', clear_cache=False, background_music=None, subtitle_type=0, only_out_mp4=False, recogn2pass=False, output_srt=0, copysrt_rawvideo=False)
+[DEBUG] The file information: {'streams': [{'index': 0, 'codec_name': 'h264', 'codec_long_name': 'H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10', 'profile': 'High', 'codec_type': 'video', 'codec_tag_string': 'avc1', 'codec_tag': '0x31637661', 'width': 1280, 'height': 720, 'coded_width': 1280, 'coded_height': 720, 'closed_captions': 0, 'film_grain': 0, 'has_b_frames': 1, 'sample_aspect_ratio': '1:1', 'display_aspect_ratio': '16:9', 'pix_fmt': 'yuv420p', 'level': 31, 'color_range': 'tv', 'color_space': 'bt709', 'color_transfer': 'bt709', 'color_primaries': 'bt709', 'chroma_location': 'left', 'field_order': 'progressive', 'refs': 1, 'is_avc': 'true', 'nal_length_size': '4', 'id': '0x1', 'r_frame_rate': '25/1', 'avg_frame_rate': '25/1', 'time_base': '1/12800', 'start_pts': 179, 'start_time': '0.013984', 'duration_ts': 3097088, 'duration': '241.960000', 'bit_rate': '517787', 'bits_per_raw_sample': '8', 'nb_frames': '6049', 'extradata_size': 49, 'disposition': {'default': 1, 'dub': 0, 'original': 0, 'comment': 0, 'lyrics': 0, 'karaoke': 0, 'forced': 0, 'hearing_impaired': 0, 'visual_impaired': 0, 'clean_effects': 0, 'attached_pic': 0, 'timed_thumbnails': 0, 'non_diegetic': 0, 'captions': 0, 'descriptions': 0, 'metadata': 0, 'dependent': 0, 'still_image': 0}, 'tags': {'language': 'und', 'handler_name': 'ISO Media file produced by Google Inc.', 'vendor_id': '[0][0][0][0]', 'encoder': 'Lavc60.31.102 h264_vaapi'}}, {'index': 1, 'codec_name': 'aac', 'codec_long_name': 'AAC (Advanced Audio Coding)', 'profile': 'LC', 'codec_type': 'audio', 'codec_tag_string': 'mp4a', 'codec_tag': '0x6134706d', 'sample_fmt': 'fltp', 'sample_rate': '48000', 'channels': 2, 'channel_layout': 'stereo', 'bits_per_sample': 0, 'initial_padding': 0, 'id': '0x2', 'r_frame_rate': '0/0', 'avg_frame_rate': '0/0', 'time_base': '1/48000', 'start_pts': 0, 'start_time': '0.000000', 'duration_ts': 11615800, 'duration': '241.995833', 'bit_rate': '127734', 'nb_frames': '11344', 'extradata_size': 5, 'disposition': {'default': 1, 'dub': 0, 'original': 0, 'comment': 0, 'lyrics': 0, 'karaoke': 0, 'forced': 0, 'hearing_impaired': 0, 'visual_impaired': 0, 'clean_effects': 0, 'attached_pic': 0, 'timed_thumbnails': 0, 'non_diegetic': 0, 'captions': 0, 'descriptions': 0, 'metadata': 0, 'dependent': 0, 'still_image': 0}, 'tags': {'language': 'eng', 'handler_name': 'SoundHandler', 'vendor_id': '[0][0][0][0]'}}], 'format': {'filename': '/tmp/pvt_merge_eh0t15tg/merged.mp4', 'nb_streams': 2, 'nb_programs': 0, 'format_name': 'mov,mp4,m4a,3gp,3g2,mj2', 'format_long_name': 'QuickTime / MOV', 'start_time': '0.000000', 'duration': '241.995833', 'size': '19694919', 'bit_rate': '651082', 'probe_score': 100, 'tags': {'major_brand': 'isom', 'minor_version': '512', 'compatible_brands': 'isomiso2avc1mp41', 'encoder': 'Lavf60.16.100'}}}
+[DEBUG] The file info after process:result={'video_fps': 25.0, 'r_frame_rate': '25/1', 'video_codec_name': 'h264', 'audio_codec_name': 'aac', 'width': 1280, 'height': 720, 'time': 241960, 'streams_len': 2, 'streams_audio': 1, 'video_streams': 1, 'color': 'yuv420p'}
+[DEBUG] [FFMPEG-CMD]:
+ffmpeg -hide_banner -nostdin -ignore_unknown -threads 0 -y -fflags +genpts -i /tmp/pvt_merge_eh0t15tg/merged.mp4 -an -c:v copy novoice.mp4
+
+[DEBUG] [trans_create]:run_recogn() time.time()=1779178458.619611
+[DEBUG] [recognition]__init__:kwargs={'detect_language': 'uk', 'audio_file': '/home/deepin/pyvideotrans/pyvideotrans-studio/tmp/426310/cf257ad70a/uk.wav', 'cache_folder': '/home/deepin/pyvideotrans/pyvideotrans-studio/tmp/426310/cf257ad70a', 'model_name': 'Yehor/whisper-large-v3-turbo-quantized-uk', 'uuid': 'cf257ad70a', 'is_cuda': True, 'subtitle_type': 0, 'recogn_type': 4, 'max_speakers': -1, 'llm_post': False, 'recogn2pass': False}
+[DEBUG] BaseRecogn 初始化
+[DEBUG] 本次EdgeTTS配音：重试延迟:5,出错将重试:4,并发:10
+[DEBUG] 执行流程：所有配音任务结束。
+[DEBUG] 开始执行事件循环的关闭流程...
+[DEBUG] 事件循环已关闭。
+[DEBUG] [字幕配音]渠道0:共耗时:3s
+[DEBUG] 本次EdgeTTS配音：重试延迟:5,出错将重试:4,并发:10
+[DEBUG] 执行流程：所有配音任务结束。
+[DEBUG] 开始执行事件循环的关闭流程...
+[DEBUG] 事件循环已关闭。
+[DEBUG] [字幕配音]渠道0:共耗时:2s
+[DEBUG] 本次EdgeTTS配音：重试延迟:5,出错将重试:4,并发:10
+[DEBUG] 执行流程：所有配音任务结束。
+[DEBUG] 开始执行事件循环的关闭流程...
+[DEBUG] 事件循环已关闭。
+[DEBUG] [字幕配音]渠道0:共耗时:2s
+[DEBUG] 本次EdgeTTS配音：重试延迟:5,出错将重试:4,并发:10
+[DEBUG] 执行流程：所有配音任务结束。
+[DEBUG] 开始执行事件循环的关闭流程...
+[DEBUG] 事件循环已关闭。
+[DEBUG] [字幕配音]渠道0:共耗时:2s
+[DEBUG] 返回缓存的编解码器 Linux-264: h264_vaapi
+[DEBUG] 最终配置信息：self.cfg=TaskCfgVTT(is_cuda=True, uuid='3d3b03c2e2', cache_folder='/home/deepin/pyvideotrans/pyvideotrans-studio/tmp/429768/3d3b03c2e2', target_dir='/home/deepin/Videos/0002', source_language='乌克兰语', source_language_code='uk', source_sub='/home/deepin/Videos/0002/uk.srt', source_wav='/home/deepin/pyvideotrans/pyvideotrans-studio/tmp/429768/3d3b03c2e2/uk.wav', source_wav_output='/home/deepin/Videos/0002/uk.m4a', target_language='简体中文', target_language_code='zh-cn', target_sub='/home/deepin/Videos/0002/zh-cn.srt', target_wav='/home/deepin/pyvideotrans/pyvideotrans-studio/tmp/429768/3d3b03c2e2/target.wav', target_wav_output='/home/deepin/Videos/0002/zh-cn.m4a', name='/tmp/pvt_merge_vqo5e8hg/merged.mp4', noextname='乌', basename='乌.mp4', ext='mp4', dirname='/home/deepin/Videos', shound_del_name=None, translate_type=4, tts_type=0, volume='+0%', pitch=0, voice_rate=0, voice_role='Yunjian(Male/CN)', voice_autorate=False, video_autorate=False, remove_silent_mid=False, align_sub_audio=True, detect_language='uk', recogn_type=4, model_name='Yehor/whisper-large-v3-turbo-quantized-uk', shibie_audio=None, remove_noise=False, enable_diariz=False, nums_diariz=0, rephrase=0, fix_punc=False, subtitle_language=None, app_mode='biaozhun', subtitles='', targetdir_mp4='/home/deepin/Videos/0002/乌.mp4', novoice_mp4='/home/deepin/pyvideotrans/pyvideotrans-studio/tmp/429768/3d3b03c2e2/novoice.mp4', is_separate=False, embed_bgm=False, instrument=None, vocal=None, back_audio='', clear_cache=False, background_music=None, subtitle_type=0, only_out_mp4=False, recogn2pass=False, output_srt=0, copysrt_rawvideo=False)
+[DEBUG] The file information: {'streams': [{'index': 0, 'codec_name': 'h264', 'codec_long_name': 'H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10', 'profile': 'High', 'codec_type': 'video', 'codec_tag_string': 'avc1', 'codec_tag': '0x31637661', 'width': 1280, 'height': 720, 'coded_width': 1280, 'coded_height': 720, 'closed_captions': 0, 'film_grain': 0, 'has_b_frames': 1, 'sample_aspect_ratio': '1:1', 'display_aspect_ratio': '16:9', 'pix_fmt': 'yuv420p', 'level': 31, 'color_range': 'tv', 'color_space': 'bt709', 'color_transfer': 'bt709', 'color_primaries': 'bt709', 'chroma_location': 'left', 'field_order': 'progressive', 'refs': 1, 'is_avc': 'true', 'nal_length_size': '4', 'id': '0x1', 'r_frame_rate': '25/1', 'avg_frame_rate': '25/1', 'time_base': '1/12800', 'start_pts': 179, 'start_time': '0.013984', 'duration_ts': 3097088, 'duration': '241.960000', 'bit_rate': '517787', 'bits_per_raw_sample': '8', 'nb_frames': '6049', 'extradata_size': 49, 'disposition': {'default': 1, 'dub': 0, 'original': 0, 'comment': 0, 'lyrics': 0, 'karaoke': 0, 'forced': 0, 'hearing_impaired': 0, 'visual_impaired': 0, 'clean_effects': 0, 'attached_pic': 0, 'timed_thumbnails': 0, 'non_diegetic': 0, 'captions': 0, 'descriptions': 0, 'metadata': 0, 'dependent': 0, 'still_image': 0}, 'tags': {'language': 'und', 'handler_name': 'ISO Media file produced by Google Inc.', 'vendor_id': '[0][0][0][0]', 'encoder': 'Lavc60.31.102 h264_vaapi'}}, {'index': 1, 'codec_name': 'aac', 'codec_long_name': 'AAC (Advanced Audio Coding)', 'profile': 'LC', 'codec_type': 'audio', 'codec_tag_string': 'mp4a', 'codec_tag': '0x6134706d', 'sample_fmt': 'fltp', 'sample_rate': '48000', 'channels': 2, 'channel_layout': 'stereo', 'bits_per_sample': 0, 'initial_padding': 0, 'id': '0x2', 'r_frame_rate': '0/0', 'avg_frame_rate': '0/0', 'time_base': '1/48000', 'start_pts': 0, 'start_time': '0.000000', 'duration_ts': 11615800, 'duration': '241.995833', 'bit_rate': '127734', 'nb_frames': '11344', 'extradata_size': 5, 'disposition': {'default': 1, 'dub': 0, 'original': 0, 'comment': 0, 'lyrics': 0, 'karaoke': 0, 'forced': 0, 'hearing_impaired': 0, 'visual_impaired': 0, 'clean_effects': 0, 'attached_pic': 0, 'timed_thumbnails': 0, 'non_diegetic': 0, 'captions': 0, 'descriptions': 0, 'metadata': 0, 'dependent': 0, 'still_image': 0}, 'tags': {'language': 'eng', 'handler_name': 'SoundHandler', 'vendor_id': '[0][0][0][0]'}}], 'format': {'filename': '/tmp/pvt_merge_vqo5e8hg/merged.mp4', 'nb_streams': 2, 'nb_programs': 0, 'format_name': 'mov,mp4,m4a,3gp,3g2,mj2', 'format_long_name': 'QuickTime / MOV', 'start_time': '0.000000', 'duration': '241.995833', 'size': '19694919', 'bit_rate': '651082', 'probe_score': 100, 'tags': {'major_brand': 'isom', 'minor_version': '512', 'compatible_brands': 'isomiso2avc1mp41', 'encoder': 'Lavf60.16.100'}}}
+[DEBUG] The file info after process:result={'video_fps': 25.0, 'r_frame_rate': '25/1', 'video_codec_name': 'h264', 'audio_codec_name': 'aac', 'width': 1280, 'height': 720, 'time': 241960, 'streams_len': 2, 'streams_audio': 1, 'video_streams': 1, 'color': 'yuv420p'}
+[DEBUG] [FFMPEG-CMD]:
+ffmpeg -hide_banner -nostdin -ignore_unknown -threads 0 -y -fflags +genpts -i /tmp/pvt_merge_vqo5e8hg/merged.mp4 -an -c:v copy novoice.mp4
+
+[DEBUG] [trans_create]:run_recogn() time.time()=1779178731.5806522
+[DEBUG] [recognition]__init__:kwargs={'detect_language': 'uk', 'audio_file': '/home/deepin/pyvideotrans/pyvideotrans-studio/tmp/429768/3d3b03c2e2/uk.wav', 'cache_folder': '/home/deepin/pyvideotrans/pyvideotrans-studio/tmp/429768/3d3b03c2e2', 'model_name': 'Yehor/whisper-large-v3-turbo-quantized-uk', 'uuid': '3d3b03c2e2', 'is_cuda': True, 'subtitle_type': 0, 'recogn_type': 4, 'max_speakers': -1, 'llm_post': False, 'recogn2pass': False}
+[DEBUG] BaseRecogn 初始化
+[DEBUG] [HuggingfaceRecogn]_exec:self.model_name='Yehor/whisper-large-v3-turbo-quantized-uk'
+[DEBUG] [Before VAD silero][self.recogn2pass=False],_min_speech=1000ms,_max_speech=8000ms,_min_silence=250ms
+[DEBUG] [新进程执行任务]:VAD:silero split audio...
+[DEBUG] CPU进程池:max_workers=1
+[DEBUG] [silero-VAD]Fix:VAD断句参数：threshold=0.5,min_speech_duration_ms=0ms,max_speech_duration_ms=8000ms,min_silent_duration_ms=250ms
+[WARNING] cut_audio 时长小于 1000ms 需要下个字幕左移开始时间,diff=768,prev_diff=0,next_diff=0
+[WARNING] cut_audio 时长小于 1000ms 需要下个字幕左移开始时间,diff=832,prev_diff=0,next_diff=0
+[WARNING] cut_audio 时长小于 1000ms 需要下个字幕左移开始时间,diff=800,prev_diff=0,next_diff=0
+[WARNING] cut_audio 时长小于 1000ms 需要下个字幕左移开始时间,diff=912,prev_diff=0,next_diff=0
+[WARNING] cut_audio 时长小于 1000ms 需要下个字幕左移开始时间,diff=992,prev_diff=0,next_diff=0
+[DEBUG] [新进程执行任务]:load Yehor/whisper-large-v3-turbo-quantized-uk
+[DEBUG] GPU进程池:max_workers=1
+[ERROR] 语音识别失败:model_name='Yehor/whisper-large-v3-turbo-quantized-uk',Traceback (most recent call last):
+  File "/home/deepin/pyvideotrans/pyvideotrans-studio/videotrans/process/stt_fun.py", line 538, in pipe_asr
+    p = pipeline(
+        ^^^^^^^^^
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/transformers/pipelines/__init__.py", line 942, in pipeline
+    framework, model = infer_framework_load_model(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/transformers/pipelines/base.py", line 291, in infer_framework_load_model
+    model = model_class.from_pretrained(model, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/transformers/models/auto/auto_factory.py", line 571, in from_pretrained
+    return model_class.from_pretrained(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/transformers/modeling_utils.py", line 279, in _wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/transformers/modeling_utils.py", line 4214, in from_pretrained
+    config.quantization_config = AutoHfQuantizer.merge_quantization_configs(
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/transformers/quantizers/auto.py", line 198, in merge_quantization_configs
+    quantization_config = AutoQuantizationConfig.from_dict(quantization_config)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/transformers/quantizers/auto.py", line 128, in from_dict
+    return target_cls.from_dict(quantization_config_dict)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/transformers/utils/quantization_config.py", line 1325, in from_dict
+    return super().from_dict(config_dict, return_unused_kwargs=return_unused_kwargs, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/transformers/utils/quantization_config.py", line 119, in from_dict
+    config = cls(**config_dict)
+             ^^^^^^^^^^^^^^^^^^
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/transformers/utils/quantization_config.py", line 1256, in __init__
+    raise ImportError(
+ImportError: compressed_tensors is not installed and is required for compressed-tensors quantization. Please install it with `pip install compressed-tensors`.
+Traceback (most recent call last):
+  File "/home/deepin/pyvideotrans/pyvideotrans-studio/videotrans/process/stt_fun.py", line 538, in pipe_asr
+    p = pipeline(
+        ^^^^^^^^^
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/transformers/pipelines/__init__.py", line 942, in pipeline
+    framework, model = infer_framework_load_model(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/transformers/pipelines/base.py", line 291, in infer_framework_load_model
+    model = model_class.from_pretrained(model, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/transformers/models/auto/auto_factory.py", line 571, in from_pretrained
+    return model_class.from_pretrained(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/transformers/modeling_utils.py", line 279, in _wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/transformers/modeling_utils.py", line 4214, in from_pretrained
+    config.quantization_config = AutoHfQuantizer.merge_quantization_configs(
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/transformers/quantizers/auto.py", line 198, in merge_quantization_configs
+    quantization_config = AutoQuantizationConfig.from_dict(quantization_config)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/transformers/quantizers/auto.py", line 128, in from_dict
+    return target_cls.from_dict(quantization_config_dict)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/transformers/utils/quantization_config.py", line 1325, in from_dict
+    return super().from_dict(config_dict, return_unused_kwargs=return_unused_kwargs, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/transformers/utils/quantization_config.py", line 119, in from_dict
+    config = cls(**config_dict)
+             ^^^^^^^^^^^^^^^^^^
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/transformers/utils/quantization_config.py", line 1256, in __init__
+    raise ImportError(
+ImportError: compressed_tensors is not installed and is required for compressed-tensors quantization. Please install it with `pip install compressed-tensors`.
+[ERROR] new process:Traceback (most recent call last):
+  File "/home/deepin/pyvideotrans/pyvideotrans-studio/videotrans/configure/_base.py", line 283, in _new_process
+    raise RuntimeError(err)
+RuntimeError: Traceback (most recent call last):
+  File "/home/deepin/pyvideotrans/pyvideotrans-studio/videotrans/process/stt_fun.py", line 538, in pipe_asr
+    p = pipeline(
+        ^^^^^^^^^
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/transformers/pipelines/__init__.py", line 942, in pipeline
+    framework, model = infer_framework_load_model(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/transformers/pipelines/base.py", line 291, in infer_framework_load_model
+    model = model_class.from_pretrained(model, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/transformers/models/auto/auto_factory.py", line 571, in from_pretrained
+    return model_class.from_pretrained(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/transformers/modeling_utils.py", line 279, in _wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/transformers/modeling_utils.py", line 4214, in from_pretrained
+    config.quantization_config = AutoHfQuantizer.merge_quantization_configs(
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/transformers/quantizers/auto.py", line 198, in merge_quantization_configs
+    quantization_config = AutoQuantizationConfig.from_dict(quantization_config)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/transformers/quantizers/auto.py", line 128, in from_dict
+    return target_cls.from_dict(quantization_config_dict)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/transformers/utils/quantization_config.py", line 1325, in from_dict
+    return super().from_dict(config_dict, return_unused_kwargs=return_unused_kwargs, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/transformers/utils/quantization_config.py", line 119, in from_dict
+    config = cls(**config_dict)
+             ^^^^^^^^^^^^^^^^^^
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/transformers/utils/quantization_config.py", line 1256, in __init__
+    raise ImportError(
+ImportError: compressed_tensors is not installed and is required for compressed-tensors quantization. Please install it with `pip install compressed-tensors`.
+
+Traceback (most recent call last):
+  File "/home/deepin/pyvideotrans/pyvideotrans-studio/videotrans/configure/_base.py", line 283, in _new_process
+    raise RuntimeError(err)
+RuntimeError: Traceback (most recent call last):
+  File "/home/deepin/pyvideotrans/pyvideotrans-studio/videotrans/process/stt_fun.py", line 538, in pipe_asr
+    p = pipeline(
+        ^^^^^^^^^
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/transformers/pipelines/__init__.py", line 942, in pipeline
+    framework, model = infer_framework_load_model(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/transformers/pipelines/base.py", line 291, in infer_framework_load_model
+    model = model_class.from_pretrained(model, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/transformers/models/auto/auto_factory.py", line 571, in from_pretrained
+    return model_class.from_pretrained(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/transformers/modeling_utils.py", line 279, in _wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/transformers/modeling_utils.py", line 4214, in from_pretrained
+    config.quantization_config = AutoHfQuantizer.merge_quantization_configs(
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/transformers/quantizers/auto.py", line 198, in merge_quantization_configs
+    quantization_config = AutoQuantizationConfig.from_dict(quantization_config)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/transformers/quantizers/auto.py", line 128, in from_dict
+    return target_cls.from_dict(quantization_config_dict)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/transformers/utils/quantization_config.py", line 1325, in from_dict
+    return super().from_dict(config_dict, return_unused_kwargs=return_unused_kwargs, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/transformers/utils/quantization_config.py", line 119, in from_dict
+    config = cls(**config_dict)
+             ^^^^^^^^^^^^^^^^^^
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/transformers/utils/quantization_config.py", line 1256, in __init__
+    raise ImportError(
+ImportError: compressed_tensors is not installed and is required for compressed-tensors quantization. Please install it with `pip install compressed-tensors`.
+
+[DEBUG] [语音识别]渠道4,Yehor/whisper-large-v3-turbo-quantized-uk:共耗时:852s
+[ERROR] 管线异常
+Traceback (most recent call last):
+  File "/home/deepin/pyvideotrans/pyvideotrans-studio/studio/main_window.py", line 3484, in _run_translate_pipeline
+    _run_step("音频转字幕", trk.recogn)
+  File "/home/deepin/pyvideotrans/pyvideotrans-studio/studio/main_window.py", line 3477, in _run_step
+    result = fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^
+  File "/home/deepin/pyvideotrans/pyvideotrans-studio/videotrans/task/trans_create.py", line 413, in recogn
+    raw_subtitles = run_recogn(
+                    ^^^^^^^^^^^
+  File "/home/deepin/pyvideotrans/pyvideotrans-studio/videotrans/recognition/__init__.py", line 384, in run
+    return HuggingfaceRecogn(**kwargs).run()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/deepin/pyvideotrans/pyvideotrans-studio/videotrans/recognition/_base.py", line 145, in run
+    res = self._exec()
+          ^^^^^^^^^^^^
+  File "/home/deepin/pyvideotrans/pyvideotrans-studio/videotrans/recognition/_huggingface.py", line 42, in _exec
+    result = self._pipe_asr()
+             ^^^^^^^^^^^^^^^^
+  File "/home/deepin/pyvideotrans/pyvideotrans-studio/videotrans/recognition/_huggingface.py", line 68, in _pipe_asr
+    raws = self._new_process(callback=pipe_asr, title=title, is_cuda=self.is_cuda, kwargs=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/deepin/pyvideotrans/pyvideotrans-studio/videotrans/configure/_base.py", line 283, in _new_process
+    raise RuntimeError(err)
+RuntimeError: Traceback (most recent call last):
+  File "/home/deepin/pyvideotrans/pyvideotrans-studio/videotrans/process/stt_fun.py", line 538, in pipe_asr
+    p = pipeline(
+        ^^^^^^^^^
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/transformers/pipelines/__init__.py", line 942, in pipeline
+    framework, model = infer_framework_load_model(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/transformers/pipelines/base.py", line 291, in infer_framework_load_model
+    model = model_class.from_pretrained(model, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/transformers/models/auto/auto_factory.py", line 571, in from_pretrained
+    return model_class.from_pretrained(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/transformers/modeling_utils.py", line 279, in _wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/transformers/modeling_utils.py", line 4214, in from_pretrained
+    config.quantization_config = AutoHfQuantizer.merge_quantization_configs(
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/transformers/quantizers/auto.py", line 198, in merge_quantization_configs
+    quantization_config = AutoQuantizationConfig.from_dict(quantization_config)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/transformers/quantizers/auto.py", line 128, in from_dict
+    return target_cls.from_dict(quantization_config_dict)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/transformers/utils/quantization_config.py", line 1325, in from_dict
+    return super().from_dict(config_dict, return_unused_kwargs=return_unused_kwargs, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/transformers/utils/quantization_config.py", line 119, in from_dict
+    config = cls(**config_dict)
+             ^^^^^^^^^^^^^^^^^^
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/transformers/utils/quantization_config.py", line 1256, in __init__
+    raise ImportError(
+ImportError: compressed_tensors is not installed and is required for compressed-tensors quantization. Please install it with `pip install compressed-tensors`.
+
+
+[DEBUG] 返回缓存的编解码器 Linux-264: h264_vaapi
+[DEBUG] 最终配置信息：self.cfg=TaskCfgVTT(is_cuda=True, uuid='0469d5725d', cache_folder='/home/deepin/pyvideotrans/pyvideotrans-studio/tmp/436747/0469d5725d', target_dir='/home/deepin/Videos/0002', source_language='乌克兰语', source_language_code='uk', source_sub='/home/deepin/Videos/0002/uk.srt', source_wav='/home/deepin/pyvideotrans/pyvideotrans-studio/tmp/436747/0469d5725d/uk.wav', source_wav_output='/home/deepin/Videos/0002/uk.m4a', target_language='简体中文', target_language_code='zh-cn', target_sub='/home/deepin/Videos/0002/zh-cn.srt', target_wav='/home/deepin/pyvideotrans/pyvideotrans-studio/tmp/436747/0469d5725d/target.wav', target_wav_output='/home/deepin/Videos/0002/zh-cn.m4a', name='/tmp/pvt_merge_xckfb_3q/merged.mp4', noextname='乌', basename='乌.mp4', ext='mp4', dirname='/home/deepin/Videos', shound_del_name=None, translate_type=4, tts_type=0, volume='+0%', pitch=0, voice_rate=0, voice_role='Yunjian(Male/CN)', voice_autorate=False, video_autorate=False, remove_silent_mid=False, align_sub_audio=True, detect_language='uk', recogn_type=4, model_name='Yehor/whisper-large-v3-turbo-quantized-uk', shibie_audio=None, remove_noise=False, enable_diariz=False, nums_diariz=0, rephrase=0, fix_punc=False, subtitle_language=None, app_mode='biaozhun', subtitles='', targetdir_mp4='/home/deepin/Videos/0002/乌.mp4', novoice_mp4='/home/deepin/pyvideotrans/pyvideotrans-studio/tmp/436747/0469d5725d/novoice.mp4', is_separate=False, embed_bgm=False, instrument=None, vocal=None, back_audio='', clear_cache=False, background_music=None, subtitle_type=0, only_out_mp4=False, recogn2pass=False, output_srt=0, copysrt_rawvideo=False)
+[DEBUG] The file information: {'streams': [{'index': 0, 'codec_name': 'h264', 'codec_long_name': 'H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10', 'profile': 'High', 'codec_type': 'video', 'codec_tag_string': 'avc1', 'codec_tag': '0x31637661', 'width': 1280, 'height': 720, 'coded_width': 1280, 'coded_height': 720, 'closed_captions': 0, 'film_grain': 0, 'has_b_frames': 1, 'sample_aspect_ratio': '1:1', 'display_aspect_ratio': '16:9', 'pix_fmt': 'yuv420p', 'level': 31, 'color_range': 'tv', 'color_space': 'bt709', 'color_transfer': 'bt709', 'color_primaries': 'bt709', 'chroma_location': 'left', 'field_order': 'progressive', 'refs': 1, 'is_avc': 'true', 'nal_length_size': '4', 'id': '0x1', 'r_frame_rate': '25/1', 'avg_frame_rate': '25/1', 'time_base': '1/12800', 'start_pts': 179, 'start_time': '0.013984', 'duration_ts': 3097088, 'duration': '241.960000', 'bit_rate': '517787', 'bits_per_raw_sample': '8', 'nb_frames': '6049', 'extradata_size': 49, 'disposition': {'default': 1, 'dub': 0, 'original': 0, 'comment': 0, 'lyrics': 0, 'karaoke': 0, 'forced': 0, 'hearing_impaired': 0, 'visual_impaired': 0, 'clean_effects': 0, 'attached_pic': 0, 'timed_thumbnails': 0, 'non_diegetic': 0, 'captions': 0, 'descriptions': 0, 'metadata': 0, 'dependent': 0, 'still_image': 0}, 'tags': {'language': 'und', 'handler_name': 'ISO Media file produced by Google Inc.', 'vendor_id': '[0][0][0][0]', 'encoder': 'Lavc60.31.102 h264_vaapi'}}, {'index': 1, 'codec_name': 'aac', 'codec_long_name': 'AAC (Advanced Audio Coding)', 'profile': 'LC', 'codec_type': 'audio', 'codec_tag_string': 'mp4a', 'codec_tag': '0x6134706d', 'sample_fmt': 'fltp', 'sample_rate': '48000', 'channels': 2, 'channel_layout': 'stereo', 'bits_per_sample': 0, 'initial_padding': 0, 'id': '0x2', 'r_frame_rate': '0/0', 'avg_frame_rate': '0/0', 'time_base': '1/48000', 'start_pts': 0, 'start_time': '0.000000', 'duration_ts': 11615800, 'duration': '241.995833', 'bit_rate': '127734', 'nb_frames': '11344', 'extradata_size': 5, 'disposition': {'default': 1, 'dub': 0, 'original': 0, 'comment': 0, 'lyrics': 0, 'karaoke': 0, 'forced': 0, 'hearing_impaired': 0, 'visual_impaired': 0, 'clean_effects': 0, 'attached_pic': 0, 'timed_thumbnails': 0, 'non_diegetic': 0, 'captions': 0, 'descriptions': 0, 'metadata': 0, 'dependent': 0, 'still_image': 0}, 'tags': {'language': 'eng', 'handler_name': 'SoundHandler', 'vendor_id': '[0][0][0][0]'}}], 'format': {'filename': '/tmp/pvt_merge_xckfb_3q/merged.mp4', 'nb_streams': 2, 'nb_programs': 0, 'format_name': 'mov,mp4,m4a,3gp,3g2,mj2', 'format_long_name': 'QuickTime / MOV', 'start_time': '0.000000', 'duration': '241.995833', 'size': '19694919', 'bit_rate': '651082', 'probe_score': 100, 'tags': {'major_brand': 'isom', 'minor_version': '512', 'compatible_brands': 'isomiso2avc1mp41', 'encoder': 'Lavf60.16.100'}}}
+[DEBUG] The file info after process:result={'video_fps': 25.0, 'r_frame_rate': '25/1', 'video_codec_name': 'h264', 'audio_codec_name': 'aac', 'width': 1280, 'height': 720, 'time': 241960, 'streams_len': 2, 'streams_audio': 1, 'video_streams': 1, 'color': 'yuv420p'}
+[DEBUG] [FFMPEG-CMD]:
+ffmpeg -hide_banner -nostdin -ignore_unknown -threads 0 -y -fflags +genpts -i /tmp/pvt_merge_xckfb_3q/merged.mp4 -an -c:v copy novoice.mp4
+
+[DEBUG] [trans_create]:run_recogn() time.time()=1779182137.241274
+[DEBUG] [recognition]__init__:kwargs={'detect_language': 'uk', 'audio_file': '/home/deepin/pyvideotrans/pyvideotrans-studio/tmp/436747/0469d5725d/uk.wav', 'cache_folder': '/home/deepin/pyvideotrans/pyvideotrans-studio/tmp/436747/0469d5725d', 'model_name': 'Yehor/whisper-large-v3-turbo-quantized-uk', 'uuid': '0469d5725d', 'is_cuda': True, 'subtitle_type': 0, 'recogn_type': 4, 'max_speakers': -1, 'llm_post': False, 'recogn2pass': False}
+[DEBUG] BaseRecogn 初始化
+[DEBUG] [HuggingfaceRecogn]_exec:self.model_name='Yehor/whisper-large-v3-turbo-quantized-uk'
+[DEBUG] [Before VAD silero][self.recogn2pass=False],_min_speech=1000ms,_max_speech=8000ms,_min_silence=250ms
+[DEBUG] [新进程执行任务]:VAD:silero split audio...
+[DEBUG] CPU进程池:max_workers=1
+[DEBUG] [silero-VAD]Fix:VAD断句参数：threshold=0.5,min_speech_duration_ms=0ms,max_speech_duration_ms=8000ms,min_silent_duration_ms=250ms
+[WARNING] cut_audio 时长小于 1000ms 需要下个字幕左移开始时间,diff=768,prev_diff=0,next_diff=0
+[WARNING] cut_audio 时长小于 1000ms 需要下个字幕左移开始时间,diff=832,prev_diff=0,next_diff=0
+[WARNING] cut_audio 时长小于 1000ms 需要下个字幕左移开始时间,diff=800,prev_diff=0,next_diff=0
+[WARNING] cut_audio 时长小于 1000ms 需要下个字幕左移开始时间,diff=912,prev_diff=0,next_diff=0
+[WARNING] cut_audio 时长小于 1000ms 需要下个字幕左移开始时间,diff=992,prev_diff=0,next_diff=0
+[DEBUG] [新进程执行任务]:load Yehor/whisper-large-v3-turbo-quantized-uk
+[DEBUG] GPU进程池:max_workers=1
+[ERROR] 语音识别失败:model_name='Yehor/whisper-large-v3-turbo-quantized-uk',Traceback (most recent call last):
+  File "/home/deepin/pyvideotrans/pyvideotrans-studio/videotrans/process/stt_fun.py", line 538, in pipe_asr
+    p = pipeline(
+        ^^^^^^^^^
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/transformers/pipelines/__init__.py", line 942, in pipeline
+    framework, model = infer_framework_load_model(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/transformers/pipelines/base.py", line 291, in infer_framework_load_model
+    model = model_class.from_pretrained(model, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/transformers/models/auto/auto_factory.py", line 571, in from_pretrained
+    return model_class.from_pretrained(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/transformers/modeling_utils.py", line 279, in _wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/transformers/modeling_utils.py", line 4214, in from_pretrained
+    config.quantization_config = AutoHfQuantizer.merge_quantization_configs(
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/transformers/quantizers/auto.py", line 198, in merge_quantization_configs
+    quantization_config = AutoQuantizationConfig.from_dict(quantization_config)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/transformers/quantizers/auto.py", line 128, in from_dict
+    return target_cls.from_dict(quantization_config_dict)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/transformers/utils/quantization_config.py", line 1325, in from_dict
+    return super().from_dict(config_dict, return_unused_kwargs=return_unused_kwargs, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/transformers/utils/quantization_config.py", line 119, in from_dict
+    config = cls(**config_dict)
+             ^^^^^^^^^^^^^^^^^^
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/transformers/utils/quantization_config.py", line 1253, in __init__
+    from compressed_tensors.config import SparsityCompressionConfig
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/compressed_tensors/__init__.py", line 9, in <module>
+    from .compressors import *
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/compressed_tensors/compressors/__init__.py", line 6, in <module>
+    from .base import *
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/compressed_tensors/compressors/base.py", line 8, in <module>
+    from compressed_tensors.compressors.format import infer_module_format
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/compressed_tensors/compressors/format.py", line 8, in <module>
+    from compressed_tensors.quantization import QuantizationScheme
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/compressed_tensors/quantization/__init__.py", line 11, in <module>
+    from .lifecycle import *
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/compressed_tensors/quantization/lifecycle/__init__.py", line 8, in <module>
+    from .initialize import *
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/compressed_tensors/quantization/lifecycle/initialize.py", line 8, in <module>
+    from compressed_tensors.modeling import (
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/compressed_tensors/modeling/__init__.py", line 7, in <module>
+    from .attention import *
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/compressed_tensors/modeling/attention.py", line 15, in <module>
+    from transformers.masking_utils import ALL_MASK_ATTENTION_FUNCTIONS
+ModuleNotFoundError: No module named 'transformers.masking_utils'
+Traceback (most recent call last):
+  File "/home/deepin/pyvideotrans/pyvideotrans-studio/videotrans/process/stt_fun.py", line 538, in pipe_asr
+    p = pipeline(
+        ^^^^^^^^^
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/transformers/pipelines/__init__.py", line 942, in pipeline
+    framework, model = infer_framework_load_model(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/transformers/pipelines/base.py", line 291, in infer_framework_load_model
+    model = model_class.from_pretrained(model, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/transformers/models/auto/auto_factory.py", line 571, in from_pretrained
+    return model_class.from_pretrained(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/transformers/modeling_utils.py", line 279, in _wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/transformers/modeling_utils.py", line 4214, in from_pretrained
+    config.quantization_config = AutoHfQuantizer.merge_quantization_configs(
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/transformers/quantizers/auto.py", line 198, in merge_quantization_configs
+    quantization_config = AutoQuantizationConfig.from_dict(quantization_config)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/transformers/quantizers/auto.py", line 128, in from_dict
+    return target_cls.from_dict(quantization_config_dict)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/transformers/utils/quantization_config.py", line 1325, in from_dict
+    return super().from_dict(config_dict, return_unused_kwargs=return_unused_kwargs, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/transformers/utils/quantization_config.py", line 119, in from_dict
+    config = cls(**config_dict)
+             ^^^^^^^^^^^^^^^^^^
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/transformers/utils/quantization_config.py", line 1253, in __init__
+    from compressed_tensors.config import SparsityCompressionConfig
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/compressed_tensors/__init__.py", line 9, in <module>
+    from .compressors import *
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/compressed_tensors/compressors/__init__.py", line 6, in <module>
+    from .base import *
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/compressed_tensors/compressors/base.py", line 8, in <module>
+    from compressed_tensors.compressors.format import infer_module_format
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/compressed_tensors/compressors/format.py", line 8, in <module>
+    from compressed_tensors.quantization import QuantizationScheme
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/compressed_tensors/quantization/__init__.py", line 11, in <module>
+    from .lifecycle import *
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/compressed_tensors/quantization/lifecycle/__init__.py", line 8, in <module>
+    from .initialize import *
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/compressed_tensors/quantization/lifecycle/initialize.py", line 8, in <module>
+    from compressed_tensors.modeling import (
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/compressed_tensors/modeling/__init__.py", line 7, in <module>
+    from .attention import *
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/compressed_tensors/modeling/attention.py", line 15, in <module>
+    from transformers.masking_utils import ALL_MASK_ATTENTION_FUNCTIONS
+ModuleNotFoundError: No module named 'transformers.masking_utils'
+[ERROR] new process:Traceback (most recent call last):
+  File "/home/deepin/pyvideotrans/pyvideotrans-studio/videotrans/configure/_base.py", line 283, in _new_process
+    raise RuntimeError(err)
+RuntimeError: Traceback (most recent call last):
+  File "/home/deepin/pyvideotrans/pyvideotrans-studio/videotrans/process/stt_fun.py", line 538, in pipe_asr
+    p = pipeline(
+        ^^^^^^^^^
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/transformers/pipelines/__init__.py", line 942, in pipeline
+    framework, model = infer_framework_load_model(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/transformers/pipelines/base.py", line 291, in infer_framework_load_model
+    model = model_class.from_pretrained(model, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/transformers/models/auto/auto_factory.py", line 571, in from_pretrained
+    return model_class.from_pretrained(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/transformers/modeling_utils.py", line 279, in _wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/transformers/modeling_utils.py", line 4214, in from_pretrained
+    config.quantization_config = AutoHfQuantizer.merge_quantization_configs(
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/transformers/quantizers/auto.py", line 198, in merge_quantization_configs
+    quantization_config = AutoQuantizationConfig.from_dict(quantization_config)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/transformers/quantizers/auto.py", line 128, in from_dict
+    return target_cls.from_dict(quantization_config_dict)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/transformers/utils/quantization_config.py", line 1325, in from_dict
+    return super().from_dict(config_dict, return_unused_kwargs=return_unused_kwargs, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/transformers/utils/quantization_config.py", line 119, in from_dict
+    config = cls(**config_dict)
+             ^^^^^^^^^^^^^^^^^^
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/transformers/utils/quantization_config.py", line 1253, in __init__
+    from compressed_tensors.config import SparsityCompressionConfig
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/compressed_tensors/__init__.py", line 9, in <module>
+    from .compressors import *
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/compressed_tensors/compressors/__init__.py", line 6, in <module>
+    from .base import *
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/compressed_tensors/compressors/base.py", line 8, in <module>
+    from compressed_tensors.compressors.format import infer_module_format
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/compressed_tensors/compressors/format.py", line 8, in <module>
+    from compressed_tensors.quantization import QuantizationScheme
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/compressed_tensors/quantization/__init__.py", line 11, in <module>
+    from .lifecycle import *
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/compressed_tensors/quantization/lifecycle/__init__.py", line 8, in <module>
+    from .initialize import *
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/compressed_tensors/quantization/lifecycle/initialize.py", line 8, in <module>
+    from compressed_tensors.modeling import (
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/compressed_tensors/modeling/__init__.py", line 7, in <module>
+    from .attention import *
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/compressed_tensors/modeling/attention.py", line 15, in <module>
+    from transformers.masking_utils import ALL_MASK_ATTENTION_FUNCTIONS
+ModuleNotFoundError: No module named 'transformers.masking_utils'
+
+Traceback (most recent call last):
+  File "/home/deepin/pyvideotrans/pyvideotrans-studio/videotrans/configure/_base.py", line 283, in _new_process
+    raise RuntimeError(err)
+RuntimeError: Traceback (most recent call last):
+  File "/home/deepin/pyvideotrans/pyvideotrans-studio/videotrans/process/stt_fun.py", line 538, in pipe_asr
+    p = pipeline(
+        ^^^^^^^^^
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/transformers/pipelines/__init__.py", line 942, in pipeline
+    framework, model = infer_framework_load_model(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/transformers/pipelines/base.py", line 291, in infer_framework_load_model
+    model = model_class.from_pretrained(model, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/transformers/models/auto/auto_factory.py", line 571, in from_pretrained
+    return model_class.from_pretrained(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/transformers/modeling_utils.py", line 279, in _wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/transformers/modeling_utils.py", line 4214, in from_pretrained
+    config.quantization_config = AutoHfQuantizer.merge_quantization_configs(
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/transformers/quantizers/auto.py", line 198, in merge_quantization_configs
+    quantization_config = AutoQuantizationConfig.from_dict(quantization_config)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/transformers/quantizers/auto.py", line 128, in from_dict
+    return target_cls.from_dict(quantization_config_dict)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/transformers/utils/quantization_config.py", line 1325, in from_dict
+    return super().from_dict(config_dict, return_unused_kwargs=return_unused_kwargs, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/transformers/utils/quantization_config.py", line 119, in from_dict
+    config = cls(**config_dict)
+             ^^^^^^^^^^^^^^^^^^
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/transformers/utils/quantization_config.py", line 1253, in __init__
+    from compressed_tensors.config import SparsityCompressionConfig
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/compressed_tensors/__init__.py", line 9, in <module>
+    from .compressors import *
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/compressed_tensors/compressors/__init__.py", line 6, in <module>
+    from .base import *
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/compressed_tensors/compressors/base.py", line 8, in <module>
+    from compressed_tensors.compressors.format import infer_module_format
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/compressed_tensors/compressors/format.py", line 8, in <module>
+    from compressed_tensors.quantization import QuantizationScheme
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/compressed_tensors/quantization/__init__.py", line 11, in <module>
+    from .lifecycle import *
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/compressed_tensors/quantization/lifecycle/__init__.py", line 8, in <module>
+    from .initialize import *
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/compressed_tensors/quantization/lifecycle/initialize.py", line 8, in <module>
+    from compressed_tensors.modeling import (
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/compressed_tensors/modeling/__init__.py", line 7, in <module>
+    from .attention import *
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/compressed_tensors/modeling/attention.py", line 15, in <module>
+    from transformers.masking_utils import ALL_MASK_ATTENTION_FUNCTIONS
+ModuleNotFoundError: No module named 'transformers.masking_utils'
+
+[DEBUG] [语音识别]渠道4,Yehor/whisper-large-v3-turbo-quantized-uk:共耗时:14s
+[ERROR] 管线异常
+Traceback (most recent call last):
+  File "/home/deepin/pyvideotrans/pyvideotrans-studio/studio/main_window.py", line 3484, in _run_translate_pipeline
+    _run_step("音频转字幕", trk.recogn)
+  File "/home/deepin/pyvideotrans/pyvideotrans-studio/studio/main_window.py", line 3477, in _run_step
+    result = fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^
+  File "/home/deepin/pyvideotrans/pyvideotrans-studio/videotrans/task/trans_create.py", line 413, in recogn
+    raw_subtitles = run_recogn(
+                    ^^^^^^^^^^^
+  File "/home/deepin/pyvideotrans/pyvideotrans-studio/videotrans/recognition/__init__.py", line 384, in run
+    return HuggingfaceRecogn(**kwargs).run()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/deepin/pyvideotrans/pyvideotrans-studio/videotrans/recognition/_base.py", line 145, in run
+    res = self._exec()
+          ^^^^^^^^^^^^
+  File "/home/deepin/pyvideotrans/pyvideotrans-studio/videotrans/recognition/_huggingface.py", line 42, in _exec
+    result = self._pipe_asr()
+             ^^^^^^^^^^^^^^^^
+  File "/home/deepin/pyvideotrans/pyvideotrans-studio/videotrans/recognition/_huggingface.py", line 68, in _pipe_asr
+    raws = self._new_process(callback=pipe_asr, title=title, is_cuda=self.is_cuda, kwargs=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/deepin/pyvideotrans/pyvideotrans-studio/videotrans/configure/_base.py", line 283, in _new_process
+    raise RuntimeError(err)
+RuntimeError: Traceback (most recent call last):
+  File "/home/deepin/pyvideotrans/pyvideotrans-studio/videotrans/process/stt_fun.py", line 538, in pipe_asr
+    p = pipeline(
+        ^^^^^^^^^
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/transformers/pipelines/__init__.py", line 942, in pipeline
+    framework, model = infer_framework_load_model(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/transformers/pipelines/base.py", line 291, in infer_framework_load_model
+    model = model_class.from_pretrained(model, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/transformers/models/auto/auto_factory.py", line 571, in from_pretrained
+    return model_class.from_pretrained(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/transformers/modeling_utils.py", line 279, in _wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/transformers/modeling_utils.py", line 4214, in from_pretrained
+    config.quantization_config = AutoHfQuantizer.merge_quantization_configs(
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/transformers/quantizers/auto.py", line 198, in merge_quantization_configs
+    quantization_config = AutoQuantizationConfig.from_dict(quantization_config)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/transformers/quantizers/auto.py", line 128, in from_dict
+    return target_cls.from_dict(quantization_config_dict)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/transformers/utils/quantization_config.py", line 1325, in from_dict
+    return super().from_dict(config_dict, return_unused_kwargs=return_unused_kwargs, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/transformers/utils/quantization_config.py", line 119, in from_dict
+    config = cls(**config_dict)
+             ^^^^^^^^^^^^^^^^^^
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/transformers/utils/quantization_config.py", line 1253, in __init__
+    from compressed_tensors.config import SparsityCompressionConfig
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/compressed_tensors/__init__.py", line 9, in <module>
+    from .compressors import *
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/compressed_tensors/compressors/__init__.py", line 6, in <module>
+    from .base import *
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/compressed_tensors/compressors/base.py", line 8, in <module>
+    from compressed_tensors.compressors.format import infer_module_format
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/compressed_tensors/compressors/format.py", line 8, in <module>
+    from compressed_tensors.quantization import QuantizationScheme
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/compressed_tensors/quantization/__init__.py", line 11, in <module>
+    from .lifecycle import *
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/compressed_tensors/quantization/lifecycle/__init__.py", line 8, in <module>
+    from .initialize import *
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/compressed_tensors/quantization/lifecycle/initialize.py", line 8, in <module>
+    from compressed_tensors.modeling import (
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/compressed_tensors/modeling/__init__.py", line 7, in <module>
+    from .attention import *
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/compressed_tensors/modeling/attention.py", line 15, in <module>
+    from transformers.masking_utils import ALL_MASK_ATTENTION_FUNCTIONS
+ModuleNotFoundError: No module named 'transformers.masking_utils'
+
+
+[DEBUG] 返回缓存的编解码器 Linux-264: h264_vaapi
+[DEBUG] 最终配置信息：self.cfg=TaskCfgVTT(is_cuda=True, uuid='f1820a5587', cache_folder='/home/deepin/pyvideotrans/pyvideotrans-studio/tmp/439108/f1820a5587', target_dir='/home/deepin/pyvideotrans/pyvideotrans-studio/output/乌-mp4', source_language='乌克兰语', source_language_code='uk', source_sub='/home/deepin/pyvideotrans/pyvideotrans-studio/output/乌-mp4/uk.srt', source_wav='/home/deepin/pyvideotrans/pyvideotrans-studio/tmp/439108/f1820a5587/uk.wav', source_wav_output='/home/deepin/pyvideotrans/pyvideotrans-studio/output/乌-mp4/uk.m4a', target_language='简体中文', target_language_code='zh-cn', target_sub='/home/deepin/pyvideotrans/pyvideotrans-studio/output/乌-mp4/zh-cn.srt', target_wav='/home/deepin/pyvideotrans/pyvideotrans-studio/tmp/439108/f1820a5587/target.wav', target_wav_output='/home/deepin/pyvideotrans/pyvideotrans-studio/output/乌-mp4/zh-cn.m4a', name='/tmp/pvt_merge_ogkmxmq2/merged.mp4', noextname='乌', basename='乌.mp4', ext='mp4', dirname='/home/deepin/Videos', shound_del_name=None, translate_type=4, tts_type=0, volume='+0%', pitch=0, voice_rate=0, voice_role='Yunjian(Male/CN)', voice_autorate=False, video_autorate=False, remove_silent_mid=False, align_sub_audio=True, detect_language='uk', recogn_type=4, model_name='Yehor/whisper-large-v3-turbo-quantized-uk', shibie_audio=None, remove_noise=False, enable_diariz=False, nums_diariz=0, rephrase=0, fix_punc=False, subtitle_language=None, app_mode='biaozhun', subtitles='', targetdir_mp4='/home/deepin/pyvideotrans/pyvideotrans-studio/output/乌-mp4/乌.mp4', novoice_mp4='/home/deepin/pyvideotrans/pyvideotrans-studio/tmp/439108/f1820a5587/novoice.mp4', is_separate=False, embed_bgm=False, instrument=None, vocal=None, back_audio='', clear_cache=False, background_music=None, subtitle_type=0, only_out_mp4=False, recogn2pass=False, output_srt=0, copysrt_rawvideo=False)
+[DEBUG] The file information: {'streams': [{'index': 0, 'codec_name': 'h264', 'codec_long_name': 'H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10', 'profile': 'High', 'codec_type': 'video', 'codec_tag_string': 'avc1', 'codec_tag': '0x31637661', 'width': 1280, 'height': 720, 'coded_width': 1280, 'coded_height': 720, 'closed_captions': 0, 'film_grain': 0, 'has_b_frames': 1, 'sample_aspect_ratio': '1:1', 'display_aspect_ratio': '16:9', 'pix_fmt': 'yuv420p', 'level': 31, 'color_range': 'tv', 'color_space': 'bt709', 'color_transfer': 'bt709', 'color_primaries': 'bt709', 'chroma_location': 'left', 'field_order': 'progressive', 'refs': 1, 'is_avc': 'true', 'nal_length_size': '4', 'id': '0x1', 'r_frame_rate': '25/1', 'avg_frame_rate': '25/1', 'time_base': '1/12800', 'start_pts': 179, 'start_time': '0.013984', 'duration_ts': 3097088, 'duration': '241.960000', 'bit_rate': '517787', 'bits_per_raw_sample': '8', 'nb_frames': '6049', 'extradata_size': 49, 'disposition': {'default': 1, 'dub': 0, 'original': 0, 'comment': 0, 'lyrics': 0, 'karaoke': 0, 'forced': 0, 'hearing_impaired': 0, 'visual_impaired': 0, 'clean_effects': 0, 'attached_pic': 0, 'timed_thumbnails': 0, 'non_diegetic': 0, 'captions': 0, 'descriptions': 0, 'metadata': 0, 'dependent': 0, 'still_image': 0}, 'tags': {'language': 'und', 'handler_name': 'ISO Media file produced by Google Inc.', 'vendor_id': '[0][0][0][0]', 'encoder': 'Lavc60.31.102 h264_vaapi'}}, {'index': 1, 'codec_name': 'aac', 'codec_long_name': 'AAC (Advanced Audio Coding)', 'profile': 'LC', 'codec_type': 'audio', 'codec_tag_string': 'mp4a', 'codec_tag': '0x6134706d', 'sample_fmt': 'fltp', 'sample_rate': '48000', 'channels': 2, 'channel_layout': 'stereo', 'bits_per_sample': 0, 'initial_padding': 0, 'id': '0x2', 'r_frame_rate': '0/0', 'avg_frame_rate': '0/0', 'time_base': '1/48000', 'start_pts': 0, 'start_time': '0.000000', 'duration_ts': 11615800, 'duration': '241.995833', 'bit_rate': '127734', 'nb_frames': '11344', 'extradata_size': 5, 'disposition': {'default': 1, 'dub': 0, 'original': 0, 'comment': 0, 'lyrics': 0, 'karaoke': 0, 'forced': 0, 'hearing_impaired': 0, 'visual_impaired': 0, 'clean_effects': 0, 'attached_pic': 0, 'timed_thumbnails': 0, 'non_diegetic': 0, 'captions': 0, 'descriptions': 0, 'metadata': 0, 'dependent': 0, 'still_image': 0}, 'tags': {'language': 'eng', 'handler_name': 'SoundHandler', 'vendor_id': '[0][0][0][0]'}}], 'format': {'filename': '/tmp/pvt_merge_ogkmxmq2/merged.mp4', 'nb_streams': 2, 'nb_programs': 0, 'format_name': 'mov,mp4,m4a,3gp,3g2,mj2', 'format_long_name': 'QuickTime / MOV', 'start_time': '0.000000', 'duration': '241.995833', 'size': '19694919', 'bit_rate': '651082', 'probe_score': 100, 'tags': {'major_brand': 'isom', 'minor_version': '512', 'compatible_brands': 'isomiso2avc1mp41', 'encoder': 'Lavf60.16.100'}}}
+[DEBUG] The file info after process:result={'video_fps': 25.0, 'r_frame_rate': '25/1', 'video_codec_name': 'h264', 'audio_codec_name': 'aac', 'width': 1280, 'height': 720, 'time': 241960, 'streams_len': 2, 'streams_audio': 1, 'video_streams': 1, 'color': 'yuv420p'}
+[DEBUG] [FFMPEG-CMD]:
+ffmpeg -hide_banner -nostdin -ignore_unknown -threads 0 -y -fflags +genpts -i /tmp/pvt_merge_ogkmxmq2/merged.mp4 -an -c:v copy novoice.mp4
+
+[DEBUG] [trans_create]:run_recogn() time.time()=1779183012.4690833
+[DEBUG] [recognition]__init__:kwargs={'detect_language': 'uk', 'audio_file': '/home/deepin/pyvideotrans/pyvideotrans-studio/tmp/439108/f1820a5587/uk.wav', 'cache_folder': '/home/deepin/pyvideotrans/pyvideotrans-studio/tmp/439108/f1820a5587', 'model_name': 'Yehor/whisper-large-v3-turbo-quantized-uk', 'uuid': 'f1820a5587', 'is_cuda': True, 'subtitle_type': 0, 'recogn_type': 4, 'max_speakers': -1, 'llm_post': False, 'recogn2pass': False}
+[DEBUG] BaseRecogn 初始化
+[DEBUG] [HuggingfaceRecogn]_exec:self.model_name='Yehor/whisper-large-v3-turbo-quantized-uk'
+[DEBUG] [Before VAD silero][self.recogn2pass=False],_min_speech=1000ms,_max_speech=8000ms,_min_silence=250ms
+[DEBUG] [新进程执行任务]:VAD:silero split audio...
+[DEBUG] CPU进程池:max_workers=1
+[DEBUG] [silero-VAD]Fix:VAD断句参数：threshold=0.5,min_speech_duration_ms=0ms,max_speech_duration_ms=8000ms,min_silent_duration_ms=250ms
+[WARNING] cut_audio 时长小于 1000ms 需要下个字幕左移开始时间,diff=768,prev_diff=0,next_diff=0
+[WARNING] cut_audio 时长小于 1000ms 需要下个字幕左移开始时间,diff=832,prev_diff=0,next_diff=0
+[WARNING] cut_audio 时长小于 1000ms 需要下个字幕左移开始时间,diff=800,prev_diff=0,next_diff=0
+[WARNING] cut_audio 时长小于 1000ms 需要下个字幕左移开始时间,diff=912,prev_diff=0,next_diff=0
+[WARNING] cut_audio 时长小于 1000ms 需要下个字幕左移开始时间,diff=992,prev_diff=0,next_diff=0
+[DEBUG] [新进程执行任务]:load Yehor/whisper-large-v3-turbo-quantized-uk
+[DEBUG] GPU进程池:max_workers=1
+[ERROR] 语音识别失败:model_name='Yehor/whisper-large-v3-turbo-quantized-uk',Traceback (most recent call last):
+  File "/home/deepin/pyvideotrans/pyvideotrans-studio/videotrans/process/stt_fun.py", line 538, in pipe_asr
+    p = pipeline(
+        ^^^^^^^^^
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/transformers/pipelines/__init__.py", line 1180, in pipeline
+    return pipeline_class(model=model, framework=framework, task=task, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/transformers/pipelines/automatic_speech_recognition.py", line 220, in __init__
+    super().__init__(model, tokenizer, feature_extractor, device=device, torch_dtype=torch_dtype, **kwargs)
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/transformers/pipelines/base.py", line 1027, in __init__
+    self._preprocess_params, self._forward_params, self._postprocess_params = self._sanitize_parameters(**kwargs)
+                                                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: AutomaticSpeechRecognitionPipeline._sanitize_parameters() got an unexpected keyword argument 'dtype'
+Traceback (most recent call last):
+  File "/home/deepin/pyvideotrans/pyvideotrans-studio/videotrans/process/stt_fun.py", line 538, in pipe_asr
+    p = pipeline(
+        ^^^^^^^^^
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/transformers/pipelines/__init__.py", line 1180, in pipeline
+    return pipeline_class(model=model, framework=framework, task=task, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/transformers/pipelines/automatic_speech_recognition.py", line 220, in __init__
+    super().__init__(model, tokenizer, feature_extractor, device=device, torch_dtype=torch_dtype, **kwargs)
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/transformers/pipelines/base.py", line 1027, in __init__
+    self._preprocess_params, self._forward_params, self._postprocess_params = self._sanitize_parameters(**kwargs)
+                                                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: AutomaticSpeechRecognitionPipeline._sanitize_parameters() got an unexpected keyword argument 'dtype'
+[ERROR] new process:Traceback (most recent call last):
+  File "/home/deepin/pyvideotrans/pyvideotrans-studio/videotrans/configure/_base.py", line 283, in _new_process
+    raise RuntimeError(err)
+RuntimeError: Traceback (most recent call last):
+  File "/home/deepin/pyvideotrans/pyvideotrans-studio/videotrans/process/stt_fun.py", line 538, in pipe_asr
+    p = pipeline(
+        ^^^^^^^^^
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/transformers/pipelines/__init__.py", line 1180, in pipeline
+    return pipeline_class(model=model, framework=framework, task=task, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/transformers/pipelines/automatic_speech_recognition.py", line 220, in __init__
+    super().__init__(model, tokenizer, feature_extractor, device=device, torch_dtype=torch_dtype, **kwargs)
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/transformers/pipelines/base.py", line 1027, in __init__
+    self._preprocess_params, self._forward_params, self._postprocess_params = self._sanitize_parameters(**kwargs)
+                                                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: AutomaticSpeechRecognitionPipeline._sanitize_parameters() got an unexpected keyword argument 'dtype'
+
+Traceback (most recent call last):
+  File "/home/deepin/pyvideotrans/pyvideotrans-studio/videotrans/configure/_base.py", line 283, in _new_process
+    raise RuntimeError(err)
+RuntimeError: Traceback (most recent call last):
+  File "/home/deepin/pyvideotrans/pyvideotrans-studio/videotrans/process/stt_fun.py", line 538, in pipe_asr
+    p = pipeline(
+        ^^^^^^^^^
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/transformers/pipelines/__init__.py", line 1180, in pipeline
+    return pipeline_class(model=model, framework=framework, task=task, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/transformers/pipelines/automatic_speech_recognition.py", line 220, in __init__
+    super().__init__(model, tokenizer, feature_extractor, device=device, torch_dtype=torch_dtype, **kwargs)
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/transformers/pipelines/base.py", line 1027, in __init__
+    self._preprocess_params, self._forward_params, self._postprocess_params = self._sanitize_parameters(**kwargs)
+                                                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: AutomaticSpeechRecognitionPipeline._sanitize_parameters() got an unexpected keyword argument 'dtype'
+
+[DEBUG] [语音识别]渠道4,Yehor/whisper-large-v3-turbo-quantized-uk:共耗时:15s
+[ERROR] 管线异常
+Traceback (most recent call last):
+  File "/home/deepin/pyvideotrans/pyvideotrans-studio/studio/main_window.py", line 3484, in _run_translate_pipeline
+    _run_step("音频转字幕", trk.recogn)
+  File "/home/deepin/pyvideotrans/pyvideotrans-studio/studio/main_window.py", line 3477, in _run_step
+    result = fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^
+  File "/home/deepin/pyvideotrans/pyvideotrans-studio/videotrans/task/trans_create.py", line 413, in recogn
+    raw_subtitles = run_recogn(
+                    ^^^^^^^^^^^
+  File "/home/deepin/pyvideotrans/pyvideotrans-studio/videotrans/recognition/__init__.py", line 384, in run
+    return HuggingfaceRecogn(**kwargs).run()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/deepin/pyvideotrans/pyvideotrans-studio/videotrans/recognition/_base.py", line 145, in run
+    res = self._exec()
+          ^^^^^^^^^^^^
+  File "/home/deepin/pyvideotrans/pyvideotrans-studio/videotrans/recognition/_huggingface.py", line 42, in _exec
+    result = self._pipe_asr()
+             ^^^^^^^^^^^^^^^^
+  File "/home/deepin/pyvideotrans/pyvideotrans-studio/videotrans/recognition/_huggingface.py", line 68, in _pipe_asr
+    raws = self._new_process(callback=pipe_asr, title=title, is_cuda=self.is_cuda, kwargs=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/deepin/pyvideotrans/pyvideotrans-studio/videotrans/configure/_base.py", line 283, in _new_process
+    raise RuntimeError(err)
+RuntimeError: Traceback (most recent call last):
+  File "/home/deepin/pyvideotrans/pyvideotrans-studio/videotrans/process/stt_fun.py", line 538, in pipe_asr
+    p = pipeline(
+        ^^^^^^^^^
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/transformers/pipelines/__init__.py", line 1180, in pipeline
+    return pipeline_class(model=model, framework=framework, task=task, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/transformers/pipelines/automatic_speech_recognition.py", line 220, in __init__
+    super().__init__(model, tokenizer, feature_extractor, device=device, torch_dtype=torch_dtype, **kwargs)
+  File "/home/deepin/.hermes/hermes-agent/venv/lib/python3.11/site-packages/transformers/pipelines/base.py", line 1027, in __init__
+    self._preprocess_params, self._forward_params, self._postprocess_params = self._sanitize_parameters(**kwargs)
+                                                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: AutomaticSpeechRecognitionPipeline._sanitize_parameters() got an unexpected keyword argument 'dtype'
+
+
+[DEBUG] 返回缓存的编解码器 Linux-264: h264_vaapi
+[DEBUG] 最终配置信息：self.cfg=TaskCfgVTT(is_cuda=True, uuid='891a375bc8', cache_folder='/home/deepin/pyvideotrans/pyvideotrans-studio/tmp/440956/891a375bc8', target_dir='/home/deepin/Videos/0002', source_language='乌克兰语', source_language_code='uk', source_sub='/home/deepin/Videos/0002/uk.srt', source_wav='/home/deepin/pyvideotrans/pyvideotrans-studio/tmp/440956/891a375bc8/uk.wav', source_wav_output='/home/deepin/Videos/0002/uk.m4a', target_language='简体中文', target_language_code='zh-cn', target_sub='/home/deepin/Videos/0002/zh-cn.srt', target_wav='/home/deepin/pyvideotrans/pyvideotrans-studio/tmp/440956/891a375bc8/target.wav', target_wav_output='/home/deepin/Videos/0002/zh-cn.m4a', name='/tmp/pvt_merge_r4qqlx1a/merged.mp4', noextname='乌', basename='乌.mp4', ext='mp4', dirname='/home/deepin/Videos', shound_del_name=None, translate_type=4, tts_type=0, volume='+0%', pitch=0, voice_rate=0, voice_role='Yunxi(Male/CN)', voice_autorate=False, video_autorate=False, remove_silent_mid=False, align_sub_audio=True, detect_language='uk', recogn_type=4, model_name='Yehor/whisper-large-v3-turbo-quantized-uk', shibie_audio=None, remove_noise=False, enable_diariz=False, nums_diariz=0, rephrase=0, fix_punc=False, subtitle_language=None, app_mode='biaozhun', subtitles='', targetdir_mp4='/home/deepin/Videos/0002/乌.mp4', novoice_mp4='/home/deepin/pyvideotrans/pyvideotrans-studio/tmp/440956/891a375bc8/novoice.mp4', is_separate=False, embed_bgm=False, instrument=None, vocal=None, back_audio='', clear_cache=False, background_music=None, subtitle_type=0, only_out_mp4=False, recogn2pass=False, output_srt=0, copysrt_rawvideo=False)
+[DEBUG] The file information: {'streams': [{'index': 0, 'codec_name': 'h264', 'codec_long_name': 'H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10', 'profile': 'High', 'codec_type': 'video', 'codec_tag_string': 'avc1', 'codec_tag': '0x31637661', 'width': 1280, 'height': 720, 'coded_width': 1280, 'coded_height': 720, 'closed_captions': 0, 'film_grain': 0, 'has_b_frames': 1, 'sample_aspect_ratio': '1:1', 'display_aspect_ratio': '16:9', 'pix_fmt': 'yuv420p', 'level': 31, 'color_range': 'tv', 'color_space': 'bt709', 'color_transfer': 'bt709', 'color_primaries': 'bt709', 'chroma_location': 'left', 'field_order': 'progressive', 'refs': 1, 'is_avc': 'true', 'nal_length_size': '4', 'id': '0x1', 'r_frame_rate': '25/1', 'avg_frame_rate': '25/1', 'time_base': '1/12800', 'start_pts': 179, 'start_time': '0.013984', 'duration_ts': 3097088, 'duration': '241.960000', 'bit_rate': '517787', 'bits_per_raw_sample': '8', 'nb_frames': '6049', 'extradata_size': 49, 'disposition': {'default': 1, 'dub': 0, 'original': 0, 'comment': 0, 'lyrics': 0, 'karaoke': 0, 'forced': 0, 'hearing_impaired': 0, 'visual_impaired': 0, 'clean_effects': 0, 'attached_pic': 0, 'timed_thumbnails': 0, 'non_diegetic': 0, 'captions': 0, 'descriptions': 0, 'metadata': 0, 'dependent': 0, 'still_image': 0}, 'tags': {'language': 'und', 'handler_name': 'ISO Media file produced by Google Inc.', 'vendor_id': '[0][0][0][0]', 'encoder': 'Lavc60.31.102 h264_vaapi'}}, {'index': 1, 'codec_name': 'aac', 'codec_long_name': 'AAC (Advanced Audio Coding)', 'profile': 'LC', 'codec_type': 'audio', 'codec_tag_string': 'mp4a', 'codec_tag': '0x6134706d', 'sample_fmt': 'fltp', 'sample_rate': '48000', 'channels': 2, 'channel_layout': 'stereo', 'bits_per_sample': 0, 'initial_padding': 0, 'id': '0x2', 'r_frame_rate': '0/0', 'avg_frame_rate': '0/0', 'time_base': '1/48000', 'start_pts': 0, 'start_time': '0.000000', 'duration_ts': 11615800, 'duration': '241.995833', 'bit_rate': '127734', 'nb_frames': '11344', 'extradata_size': 5, 'disposition': {'default': 1, 'dub': 0, 'original': 0, 'comment': 0, 'lyrics': 0, 'karaoke': 0, 'forced': 0, 'hearing_impaired': 0, 'visual_impaired': 0, 'clean_effects': 0, 'attached_pic': 0, 'timed_thumbnails': 0, 'non_diegetic': 0, 'captions': 0, 'descriptions': 0, 'metadata': 0, 'dependent': 0, 'still_image': 0}, 'tags': {'language': 'eng', 'handler_name': 'SoundHandler', 'vendor_id': '[0][0][0][0]'}}], 'format': {'filename': '/tmp/pvt_merge_r4qqlx1a/merged.mp4', 'nb_streams': 2, 'nb_programs': 0, 'format_name': 'mov,mp4,m4a,3gp,3g2,mj2', 'format_long_name': 'QuickTime / MOV', 'start_time': '0.000000', 'duration': '241.995833', 'size': '19694919', 'bit_rate': '651082', 'probe_score': 100, 'tags': {'major_brand': 'isom', 'minor_version': '512', 'compatible_brands': 'isomiso2avc1mp41', 'encoder': 'Lavf60.16.100'}}}
+[DEBUG] The file info after process:result={'video_fps': 25.0, 'r_frame_rate': '25/1', 'video_codec_name': 'h264', 'audio_codec_name': 'aac', 'width': 1280, 'height': 720, 'time': 241960, 'streams_len': 2, 'streams_audio': 1, 'video_streams': 1, 'color': 'yuv420p'}
+[DEBUG] [FFMPEG-CMD]:
+ffmpeg -hide_banner -nostdin -ignore_unknown -threads 0 -y -fflags +genpts -i /tmp/pvt_merge_r4qqlx1a/merged.mp4 -an -c:v copy novoice.mp4
+
+[DEBUG] [trans_create]:run_recogn() time.time()=1779183201.255023
+[DEBUG] [recognition]__init__:kwargs={'detect_language': 'uk', 'audio_file': '/home/deepin/pyvideotrans/pyvideotrans-studio/tmp/440956/891a375bc8/uk.wav', 'cache_folder': '/home/deepin/pyvideotrans/pyvideotrans-studio/tmp/440956/891a375bc8', 'model_name': 'Yehor/whisper-large-v3-turbo-quantized-uk', 'uuid': '891a375bc8', 'is_cuda': True, 'subtitle_type': 0, 'recogn_type': 4, 'max_speakers': -1, 'llm_post': False, 'recogn2pass': False}
+[DEBUG] BaseRecogn 初始化
+[DEBUG] [HuggingfaceRecogn]_exec:self.model_name='Yehor/whisper-large-v3-turbo-quantized-uk'
+[DEBUG] [Before VAD silero][self.recogn2pass=False],_min_speech=1000ms,_max_speech=8000ms,_min_silence=250ms
+[DEBUG] [新进程执行任务]:VAD:silero split audio...
+[DEBUG] CPU进程池:max_workers=1
+[DEBUG] [silero-VAD]Fix:VAD断句参数：threshold=0.5,min_speech_duration_ms=0ms,max_speech_duration_ms=8000ms,min_silent_duration_ms=250ms
+[WARNING] cut_audio 时长小于 1000ms 需要下个字幕左移开始时间,diff=768,prev_diff=0,next_diff=0
+[WARNING] cut_audio 时长小于 1000ms 需要下个字幕左移开始时间,diff=832,prev_diff=0,next_diff=0
+[WARNING] cut_audio 时长小于 1000ms 需要下个字幕左移开始时间,diff=800,prev_diff=0,next_diff=0
+[WARNING] cut_audio 时长小于 1000ms 需要下个字幕左移开始时间,diff=912,prev_diff=0,next_diff=0
+[WARNING] cut_audio 时长小于 1000ms 需要下个字幕左移开始时间,diff=992,prev_diff=0,next_diff=0
+[DEBUG] [新进程执行任务]:load Yehor/whisper-large-v3-turbo-quantized-uk
+[DEBUG] GPU进程池:max_workers=1
+[DEBUG] 对识别出的字幕进行简单修正，min_speech=1000
+[WARNING] 该字幕原始文字=Добре, додні був новий крок в Росії ще до Приднестров'я., 合并进前条字幕的文字=Добре,
+[WARNING] 剩余问文字  додні був новий крок в Росії ще до Приднестров'я.
+
+[WARNING] 该字幕原始文字=Войни, Служби безпеки України, наші., 合并进前条字幕的文字=Войни,
+[WARNING] 剩余问文字  Служби безпеки України, наші.
+
+[WARNING] 该字幕原始文字=Ми врацюємо активно і на традиційному санкційному напрямку. Ключове – це, 合并到下条字幕文字= Ключове – це
+[WARNING] 剩余文字 Ми врацюємо активно і на традиційному санкційному напрямку.
+
+[WARNING] 该字幕原始文字=Від компаній з Європи, Японії, Сполучених Штатів, 合并到下条字幕文字= Сполучених Штатів
+[WARNING] 剩余文字 Від компаній з Європи, Японії,
+
+[WARNING] 该字幕原始文字=Так само і з більшістю інших засобів ураження, які використовують ці, 合并到下条字幕文字= які використовують ці
+[WARNING] 剩余文字 Так само і з більшістю інших засобів ураження,
+
+[DEBUG] [语音识别]渠道4,Yehor/whisper-large-v3-turbo-quantized-uk:共耗时:78s
+[DEBUG] [deepseek]响应:response=ChatCompletion(id='ff6c95aa-965f-4e63-b436-6e8e30558a59', choices=[Choice(finish_reason='stop', index=0, logprobs=None, message=ChatCompletionMessage(content='<TRANSLATE_TEXT>\n1\n00:00:00,400 --> 00:00:08,016\n各位乌克兰同胞，今天我与外长西比加讨论了德涅斯特河沿岸局势。\n\n2\n00:00:08,016 --> 00:00:12,192\n俄方又针对德涅斯特河沿岸迈出新一步。\n\n3\n00:00:12,192 --> 00:00:14,480\n他们简化了\n\n4\n00:00:14,480 --> 00:00:18,016\n整个地区民众获得国籍的流程。\n\n5\n00:00:18,016 --> 00:00:19,056\n关键！\n\n6\n00:00:19,056 --> 00:00:25,680\n这一特殊步骤不仅意味着俄方在寻找新兵源，\n\n7\n00:00:25,680 --> 00:00:28,832\n因为国籍意味着兵役义务。\n\n8\n00:00:28,832 --> 00:00:32,864\n这也是俄方将德涅斯特河沿岸视为其领土的示。\n\n9\n00:00:32,864 --> 00:00:33,968\n其领土。\n\n10\n00:00:33,968 --> 00:00:38,528\n莫斯科常对各方说，\n\n11\n00:00:38,528 --> 00:00:41,776\n他们只关心顿巴斯。\n\n12\n00:00:41,776 --> 00:00:45,296\n但实则不止顿巴斯。我们必须对此\n\n13\n00:00:45,296 --> 00:00:46,336\n作出回应。\n\n14\n00:00:46,336 --> 00:00:51,584\n更何况俄罗斯在德涅斯特河沿岸的驻军和部署\n\n15\n00:00:51,584 --> 00:00:54,560\n对我们也是挑战。\n\n16\n00:00:54,560 --> 00:00:58,064\n我们乐见一个稳定强大的摩尔多瓦。\n\n17\n00:00:58,064 --> 00:01:01,376\n乌克兰外长已联络\n\n18\n00:01:01,376 --> 00:01:02,672\n摩方。\n\n19\n00:01:02,672 --> 00:01:06,896\n与摩尔多瓦协调立场和行动。\n\n20\n00:01:06,896 --> 00:01:10,288\n我也期待乌克兰安全部门提出方案。\n\n21\n00:01:10,288 --> 00:01:12,976\n我方情报机构提供应对模式。\n\n22\n00:01:12,976 --> 00:01:16,464\n俄罗斯应多想想自己的炼油厂，\n\n23\n00:01:16,464 --> 00:01:17,552\n和\n\n24\n00:01:17,552 --> 00:01:18,896\n输油码头，\n\n25\n00:01:18,896 --> 00:01:22,992\n而非干涉他国公民和土地。\n\n26\n00:01:22,992 --> 00:01:30,736\n感谢本周所有参与远程打击行动的部队。\n\n27\n00:01:31,184 --> 00:01:35,904\n乌克兰的远程制裁本周持续生效。\n\n28\n00:01:35,904 --> 00:01:42,608\n特种部队、无人系统部队、导弹部队及其他\n\n29\n00:01:42,608 --> 00:01:44,224\n武装力量战士们，\n\n30\n00:01:44,224 --> 00:01:47,408\n乌克兰安全局将士们，\n\n31\n00:01:47,408 --> 00:01:51,680\n国防部情报局、对外情报局。感谢你们！\n\n32\n00:01:51,680 --> 00:01:54,256\n精准打击的勇士们。\n\n33\n00:01:54,256 --> 00:01:59,296\n我们也在传统制裁方向积极行动。\n\n34\n00:01:59,296 --> 00:02:04,624\n关键是切断俄罗斯导弹和无人机生产的所有供应渠道。\n\n35\n00:02:04,624 --> 00:02:05,680\n打击。\n\n36\n00:02:05,680 --> 00:02:07,360\n本周基辅遭袭。\n\n37\n00:02:07,360 --> 00:02:12,320\n俄方使用了今年生产的导弹。\n\n38\n00:02:12,320 --> 00:02:13,872\n没有来自\n\n39\n00:02:13,872 --> 00:02:16,928\n欧洲、日本、\n\n40\n00:02:16,928 --> 00:02:18,496\n美国公司的部件，俄方根本\n\n41\n00:02:18,496 --> 00:02:21,248\n造不出这些导弹。\n\n42\n00:02:21,248 --> 00:02:26,816\n同理，大多数其他武器\n\n43\n00:02:26,816 --> 00:02:31,968\n那些败类用来袭击我们城市和民居。\n\n44\n00:02:31,968 --> 00:02:37,616\n俄与世界的关联，新的制裁，直接威胁生命。\n\n45\n00:02:37,616 --> 00:02:39,408\n不仅是我们，\n\n46\n00:02:39,408 --> 00:02:41,968\n在乌克兰，如果俄罗斯这台战争机器\n\n47\n00:02:41,968 --> 00:02:45,936\n开火，下一击可能\n\n48\n00:02:45,936 --> 00:02:47,440\n指向欧洲。\n\n49\n00:02:47,504 --> 00:02:51,904\n指向俄罗斯其他邻国及更远地区。\n\n50\n00:02:51,904 --> 00:02:58,096\n俄罗斯的邪恶已在叙利亚和非洲显现。现在他们大量投入\n\n51\n00:02:58,096 --> 00:02:59,456\n束缚于此！\n\n52\n00:02:59,456 --> 00:03:00,864\n我们的防御。\n\n53\n00:03:00,864 --> 00:03:02,480\n但未来如何？\n\n54\n00:03:02,480 --> 00:03:05,632\n俄将走向何方？需要决心。\n\n55\n00:03:05,632 --> 00:03:10,448\n至少让这个国家变得对世界更安全。\n\n56\n00:03:10,448 --> 00:03:14,784\n制裁等一切施压手段是最佳工具。\n\n57\n00:03:14,784 --> 00:03:17,776\n此外，今天我与法国总统通话。\n\n58\n00:03:17,776 --> 00:03:21,456\n我正与伙伴们商讨乌克兰模式。\n\n59\n00:03:21,456 --> 00:03:28,528\n加上E3国家——法、英、德，让这一模式更具实质内涵。\n\n60\n00:03:28,528 --> 00:03:32,096\n会有会面，会有成果，我们正在准备重要\n\n61\n00:03:32,096 --> 00:03:36,848\n外交事项。感谢所有帮助者。同时——\n\n62\n00:03:36,848 --> 00:03:40,656\n我们不会停下，确保有后续交换阶段。\n\n63\n00:03:40,656 --> 00:03:47,520\n本周进行了第一阶段的一千换一千交换。我们准备下一阶段。名单工作继续。\n\n64\n00:03:47,520 --> 00:03:51,040\n感谢所有为此协调\n\n65\n00:03:51,040 --> 00:03:54,224\n参与的人。必须让乌克兰人回家。\n\n66\n00:03:54,224 --> 00:04:00,816\n从俘虏中需继续加强我们与世界的联系、我们的国家、我们的人民。\n\n67\n00:04:00,816 --> 00:04:02,005\n荣耀归于乌克兰！\n</TRANSLATE_TEXT>', refusal=None, role='assistant', annotations=None, audio=None, function_call=None, tool_calls=None, reasoning_content='我们开始分析。任务是将给定的SRT源文本从乌克兰语翻译成简体中文，同时严格遵守格式要求：保持相同的块数、索引和时码，并且要适合配音，用词要简洁自然。源文本来自一段视频，似乎是乌克兰总统或高官的讲话，内容涉及乌克兰外交政策、俄罗斯在德涅斯特河沿岸地区的行动、制裁、武器生产等。\n\n首先，我需要理解源文本的意思。虽然我不是乌克兰语专家，但根据上下文和部分词汇，可以推断出大致意思。下面逐块分析并翻译。注意源文本中有一些拼写错误或识别错误，需要根据上下文纠正。例如，第1行"Приднішинської Добре"可能是"Приднестровья"或类似地名。第2行"додні"可能是"додатковий"或其它。我将尽力给出合理的翻译。\n\n由于这是一个政治演讲，语气要正式但仍口语化。以下是我的翻译思路：\n\n1. 保持简洁，每行不超过太长时间可读的字符数。中文配音通常需要比源语言更少的音节，所以尽量缩略。\n2. 使用正确的术语：比如"МЗС"是外交部，"ГУР"是军事情报局，"НПЗ"是石油加工厂，"Е3"是法国、英国、德国。\n3. 注意数字和专有名词的翻译。\n\n现在逐块输出。注意：源文本中有些行非常短，例如第5行"Мондо!"可能是个语气词或名字，根据上下文可能是"马上"或类似意思，但更可能是"Мондо"作为感叹。我猜测它是"Мондо"可能是一个人名或误识别。但从全局看，前面提到"Приднестров\'я"，后面第8行提到"при Дністрові"，所以第5行可能是"Мондо!"实际上是"Моє!"或"Ну що?"。但很难确定。我保留原样翻译成"蒙多！"也许不合适。鉴于上下文，可能是一个口语化的词，比如"好了！"或"听着！"。我倾向于翻译成"注意！"或"好了！"。但为了保险，我可以用"诸位！"或"大家！"。但最好根据语音可能：源文本是AI生成的，可能有错误。结合第4行"Отримати громадянство для вихідців всього регіону."然后第5行"Мондо!"可能是"Мондо"作为"世界"的意思？其实是"Мондо"在意大利语是"世界"，但在乌克兰语中不常见。更可能它是"Монолог"的一部分？或者是一个误听。考虑到第6行开始讨论"Крок спеціфічний"，所以"Мондо!"可能是一个独立的感叹，类似"注意！"或"重要的是！"。我选择翻译为"关键！"以保持短促。\n\n另一个模糊点：第13行"Реагувати."是单独的"反应"。第17-18行"Ядро Чиф МЗС України відповідно Контактувати."这里"Ядро Чиф"可能是"Глава МЗС"（外交部长）的误译？应该是"Глава МЗС"也就是外交部长。所以第17行是"乌克兰外交部长"，第18行是"进行联络"。第19行"Змолдовуюся"可能是"С Молдовою"（与摩尔多瓦）？原文是"Змолдовуюся до спільної тінки" - 可能应为"З Молдовою до спільної думки"（与摩尔多瓦达成共识）。我尽力修正。\n\n其他行如"Войны за влучність"可能是"Воїни за влучність"（精准打击的勇士）。"Звіски росії зі світом"可能是"Зв\'язки Росії зі світом"（俄罗斯与世界的联系）。"новіноця"可能是"новітні"（最新的）。"житю"可能是"життю"（生命）。"Сковни тут!"可能是"Сковують тут!"或"Сковують нашу оборону"? 第51行"Сковни тут!"和第52行"Нашу оборону." 所以可能"Сковни"是"сковують"（束缚）的误写，意思是"这里束缚着我们的防御"。我翻译为"束缚于此！"和"我们的防御。"\n\n第54行"Куди далі росіянна бідуть?"可能是"Куди далі росіян поведуть?"（俄罗斯人下一步会被引向何方？）。"хати цю країну"可能是"хоч би цю країну"（希望这个国家）？第55行"щоб хати цю країну так, щоб вона ставала більш безпечним для світу." 可能是"щоб хоч би цю країну зробити так, щоб вона ставала більш безпечною для світу."（至少让这个国家变得对世界更安全）。\n\n第57行"Щодне."可能是"Ще одне."（还有一件事）。第58行"Мой зараз домовляємось"可能是"Мої зараз домовляються"（我的团队正在商谈）？或"Мой"可能是"Ну"或"Я"？可能是"Я зараз домовляюся"（我现在正在商谈）。\n\n第62行"Не зупиняємося, щоб були і наступні етапи обмінів."意思是"我们不会停止，以确保有下一阶段的人员交换。"\n\n第63行"Цього тижня був перший етап зобміну тисячі на тисячу."意思是"本周进行了第一个阶段的一千换一千交换。"\n\n第65行"Хто залучений?"可能是"Хто залучений?"（谁参与其中？）或"Хто залучений, треба повертати українців."（所有参与者，需要归还乌克兰人。）\n\n第66行"З полону треба і надалі посилювати наші зв\'язки зі світом нашу державу, наших людей."可能是"З полону треба і надалі посилювати наші зв\'язки зі світом, нашу державу, наших людей."（从俘虏中，我们需要继续加强我们与世界、我们的国家、我们人民的联系。）\n\n最后第67行"Слава Україні!"译为"荣耀归于乌克兰！"\n\n现在，我需要将每个块翻译成最简洁的中文，并保持1对1映射。注意不要合并。例如第1行很长，但必须保持为一行。同样，第2行很短。我将在每个块内写出中文。\n\n为了配音简洁，我会用短词。例如"Шановні українці, українки"可以译为"尊敬的乌克兰同胞们"但可能太长，可以简化为"各位乌克兰同胞"或"同胞们"。但考虑到长度，可以更口语化："乌克兰同胞们"。时码从00:00:00.400到8.016，有7.6秒，可以容纳较长句子。\n\n下面我写出每个块对应的中文。注意标点符号根据需要调整。格式必须完全匹配：索引、时码、一行文本，空行。\n\n最终输出应该在<TRANSLATE_TEXT>标签内。'))], created=1779183287, model='deepseek-v4-flash', object='chat.completion', service_tier=None, system_fingerprint='fp_8b330d02d0_prod0820_fp8_kvcache_20260402', usage=CompletionUsage(completion_tokens=3462, prompt_tokens=4997, total_tokens=8459, completion_tokens_details=CompletionTokensDetails(accepted_prediction_tokens=None, audio_tokens=None, reasoning_tokens=1642, rejected_prediction_tokens=None), prompt_tokens_details=PromptTokensDetails(audio_tokens=None, cached_tokens=0), prompt_cache_hit_tokens=0, prompt_cache_miss_tokens=4997))
+[DEBUG] 按SRT格式翻译，原始字幕行数：67,整理为list[dict]后的行数:67
+[DEBUG] [字幕翻译]渠道4,deepseek-v4-flash:共耗时:46s
+[INFO] [Estimate] 预估报告已保存至: /home/deepin/Videos/0002/配音时长预估.txt
+[DEBUG] 本次EdgeTTS配音：重试延迟:5,出错将重试:4,并发:10
+[DEBUG] 执行流程：所有配音任务结束。
+[DEBUG] 开始执行事件循环的关闭流程...
+[DEBUG] 事件循环已关闭。
+[DEBUG] [字幕配音]渠道0:共耗时:14s
+[WARNING] [Overflow] 字幕[40] 配音时长 2319ms 超出字幕时段 1568ms (ratio=1.48)，需优化
+[WARNING] [Overflow] 字幕[46] 配音时长 3015ms 超出字幕时段 2560ms (ratio=1.18)，需优化
+[INFO] [Overflow] 分析报告已保存至: /home/deepin/Videos/0002/配音优化建议.txt
+[DEBUG] [SpeedRate] Init. AudioRate=False, VideoRate=False, Rubberband=True
+[DEBUG] [SpeedRate] 未启用变速，进入普通拼接模式。
+[DEBUG] concat_txt='/home/deepin/pyvideotrans/pyvideotrans-studio/tmp/440956/891a375bc8/final_audio_concat.txt',filelist[0]='/home/deepin/pyvideotrans/pyvideotrans-studio/tmp/440956/891a375bc8/silence_gap_0.wav'
+[DEBUG] [Audio-Concat] 最终音频已生成: /home/deepin/pyvideotrans/pyvideotrans-studio/tmp/440956/891a375bc8/target.wav
+[DEBUG] [FFMPEG-CMD]:
+ffmpeg -hide_banner -nostdin -ignore_unknown -threads 0 -y -i novoice.mp4 -vf tpad=stop_mode=clone:stop_duration=0.099 -c:v libx264 -crf 23 -preset medium -an final_video_with_freeze_lastend.mp4
+
+[DEBUG] 视频定格应延长99ms，实际向上取整秒延长0.099s,操作成功。
+[DEBUG] 返回缓存的编解码器 Linux-264: h264_vaapi
+[DEBUG] [最终视频合成]copy模式，无需重新编码:
+['-y', '-progress', 'compose1779183391.936046.txt', '-i', 'novoice.mp4', '-i', 'origin_audio.m4a', '-map', '0:v', '-map', '1:a', '-c:v', 'copy', '-c:a', 'copy', '-movflags', '+faststart', '-t', '242.040000', 'laste_target.mp4']
+[DEBUG] [FFMPEG-CMD]:
+ffmpeg -hide_banner -nostdin -ignore_unknown -threads 0 -y -progress compose1779183391.936046.txt -i novoice.mp4 -i origin_audio.m4a -map 0:v -map 1:a -c:v copy -c:a copy -movflags +faststart -t 242.040000 laste_target.mp4
+
