@@ -109,7 +109,9 @@ def step1_detect_hardware():
     # GPU
     gpu = _detect_gpu()
     info["gpu"] = gpu
-    _ok(f"显卡: {gpu['name'] or '未检测到独立显卡'}")
+    gpu_name = gpu['name'] or '未检测到独立显卡'
+    gpu_vram = f" / {gpu['vram_mb']} MB" if gpu.get('vram_mb') else ""
+    _ok(f"显卡: {gpu_name}{gpu_vram}")
     if gpu["vendor"] != "cpu":
         _ok(f"加速模式: {gpu['vendor'].upper()}")
     else:
@@ -119,24 +121,60 @@ def step1_detect_hardware():
 
 
 def _detect_gpu():
-    gpu = {"vendor": "cpu", "name": None, "driver_ok": False}
+    gpu = {"vendor": "cpu", "name": None, "vram_mb": 0, "driver_ok": False}
     # NVIDIA
     if _which("nvidia-smi"):
-        ok, out, _ = _run(["nvidia-smi", "--query-gpu=name", "--format=csv,noheader"], timeout=10)
+        ok, out, _ = _run(["nvidia-smi", "--query-gpu=name,memory.total", "--format=csv,noheader,nounits"], timeout=10)
         if ok and out.strip():
-            gpu = {"vendor": "cuda", "name": out.strip().split("\n")[0], "driver_ok": True}
+            parts = out.strip().split("\n")[0].split(",")
+            name = parts[0].strip()
+            vram = int(parts[1].strip()) if len(parts) > 1 else 0
+            gpu = {"vendor": "cuda", "name": name, "vram_mb": vram, "driver_ok": True}
             return gpu
     # AMD ROCm
     if _which("rocminfo"):
         ok, out, _ = _run(["rocminfo"], timeout=10)
         if ok:
-            for line in out.splitlines():
+            name = None
+            lines = out.splitlines()
+            # 找到 GPU 段：从 "Name: gfx" 或 "Vendor Name: AMD" 的 GPU 段取 Marketing Name
+            for i, line in enumerate(lines):
                 if "Name:" in line and "gfx" in line.lower():
-                    gpu = {"vendor": "rocm", "name": line.split(":", 1)[1].strip(), "driver_ok": True}
-                    return gpu
+                    # 向前查找 Marketing Name
+                    for j in range(max(0, i - 10), min(len(lines), i + 5)):
+                        if "Marketing Name:" in lines[j]:
+                            name = lines[j].split(":", 1)[1].strip()
+                            break
+                    if not name:
+                        name = line.split(":", 1)[1].strip()
+                    break
+            if name:
+                vram = 0
+                # 尝试从 /sys/class/drm 获取显存
+                try:
+                    for card in Path("/sys/class/drm").glob("card*"):
+                        vram_file = card / "device" / "mem_info_vram_total"
+                        if vram_file.is_file():
+                            vram = int(vram_file.read_text().strip()) // (1024 * 1024)
+                            break
+                except Exception:
+                    pass
+                # 回退: rocm-smi
+                if not vram and _which("rocm-smi"):
+                    ok2, out2, _ = _run(["rocm-smi", "--showmeminfo", "vram"], timeout=10)
+                    if ok2:
+                        for line in out2.splitlines():
+                            if "VRAM Total Memory" in line:
+                                try:
+                                    vram = int(line.split(":")[1].strip().split("(")[0].strip()) // (1024 * 1024)
+                                except Exception:
+                                    pass
+                                break
+                gpu = {"vendor": "rocm", "name": name, "vram_mb": vram, "driver_ok": True}
+                return gpu
     # lspci fallback
     if _which("lspci"):
-        ok, out, _ = _run(["lspci"], timeout=10)
+        ok, out, _ = _run(["lspci", "-v"], timeout=10)
         if ok:
             for line in out.splitlines():
                 if "VGA" in line or "3D" in line:
