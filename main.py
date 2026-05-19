@@ -457,13 +457,13 @@ def step5_generate_install_script(hw_info, venv_dir, missing):
 # ── [6/6] 完成提示 ────────────────────────────────────────
 
 
-def step6_finish(script_name, is_existing_venv):
+def step6_finish(script_name, all_ok):
     _section(6, "部署完成")
 
-    if is_existing_venv:
-        _ok("使用共享虚拟环境，无需重复安装依赖。")
+    if all_ok:
+        _ok("环境就绪，即将启动软件...")
     else:
-        _ok("虚拟环境已创建，依赖已就绪。")
+        _ok("部署检查完毕。")
 
     print(f"""
   {'='*58}
@@ -471,23 +471,82 @@ def step6_finish(script_name, is_existing_venv):
   {'='*58}
 
   日常使用:
-      python sv.py
+      python sv.py         （快速启动，跳过检测）
 
   遇到问题或缺少依赖时:
-      python main.py
+      python main.py       （重新检测环境并修复）
 
   如果安装脚本未完成，请执行:
       {'./' if sys.platform != 'win32' else ''}{script_name}
 
   {'='*58}
 """)
+    return all_ok
+
+
+# ── 启动 GUI ────────────────────────────────────────────────
+
+def _launch_gui():
+    """部署通过后启动主界面"""
+    os.environ["DESKTOP_APP_ID"] = "pyvideotrans-studio"
+    os.environ["QT_API"] = "pyside6"
+    os.environ["QT_LOGGING_RULES"] = "qt.qpa.plugin=false;qt.qpa.services=false"
+
+    # fcitx5 中文输入
+    if sys.platform == "linux" and not os.environ.get("_PV_STUDIO_QT_PATH"):
+        try:
+            import PySide6
+            _qt_lib = Path(PySide6.__file__).resolve().parent / "Qt" / "lib"
+            if _qt_lib.is_dir():
+                _env = os.environ.copy()
+                _env["LD_LIBRARY_PATH"] = f"{_qt_lib}:" + _env.get("LD_LIBRARY_PATH", "")
+                _env["_PV_STUDIO_QT_PATH"] = "1"
+                os.execve(sys.executable, [sys.executable] + sys.argv, _env)
+        except Exception:
+            pass
+
+    os.environ["QT_IM_MODULE"] = "fcitx"
+
+    try:
+        from PySide6.QtGui import QIcon
+        from PySide6.QtWidgets import QApplication
+        from videotrans.configure import config
+        from studio.main_window import StudioMainWindow
+    except ImportError as e:
+        print(f"\n  ❌ 依赖缺失: {e}")
+        print(f"  请先运行安装脚本完成依赖安装：")
+        is_win = sys.platform == "win32"
+        print(f"  {'./' if not is_win else ''}install_deps.sh" if not is_win else "  install_deps.bat")
+        print()
+        sys.exit(1)
+
+    config.init_run()
+    config.app_cfg.current_status = "stop"
+
+    app = QApplication(sys.argv)
+    app.setStyle("Fusion")
+
+    icon_path = str(PROJECT_ROOT / "studio" / "logo_icon_64.png")
+    app.setWindowIcon(QIcon(icon_path))
+
+    win = StudioMainWindow()
+    win.setWindowIcon(QIcon(icon_path))
+    win.show()
+    sys.exit(app.exec())
 
 
 # ── 主入口 ────────────────────────────────────────────────
 
+_VENV_FLAG = "_PV_STUDIO_VENV_ACTIVE"
+
 
 def main():
     """部署向导主流程"""
+    # 已从 venv re-exec 过来 → 直接启动 GUI
+    if os.environ.get(_VENV_FLAG):
+        _launch_gui()
+        return
+
     os.system("cls" if sys.platform == "win32" else "clear")
 
     print("=" * 58)
@@ -500,9 +559,21 @@ def main():
     hw_info = step1_detect_hardware()
     venv_dir, is_existing = step2_venv(hw_info)
     step3_gpu_driver(hw_info)
+
+    # 切换到 venv Python 以检查依赖和启动 GUI
+    py = _venv_python(venv_dir)
+    if py.is_file() and Path(sys.executable).resolve() != py.resolve():
+        env = os.environ.copy()
+        env[_VENV_FLAG] = "1"
+        os.execve(str(py), [str(py)] + sys.argv, env)
+
     missing = step4_check_deps(venv_dir)
     script_name = step5_generate_install_script(hw_info, venv_dir, missing)
-    step6_finish(script_name, is_existing and not missing)
+    all_ok = is_existing and not missing
+    step6_finish(script_name, all_ok)
+
+    if all_ok:
+        _launch_gui()
 
 
 if __name__ == "__main__":
