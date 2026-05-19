@@ -114,6 +114,9 @@ class BaseTask(BaseCon):
         import re, copy
 
         if len(source_srt_list) == 1 or len(target_srt_list) == 1:
+            if not target_srt_list:
+                logger.warning("翻译返回空结果，使用原文填充")
+                target_srt_list = [copy.deepcopy(source_srt_list[0])]
             target_srt_list[0]["line"] = 1
             return target_srt_list[:1]
         source_len = len(source_srt_list)

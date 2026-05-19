@@ -211,8 +211,14 @@ class ClipEngine(QObject):
         if self._process:
             # 断开旧进程信号，防止 deleteLater 延迟删除期间
             # 旧进程 finished 信号触发 _on_finished 导致段错误
-            self._process.readyReadStandardOutput.disconnect(self._parse_progress)
-            self._process.finished.disconnect(self._on_finished)
+            try:
+                self._process.readyReadStandardOutput.disconnect(self._parse_progress)
+            except (RuntimeError, TypeError):
+                pass
+            try:
+                self._process.finished.disconnect(self._on_finished)
+            except (RuntimeError, TypeError):
+                pass
             self._process.deleteLater()
         self._process = QProcess(self)
         self._process.setProcessChannelMode(QProcess.ProcessChannelMode.MergedChannels)
