@@ -26,6 +26,7 @@ gtts>=2.5
 edge-tts>=7.0
 google-genai>=1.0
 gradio_client>=1.0
+moonshine-voice>=0.0.59
 
 # 安装方式：
 # pip install -r requirements.txt

@@ -18,3 +18,4 @@ tmp/
 venv/
 .venv/
 env/
+logs/
