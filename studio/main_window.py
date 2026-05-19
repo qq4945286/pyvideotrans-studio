@@ -2741,7 +2741,8 @@ class StudioMainWindow(QMainWindow):
             entry_muted = c.muted
             if not entry_muted and os.path.exists(c.source_path):
                 audio_path = c.source_path
-            audio_schedule.append((c.start, c.end, audio_path, entry_muted))
+            # audio_schedule: (start, end, audio_path, muted, source_start)
+            audio_schedule.append((c.start, c.end, audio_path, entry_muted, c.source_start))
             # 视频轨素材：记录 (timeline_start, timeline_end, source_path, source_start)
             if os.path.exists(c.source_path) and getattr(c, "track_type", "") != "audio":
                 ss = c.source_start
@@ -3073,7 +3074,8 @@ class StudioMainWindow(QMainWindow):
                 return
         # 没有后续视频 → 检查是否有后续纯音频
         schedule = self._preview_widget._audio_schedule
-        for start, end, apath, muted in schedule:
+        for entry in schedule:
+            start, end, apath, muted = entry[0], entry[1], entry[2], entry[3]
             if start > pos + 0.05 and apath and not muted and os.path.exists(apath):
                 # 纯音频继续播放（视频停在最后一帧）
                 self._preview_widget._playing = True

@@ -970,8 +970,8 @@ class PreviewWidget(QWidget):
 
     def _find_schedule_at(self, pos: float) -> int:
         """返回播放头位置对应的排期索引，-1 表示无匹配"""
-        for i, (start, end, _, _) in enumerate(self._audio_schedule):
-            if start <= pos < end:
+        for i, entry in enumerate(self._audio_schedule):
+            if entry[0] <= pos < entry[1]:
                 return i
         return -1
 
@@ -988,10 +988,13 @@ class PreviewWidget(QWidget):
             self._schedule_idx = idx
             self._stop_audio()
             if idx >= 0 and not self._muted:
-                _, _, audio_path, entry_muted = self._audio_schedule[idx]
+                entry = self._audio_schedule[idx]
+                audio_path, entry_muted = entry[2], entry[3]
+                src_start = entry[4] if len(entry) > 4 else 0.0
                 if not entry_muted and audio_path and os.path.exists(audio_path):
                     try:
-                        offset = timeline_pos - self._audio_schedule[idx][0]
+                        # ffplay 偏移 = 素材源偏移 + (时间线位置 - 素材起始)
+                        offset = src_start + (timeline_pos - entry[0])
                         self._audio_proc = subprocess.Popen(
                             ["ffplay", "-nodisp", "-autoexit",
                              "-ss", str(max(0.0, offset)),
